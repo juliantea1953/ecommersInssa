@@ -38,7 +38,101 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
+.qr{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
 
+}
+.contPago{
+  justify-content: center;
+    display: flex;
+    margin-bottom: 13px;
+}
+
+.contRadio{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.radio1{
+  display: initial;
+ 
+}
+.radio2{
+  display: initial;
+}
+.radio{
+  width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: all .15s ease-in-out;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: .5s;
+  border-radius: 20px;
+}
+.me-1 {
+  margin-right: 0.25rem !important;
+}
+
+.btn-square, .btn-sm-square, .btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  width: 38px;
+  height: 38px;
+}
+
+.btn-outline-primary {
+  color: #f7f7f7;
+  border-color: #FDA12B;
+}
+
+.btn-square, .btn-sm-square, .btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.footer{
+  margin-top: 15px;
+
+    color: #999999;
+
+}
+
+.contSedes{
+  line-height: 3rem;
+}
+
+.contInssa{
+  line-height: 1.5;
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+}
 
 .descriptionBox{
   display: none;
@@ -279,26 +373,27 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 [ Top bar ]*/
 .top-bar {
   height: 40px;
-  background-color: #222;
+  background-color: #F8F9FA ;
+  margin-top: 15px;
 }
 
 /*---------------------------------------------*/
 .left-top-bar {
   font-family: Poppins-Regular;
-  font-size: 12px;
+  font-size: 17px;
   line-height: 1.8;
-  color: #b2b2b2;
+  color: #8D9297;
 }
 
 
 /*---------------------------------------------*/
 .right-top-bar a {
   font-family: Poppins-Regular;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 1.8;
 
   height: 100%;
-  color: #b2b2b2;
+  color: #8D9297;
   border-right: 1px solid rgba(255,255,255,0.3);
 }
 
@@ -329,7 +424,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   background-color: transparent;
   width: 100%;
   height: 84px;
-  top: 40px;
+  top: 55px;
   left: 0px; 
 
   -webkit-transition: height 0.3s, background-color 0.3s;
