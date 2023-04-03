@@ -47,10 +47,10 @@ switch ($produc) {
         $textCarac9 = "• Peso: 28 kg.";
         $textCarac10 = "• Voltaje: 110v.";
         $textCarac11 = "• Garantía 12 meses o 30.000 servicios.";
-        $textCarac12 = "";
-        $textCarac13 = "";
-        $textCarac14 = "";
-        $textCarac15 = "";
+        $textCarac12 = "• Incluye filtro de agua.";
+        $textCarac13 = "• Incluye Kit filtro";
+        $textCarac14 = "• Incluye Kit acoples";
+        $textCarac15 = "• Incluye caja de mezcladores";
         $textCarac16 = "";
         $textCndi = "";
   

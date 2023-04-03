@@ -1,5 +1,6 @@
 
 
+
 var producto = document.getElementById("producto").value;
 console.log(producto);
 
@@ -18,6 +19,7 @@ var descuento = document.getElementById("divDescuento");
 var descuentoIca = document.getElementById("divDescuentoIca");
 var descuentoFuente = document.getElementById("divDescuentoFuente");
 var total;
+
 
 new QRious({
   element: document.getElementById("codigo"),
@@ -60,6 +62,11 @@ var raiz = "https://checkout.wompi.co/l/"
 var url = raiz + id
 console.log("link", url);
 
+var envioUrl = document.getElementById("link").value = url
+
+console.log("envioUrlValue", envioUrl);
+
+
 return new Promise((resolve, reject) => {
   
   setTimeout(()=>{
@@ -71,7 +78,7 @@ return new Promise((resolve, reject) => {
       value: url, // La URL o el texto
       size: 250,
       backgroundAlpha: 0, // 0 para fondo transparente
-      foreground: "#8bc34a", // Color del QR
+      foreground: "black", // Color del QR
       level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
     }); 
   }, 000)
@@ -89,8 +96,9 @@ return new Promise((resolve, reject) => {
 }
 
 async function generarQr() {
- var x = await wompiapi();
-  console.log("url",x);
+url = document.getElementById("link").value
+location.href = url;
+
 /*   new QRious({
     element: document.getElementById("codigo"),
     value: url, // La URL o el texto
@@ -199,12 +207,14 @@ switch (producto) {
     envioTotal = document.getElementById("total").innerHTML =
       "COL 4,712,400.00";
 
-    totalwompi = document.getElementById("totalWompi").value = 4712400;
+    totalwompiP = document.getElementById("totalWompi").value = 4712400 * 100;
+
+    wompiapi();
 
     break;
 
   case "paris":
-    var precioNeto = 8341000 * cantidadProducto;
+    var precioNeto = 6216000 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
 
@@ -212,13 +222,17 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COL 3,960,000.00";
+      "COL 6,216,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COL 3,960,000.00";
+      "COL 6,216,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Paris";
     envioIva = document.getElementById("iva").innerHTML = "COL 752,400.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COL 4,712,400.00";
+      "COL 7,397,040.00";
+
+      totalwompiP = document.getElementById("totalWompi").value = 7397040 * 100;
+
+      wompiapi();
 
     break;
 
@@ -238,6 +252,10 @@ switch (producto) {
     envioIva = document.getElementById("iva").innerHTML = "COL 608,950.00";
     envioTotal = document.getElementById("total").innerHTML =
       "COL 3,813,950.00";
+
+      totalwompiP = document.getElementById("totalWompi").value = 3813950 * 100;
+
+      wompiapi();
     break;
 
   case "berna12L":
@@ -256,6 +274,10 @@ switch (producto) {
     envioIva = document.getElementById("iva").innerHTML = "COL 528,010.00";
     envioTotal = document.getElementById("total").innerHTML =
       "COL 3,307,010.00";
+
+      totalwompiP = document.getElementById("totalWompi").value = 3307010 * 100;
+
+      wompiapi();
     break;
 
   case "berna20L":
@@ -274,7 +296,12 @@ switch (producto) {
     envioIva = document.getElementById("iva").innerHTML = "COL 573,40.00";
     envioTotal = document.getElementById("total").innerHTML =
       "COL 3,589,040.00";
+      
+    totalwompiP = document.getElementById("totalWompi").value = 3589040 * 100;
+
+    wompiapi();
     break;
+
 
   default:
     break;
@@ -291,12 +318,8 @@ async function funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuen
   total = totalPrecioNeto + totalIva + totalFlete - indescuento;
   tatalWompi = total * 100;
 
-  envioTotalWompi = document.getElementById("amount-in-cents").value =
-    tatalWompi;
-    envioTotalWompii = document.getElementById("totalWompi").value =
-    tatalWompi;
-    envioTotalWompiii = document.getElementById("totalWompi").innerHTML =
-    tatalWompi;
+    envioTotalWompii = document.getElementById("totalWompi").value = tatalWompi;
+    envioTotalWompiii = document.getElementById("totalWompi").innerHTML = tatalWompi;
 
   envioNeto = document.getElementById("subtotal");
   const formateadoNeto = totalPrecioNeto.toLocaleString("en", {

@@ -5,7 +5,7 @@ $produc= $_GET['producto'];
 
 
 require "variables.php";
-require "wompi.php"
+
 
 
 
@@ -218,6 +218,7 @@ require "wompi.php"
 									<input type="hidden" id="ica" name="ica" require />
 
 									<input type="hidden" id="fleteI" name="fleteI" require />
+									<input type="hidden" id="link" name="link" require />
 
 
 
@@ -433,12 +434,12 @@ require "wompi.php"
 														</div>
 													</div>
 
-																	<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
+																	<!-- <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
 																p-lr-15 trans-04 js-addcart-detail" type="button" id =botonpagar name = "botonpagar" >
 													Pagar
 												</button>
 
-												<input class="btn  w-100 py-3 contac" type="" onclick="wompiapi()" id = "boton" name="submit" value="Enviar" />
+												<input class="btn  w-100 py-3 contac" type="" onclick="generarQr()" id = "boton" name="submit" value="Enviar" /> -->
 
 
 
@@ -564,13 +565,13 @@ require "wompi.php"
 											</div>
 										</div>
 
-										<div class="contPago">
+										<!-- <div class="contPago">
 											<form action="https://checkout.wompi.co/p/" method="GET" class="wompi"
-												name="wompi" id="wompi">
+												name="wompi" id="wompi"> -->
 
 												<!-- OBLIGATORIOS -->
 
-												<input type="hidden" name="public-key"
+												<!-- <input type="hidden" name="public-key"
 													value="pub_prod_jzoTpu9Es1mhKUKrbNw3ezvzImlD8AYb" />
 
 												<input type="hidden" name="currency" value="COP" />
@@ -581,15 +582,15 @@ require "wompi.php"
 												<input type="hidden" name="reference" value="REFERENA_DE_PAGO144554551555" />
 
 												<input type="hidden" name="collect-shipping" value="true" />
-												<input type="hidden" name="collect-customer-legal-id" value="true" />
+												<input type="hidden" name="collect-customer-legal-id" value="true" /> -->
 
 												<!-- OPCIONALES -->
-							<!-- 					<input type="hidden" name="signature:integrity"
-													value="FIRMA_DE_INTEGRIDAD" /> -->
+												<!-- <input type="hidden" name="signature:integrity"
+													value="FIRMA_DE_INTEGRIDAD" />
 													
 												<input type="hidden" name="redirect-url" value="https://inssa.com.co/" />
 												
-												<!-- 
+												
 												<input type="hidden" name="customer-data:email"
 													value="CORREO_DEL_PAGADOR" />
 
@@ -618,11 +619,16 @@ require "wompi.php"
 													value="CIUDAD_DE_ENVIO" />
 
 												<input type="hidden" name="shipping-address:region"
-													value="REGION_DE_ENVIO" /> -->
+													value="REGION_DE_ENVIO" />
 
 												<button class="waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
 																		p-lr-15 trans-04 " type="submit">Pagar con Wompi</button>
-											</form>
+											</form> -->
+										
+											<button class="waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
+											p-lr-15 trans-04 " type="button" id =botonpagar name = "botonpagar"  onclick="generarQr()" >
+													Pagar
+												</button>
 										</div>
 
 
@@ -950,5 +956,5 @@ require "wompi.php"
 
 <?php
 
-require "wompi.php"
+
 ?>
