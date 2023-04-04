@@ -155,6 +155,7 @@ require "variables.php";
 								<div class="p-l-25 p-r-30 p-lr-0-lg">
 									<div class="wrap-slick3 flex-sb flex-w">
 										<div class="wrap-slick3-dots"></div>
+										
 										<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
 										
@@ -184,7 +185,10 @@ require "variables.php";
 							
 											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img src="<?php echo " {$img3}" ?>" alt="IMG-PRODUCT">
+													
+														<img href = "" src="<?php echo " {$img3}" ?>" alt="IMG-PRODUCT">
+													
+													
 							
 													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
 																						trans-04" href="<?php echo " {$img3}" ?>">
@@ -192,22 +196,90 @@ require "variables.php";
 													</a>
 												</div>
 
-												
 											</div>
 
 											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img src="<?php echo " {$img3}" ?>" alt="IMG-PRODUCT">
+													
+													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
+													</iframe>
+													
+													
 							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04 " href="<?php echo " {$img3}" ?>">
+													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
+																						trans-04" href="<?php echo " {$img3}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
 
-												
 											</div>
+											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
+												<div class="wrap-pic-w pos-relative">
+													
+													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
+													</iframe>
+													
+													
+							
+													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
+																						trans-04" href="<?php echo " {$img3}" ?>">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+
+											</div>
+											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
+												<div class="wrap-pic-w pos-relative">
+													
+													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
+													</iframe>
+													
+													
+							
+													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
+																						trans-04" href="<?php echo " {$img3}" ?>">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+
+											</div>
+											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
+												<div class="wrap-pic-w pos-relative">
+													
+													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
+													</iframe>
+													
+													
+							
+													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
+																						trans-04" href="<?php echo " {$img3}" ?>">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+
+											</div>
+											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
+												<div class="wrap-pic-w pos-relative">
+													
+													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
+													</iframe>
+													
+													
+							
+													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
+																						trans-04" href="<?php echo " {$img3}" ?>">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+
+											</div>
+
 											
 										</div>
+
+										
+
+										
 
 										
 									</div>
