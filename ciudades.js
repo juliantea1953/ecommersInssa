@@ -33,6 +33,7 @@ new QRious({
 
 async function wompiapi() {
   totalwompi = document.getElementById("totalWompi").value
+  sku = document.getElementById("nombre").innerHTML
   tot = parseInt(totalwompi) 
   var settings = await {
     "url": "https://sandbox.wompi.co/v1/payment_links",
@@ -43,15 +44,15 @@ async function wompiapi() {
       "Content-Type": "application/json"
     },
     "data": JSON.stringify({
-      "name": "Subscripción",
-      "description": "Subscipción mensual",
+      "name": sku,
+      "description": "Compra de " + sku + " por medio de INSSA Prime",
       "single_use": true,
       "collect_shipping": true,
-      "collect_customer_legal_id": true,
+      "collect_customer_legal_id": false,
       "amount_in_cents": tot,
       "currency": "COP",
-      "sku": "1",
-      "redirect_url": "https://inssa.com.co/"
+      "sku": sku,
+      "redirect_url": "https://api.whatsapp.com/send?phone=573102242724&text=Hola%2C%20hice%20una%20compra%20por%20INSSA%20Prime%2C%20quisiera%20confirmar%20mis%20datos."
     }),
   };
   
@@ -60,17 +61,22 @@ async function wompiapi() {
 var id = response.data.id;
 var raiz = "https://checkout.wompi.co/l/"
 var url = raiz + id
-console.log("link", url);
+/* console.log("link", url); */
 
 var envioUrl = document.getElementById("link").value = url
+var envioHrefQr = document.getElementById("aQr").href = url
+var envioHrefPago = document.getElementById("linkPago").href = url
+var envioHrefPago = document.getElementById("linkPago").innerHTML = url
 
-console.log("envioUrlValue", envioUrl);
+
+
+/* console.log("envioUrlValue", envioUrl, envioHrefQr); */
 
 
 return new Promise((resolve, reject) => {
   
   setTimeout(()=>{
-    console.log("Cargando datos....");
+/*     console.log("Cargando datos...."); */
     resolve (response);
 
     new QRious({
@@ -96,17 +102,11 @@ return new Promise((resolve, reject) => {
 }
 
 async function generarQr() {
-url = document.getElementById("link").value
-location.href = url;
+var url = document.getElementById("linkPago").innerHTML
+window.open(url, '_blank');
 
-/*   new QRious({
-    element: document.getElementById("codigo"),
-    value: url, // La URL o el texto
-    size: 200,
-    backgroundAlpha: 0, // 0 para fondo transparente
-    foreground: "#8bc34a", // Color del QR
-    level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
-  }); */
+/* location.href = url; */
+
 }
 
 function clearParamDescrAgente() {
@@ -160,11 +160,13 @@ function selectRadioB() {
   if (document.getElementById("cc").checked) {
     agente.style.display = "none"
     CMunicipios.style.display = "none";
+    reteFuente = 0;
+    document.getElementById("CheckAgente").checked = false;
 
   /*   var selectPersona = document.getElementById("persona") */
-  document.getElementById("persona").selectedIndex = "0";
+/*   document.getElementById("persona").selectedIndex = "0"; */
   document.getElementById("municipios").selectedIndex = "0";
-  document.getElementById("select2-persona-container").innerHTML = "Escoja una opción"
+/*   document.getElementById("select2-persona-container").innerHTML = "Escoja una opción" */
   document.getElementById("select2-municipios-container").innerHTML = "Escoja una opción"
 /*   $(".js-select3").each(function () {
     $(this).select2({
@@ -199,16 +201,15 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COL 3,960,000.00";
+      "COP 3,960,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COL 3,960,000.00";
+      "COP 3,960,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Bari";
-    envioIva = document.getElementById("iva").innerHTML = "COL 752,400.00";
+    envioIva = document.getElementById("iva").innerHTML = "COP 752,400.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COL 4,712,400.00";
+      "COP 4,712,400.00";
 
     totalwompiP = document.getElementById("totalWompi").value = 4712400 * 100;
-
     wompiapi();
 
     break;
@@ -222,13 +223,13 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COL 6,216,000.00";
+      "COP 6,216,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COL 6,216,000.00";
+      "COP 6,216,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Paris";
-    envioIva = document.getElementById("iva").innerHTML = "COL 752,400.00";
+    envioIva = document.getElementById("iva").innerHTML = "COP 752,400.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COL 7,397,040.00";
+      "COP 7,397,040.00";
 
       totalwompiP = document.getElementById("totalWompi").value = 7397040 * 100;
 
@@ -245,13 +246,13 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COL 3,205,000.00";
+      "COP 3,205,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COL 3,205,000.00";
+      "COP 3,205,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Turin";
-    envioIva = document.getElementById("iva").innerHTML = "COL 608,950.00";
+    envioIva = document.getElementById("iva").innerHTML = "COP 608,950.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COL 3,813,950.00";
+      "COP 3,813,950.00";
 
       totalwompiP = document.getElementById("totalWompi").value = 3813950 * 100;
 
@@ -267,13 +268,13 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COL 2,779,000.00";
+      "COP 2,779,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COL 2,779,000.00";
+      "COP 2,779,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Dispensadora de jugos Berna 12 litros";
-    envioIva = document.getElementById("iva").innerHTML = "COL 528,010.00";
+    envioIva = document.getElementById("iva").innerHTML = "COP 528,010.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COL 3,307,010.00";
+      "COP 3,307,010.00";
 
       totalwompiP = document.getElementById("totalWompi").value = 3307010 * 100;
 
@@ -289,15 +290,16 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COL 3,016,000.00";
+      "COP 3,016,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COL 3,016,000.00";
+      "COP 3,016,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Dispensadora de jugos Berna 20 litros";
-    envioIva = document.getElementById("iva").innerHTML = "COL 573,40.00";
+    envioIva = document.getElementById("iva").innerHTML = "COP 573,40.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COL 3,589,040.00";
+      "COP 3,589,040.00";
       
     totalwompiP = document.getElementById("totalWompi").value = 3589040 * 100;
+    
 
     wompiapi();
     break;
@@ -309,11 +311,13 @@ switch (producto) {
 
 async function funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuente) {
 
-  
+  console.log("ica func", reteika);
 
   var totalPrecioNeto = precioNeto * cantidadProducto;
   totalIva = iva * cantidadProducto;
   totalFlete = flete * cantidadProducto;
+  reteika = reteika * cantidadProducto;
+  reteFuente = reteFuente * cantidadProducto;
   indescuento = (reteFuente + Number(reteika))* cantidadProducto;
   total = totalPrecioNeto + totalIva + totalFlete - indescuento;
   tatalWompi = total * 100;
@@ -324,49 +328,49 @@ async function funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuen
   envioNeto = document.getElementById("subtotal");
   const formateadoNeto = totalPrecioNeto.toLocaleString("en", {
     style: "currency",
-    currency: "COL",
+    currency: "COP",
   });
   envioNeto.innerHTML = formateadoNeto;
 
   envioIva = document.getElementById("iva");
   const formateadoIva = totalIva.toLocaleString("en", {
     style: "currency",
-    currency: "COL",
+    currency: "COP",
   });
   envioIva.innerHTML = formateadoIva;
 
   var envioFlete = document.getElementById("flete");
   var formateadoFlete = totalFlete.toLocaleString("en", {
     style: "currency",
-    currency: "COL",
+    currency: "COP",
   });
   envioFlete.innerHTML = formateadoFlete;
 
   var envioica = document.getElementById("reteica");
   var formateadoica = Number(reteika).toLocaleString("en", {
     style: "currency",
-    currency: "COL",
+    currency: "COP",
   });
   envioica.innerHTML = formateadoica;
 
   var envioFuente = document.getElementById("retefuente");
   var formateadoFuente = (reteFuente).toLocaleString("en", {
     style: "currency",
-    currency: "COL",
+    currency: "COP",
   });
   envioFuente.innerHTML = formateadoFuente;
 
   var envioDescuento = document.getElementById("descuento");
   var formateadoDescuento = indescuento.toLocaleString("en", {
     style: "currency",
-    currency: "COL",
+    currency: "COP",
   });
   envioDescuento.innerHTML = formateadoDescuento;
 
   var envioTotal = document.getElementById("total");
   const formateadoTotal = total.toLocaleString("en", {
     style: "currency",
-    currency: "COL",
+    currency: "COP",
   });
   envioTotal.innerHTML = formateadoTotal;
 
@@ -394,40 +398,78 @@ function mensaje() {
   });
 }
 
+
+
 async function cambios(selectPersona) {
-  var selectPersona = document.getElementById("persona").value;
+  
+
+
+/*   var selectPersona = document.getElementById("persona").value; */
+  var municipios = document.getElementById("CMunicipios")
   var selectCiudad = document.getElementById("municipios").value;
   var ciudadDelivery = document.getElementById("ciudadDelivery").value;
   var delivery = document.getElementById("delivery").value;
   var cantidadProducto = document.getElementById("num-product").value;
   var ciudadSucursal = document.getElementById("ciudadSucursal").value;
+  var botonMas = document.getElementById("mas")
+  var botonMenos = document.getElementById("menos")
+
+ 
 
 
-  switch (selectPersona) {
-    case "Escoja una opción":
+  if (cantidadProducto >= 2) {
+    botonMas.disabled = true;
+  }
+  else{
+    botonMas.disabled = false;
+
+  }
+  if (cantidadProducto <= 1) {
+    botonMenos.disabled = true;
+  }
+  else{
+    botonMenos.disabled = false;
+
+  }
+
+  if (document.getElementById("CheckAgente").checked) {
+    console.log("hace check");
+    municipios.style.display = "";
+    CMunicipios.style.display = "";
+    descuento.style.display = "";
+    descuentoIca.style.display = "";
+    descuentoFuente.style.display = "";
+    var porcentajeFuente = 2.5;
+    var reteFuente = (precioNeto * porcentajeFuente) / 100;
+    ciudadAgente = document.getElementById("municipios").value
+    delivery = document.getElementById("delivery").value
+    document.getElementById("reteica").innerHTML = 0
+
+
+    if (ciudadAgente == "Escoja una opción") {
+      console.log("ciudadAgente",ciudadAgente);
+      var ica = 0;
+      var flete = 0;
+      var reteika = 0;
+      console.log("ica",reteika);
+
+
       switch (delivery) {
         case "Escoja una opción":
-
-        
-          var ica = 0;
-          var flete = 0;
-          var reteFuente = 0;
-          var reteika = 0;
+          console.log("delivery",delivery);
           cCiudadDelivery.style.display = "none";
           cCiudadSucursal.style.display = "none";
           funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuente);
           break;
-
+  
         case "Domicilio":
+          console.log("delivery",delivery);
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "";
           cCiudadSucursal.style.display = "none";
-
+  
           if (ciudadDelivery == "Escoja una opción") {
-            var ica = 0;
-            var flete = 0;
-            var reteFuente = 0;
-            var reteika = 0;
+            console.log("ciudadDelivery",ciudadDelivery);
             funct(
               cantidadProducto,
               precioNeto,
@@ -437,18 +479,11 @@ async function cambios(selectPersona) {
               reteFuente
             );
           } else {
+            console.log("ciudadDelivery",ciudadDelivery);
+  
             var ciudadDelivery =
-              document.getElementById("ciudadDelivery").value;
-            var ica = 0;
-            var reteika = 0;
-            var reteFuente = 0;
+              document.getElementById("ciudadDelivery").value;   
             var flete = document.getElementById("fleteI").value;
-            console.log("cantidadProducto",cantidadProducto);
-            console.log("precioNeto",precioNeto);
-            console.log("iva",iva);
-            console.log("flete",flete);
-            console.log("reteika",reteika);
-            console.log("reteFuente",reteFuente);
             funct(
               cantidadProducto,
               precioNeto,
@@ -458,19 +493,22 @@ async function cambios(selectPersona) {
               reteFuente
             );
           }
-
+  
           break;
-
+  
         case "fisico":
-          var delivery = document.getElementById("delivery").value;
+          var ciudadSucursal =
+            document.getElementById("ciudadSucursal").value;  
+          document.getElementById("ciudadDelivery").selectedIndex = "0";
+          document.getElementById("select2-ciudadDelivery-container").innerHTML = "Escoja una opción"
+          console.log("delivery",delivery);
           cCiudadDelivery.style.display = "none";
           cCiudadSucursal.style.display = "";
-
+          console.log("flete",flete);
+          flete = 0;
+  
           if (ciudadSucursal == "Escoja una opción") {
-            var ica = 0;
-            var flete = 0;
-            var reteFuente = 0;
-            var reteika = 0;
+            console.log("ciudadSucursal",ciudadSucursal);
             funct(
               cantidadProducto,
               precioNeto,
@@ -480,12 +518,11 @@ async function cambios(selectPersona) {
               reteFuente
             );
           } else {
-            var ciudadDelivery =
-              document.getElementById("ciudadDelivery").value;
-            var ica = 0;
-            var reteika = 0;
-            var reteFuente = 0;
-            var flete = 0;
+            console.log("ciudadSucursal",ciudadSucursal);
+  
+            var ciudadSucursal =
+            document.getElementById("ciudadSucursal").value;   
+            var flete = 0
             funct(
               cantidadProducto,
               precioNeto,
@@ -495,16 +532,117 @@ async function cambios(selectPersona) {
               reteFuente
             );
           }
-
+  
           break;
       }
 
-   
+    } else {
+      console.log("ciudadAgente",ciudadAgente);
+      var delivery = document.getElementById("delivery").value;
+      var reteika = document.getElementById("ica").value;
+      var flete = 0;
 
-      break;
+      switch (delivery) {
+        case "Escoja una opción":
+          console.log("delivery",delivery);
+          cCiudadDelivery.style.display = "none";
+          cCiudadSucursal.style.display = "none";
+          funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuente);
+          break;
+  
+        case "Domicilio":
+          console.log("delivery",delivery);
+          var delivery = document.getElementById("delivery").value;
+          cCiudadDelivery.style.display = "";
+          cCiudadSucursal.style.display = "none";
+  
+          if (ciudadDelivery == "Escoja una opción") {
+            console.log("ciudadDelivery",ciudadDelivery);
+            funct(
+              cantidadProducto,
+              precioNeto,
+              iva,
+              flete,
+              reteika,
+              reteFuente
+            );
+          } else {
+            console.log("ciudadDelivery",ciudadDelivery);
+  
+            var ciudadDelivery =
+              document.getElementById("ciudadDelivery").value;   
+            var flete = document.getElementById("fleteI").value;
+            funct(
+              cantidadProducto,
+              precioNeto,
+              iva,
+              flete,
+              reteika,
+              reteFuente
+            );
+          }
+  
+          break;
+  
+        case "fisico":
+          var ciudadSucursal =
+            document.getElementById("ciudadSucursal").value;  
+          document.getElementById("ciudadDelivery").selectedIndex = "0";
+          document.getElementById("select2-ciudadDelivery-container").innerHTML = "Escoja una opción"
+          console.log("delivery",delivery);
+          cCiudadDelivery.style.display = "none";
+          cCiudadSucursal.style.display = "";
+          console.log("flete",flete);
+          flete = 0;
+  
+          if (ciudadSucursal == "Escoja una opción") {
+            console.log("ciudadSucursal",ciudadSucursal);
+            funct(
+              cantidadProducto,
+              precioNeto,
+              iva,
+              flete,
+              reteika,
+              reteFuente
+            );
+          } else {
+            cCiudadDelivery.style.display = "";
+            cCiudadSucursal.style.display = "none";
+            document.getElementById("ciudadSucursal").selectedIndex = "0";
+            document.getElementById("select2-ciudadSucursal-container").innerHTML = "Escoja una opción"
+            console.log("ciudadSucursal",ciudadSucursal);
+  
+            var ciudadSucursal =
+            document.getElementById("ciudadSucursal").value;   
+            var flete = 0
+            funct(
+              cantidadProducto,
+              precioNeto,
+              iva,
+              flete,
+              reteika,
+              reteFuente
+            );
+          }
+  
+          break;
+      }
 
-    case "No":
-      CMunicipios.style.display = "none";
+    }
+
+
+
+    
+  } else {
+
+    console.log("no Hace check");
+
+    CMunicipios.style.display = "none";
+    
+
+    document.getElementById("municipios").selectedIndex = "0";
+    document.getElementById("select2-municipios-container").innerHTML = "Escoja una opción"
+      var reteika = 0;
       descuento.style.display = "none";
       descuentoIca.style.display = "none";
       descuentoFuente.style.display = "none";
@@ -520,6 +658,8 @@ async function cambios(selectPersona) {
           break;
 
         case "Domicilio":
+          document.getElementById("ciudadSucursal").selectedIndex = "0";
+          document.getElementById("select2-ciudadSucursal-container").innerHTML = "Escoja una opción"
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "";
           cCiudadSucursal.style.display = "none";
@@ -557,6 +697,8 @@ async function cambios(selectPersona) {
           break;
 
         case "fisico":
+          document.getElementById("ciudadDelivery").selectedIndex = "0";
+          document.getElementById("select2-ciudadDelivery-container").innerHTML = "Escoja una opción"
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "none";
           cCiudadSucursal.style.display = "";
@@ -564,6 +706,7 @@ async function cambios(selectPersona) {
           if (ciudadSucursal == "Escoja una opción") {
             var ica = 0;
             var flete = 0;
+            var reteFuente = 0;
     
             var reteika = 0;
             funct(
@@ -593,140 +736,8 @@ async function cambios(selectPersona) {
 
           break;
       }
-
-
-      break;
-
-    case "Si":
-      /// mostrar descuento
-      CMunicipios.style.display = "";
-      descuento.style.display = "";
-      descuentoIca.style.display = "";
-      descuentoFuente.style.display = "";
-      var porcentajeFuente = 2.5;
-      var reteFuente = (precioNeto * porcentajeFuente) / 100;
-
-
-      if (ciudadAgente == "Escoja una opción") {
-        var ica = 0;
-        var flete = 0;
-        var reteika = 0;
-        funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuente);
-
-      } else {
-        var ciudadAgente = document.getElementById("municipios").value;
-        var reteika = document.getElementById("ica").value;
-        var flete = document.getElementById("fleteI").value;
-        funct(
-          cantidadProducto,
-          precioNeto,
-          iva,
-          flete,
-          reteika,
-          reteFuente
-        );
-      }
-
-      switch (delivery) {
-        case "Escoja una opción":
-          var ica = 0;
-          var flete = 0;
-          var reteika = document.getElementById("ica").value;
-          cCiudadDelivery.style.display = "none";
-          cCiudadSucursal.style.display = "none";
-          funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuente);
-          break;
-
-        case "Domicilio":
-          var delivery = document.getElementById("delivery").value;
-          cCiudadDelivery.style.display = "";
-          cCiudadSucursal.style.display = "none";
-
-          if (ciudadDelivery == "Escoja una opción") {
-            var ica = 0;
-            var flete = 0;
-            var reteika = document.getElementById("ica").value;
-            funct(
-              cantidadProducto,
-              precioNeto,
-              iva,
-              flete,
-              reteika,
-              reteFuente
-            );
-          } else {
-            var ciudadDelivery =
-              document.getElementById("ciudadDelivery").value;
-            var ica = 0;
-            var reteika = document.getElementById("ica").value;
-   
-            var flete = document.getElementById("fleteI").value;
-            funct(
-              cantidadProducto,
-              precioNeto,
-              iva,
-              flete,
-              reteika,
-              reteFuente
-            );
-          }
-
-          break;
-
-        case "fisico":
-          var delivery = document.getElementById("delivery").value;
-          cCiudadDelivery.style.display = "none";
-          cCiudadSucursal.style.display = "";
-
-          if (ciudadSucursal == "Escoja una opción") {
-            var ica = 0;
-            var flete = 0;
-    
-            var reteika = document.getElementById("ica").value;
-            funct(
-              cantidadProducto,
-              precioNeto,
-              iva,
-              flete,
-              reteika,
-              reteFuente
-            );
-          } else {
-            var ciudadDelivery =
-              document.getElementById("ciudadDelivery").value;
-            var ica = 0;
-            var reteika = 0;
-
-            var flete = 0;
-            funct(
-              cantidadProducto,
-              precioNeto,
-              iva,
-              flete,
-              reteika,
-              reteFuente
-            );
-          }
-
-          break;
-      }
-      break;
   }
 
-  /*   if (ciudadDelivery == "Domicilio") {
-    cCiudadDelivery.style.display = "";
-    cCiudadSucursal.style.display = "none";
-  } else {
-    cCiudadDelivery.style.display = "none";
-    cCiudadSucursal.style.display = "none";
-  }
-  if (ciudadDelivery == "fisico") {
-    cCiudadSucursal.style.display = "";
-    cCiudadDelivery.style.display = "none";
-  } else {
-    cCiudadDelivery.style.display = "none";
-    cCiudadSucursal.style.display = "none";
-  } */
 }
 
 const boton = document.querySelector("#menos");
@@ -748,6 +759,23 @@ function ShowSelectAgente() {
 }
 
 function ShowSelectedMunicipios() {
+  selectCiudad = document.getElementById("municipios").value
+  var alerta = document.getElementById("alertaIca")
+  if (selectCiudad == "Otra") {
+
+    alerta.innerHTML = "• pailas ica"
+    alerta.style.color = "red"
+    Swal.fire({
+      title: "Titulo:",
+      text: "Mensaje de ciudad sin ica",
+      icon: "info",
+    
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "ok",
+    })
+  }
+
   setTimeout(cambios, 3);
 
   descriptionBoxMunicipios.style.display = "none";
@@ -760,6 +788,23 @@ function ShowSelectedDelivery() {
 }
 
 function ShowSelectedCiudadDelivery() {
+  ciudadDelivery = document.getElementById("ciudadDelivery").value
+  var alerta = document.getElementById("alertaDelivery")
+  if (ciudadDelivery == "Otra") {
+
+    alerta.innerHTML = "• pailas delivery"
+    alerta.style.color = "red"
+    Swal.fire({
+      title: "Titulo :",
+      text: "Mensaje de ciudad sin domicilio",
+      icon: "info",
+    
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "ok",
+    })
+  }
+
   descriptionBoxCiudadDelivery.style.display = "none";
   setTimeout(cambios, 3);
 }

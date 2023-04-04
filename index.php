@@ -97,11 +97,11 @@ require "variables.php";
 								<i class="fab fa-facebook-f"></i></a>
 							</a>
 
-							<a href="#" class="flex-c-m trans-04 p-lr-25">
+							<a href="https://www.youtube.com/@inssasas/videos" class="flex-c-m trans-04 p-lr-25">
 								<i class="fab fa-youtube"></i>
 							</a>
 
-							<a href="#" class="flex-c-m trans-04 p-lr-25">
+							<a href="https://www.instagram.com/inssasas/" class="flex-c-m trans-04 p-lr-25">
 								<i class="fab fa-instagram"></i>
 							</a>
 
@@ -194,6 +194,18 @@ require "variables.php";
 
 												
 											</div>
+
+											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
+												<div class="wrap-pic-w pos-relative">
+													<img src="<?php echo " {$img3}" ?>" alt="IMG-PRODUCT">
+							
+													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04 " href="<?php echo " {$img3}" ?>">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+
+												
+											</div>
 											
 										</div>
 
@@ -201,8 +213,23 @@ require "variables.php";
 									</div>
 
 									<div class="qr">
-										<img alt="Código QR" id="codigo">
+										
+										<a id="aQr" href="">
+											<img alt="Código QR" id="codigo">
+										</a>
+
+										
 									</div>
+
+									<div class="linkPago">
+										<a id="linkPago" href="">
+											<label readonly type="url" id="link" name="link" for=""></label>
+										</a>
+									</div>
+
+									
+								
+									<input  type="hidden" id="link" name="link" require />
 									
 								</div>
 								
@@ -218,7 +245,7 @@ require "variables.php";
 									<input type="hidden" id="ica" name="ica" require />
 
 									<input type="hidden" id="fleteI" name="fleteI" require />
-									<input type="hidden" id="link" name="link" require />
+									
 
 
 
@@ -273,6 +300,51 @@ require "variables.php";
 											
 
 
+						<div class="flex-w flex-r-m p-b-10"
+						onmouseover="describeSelectParamAgente()"
+						onmouseout="clearParamDescrAgente();"
+						id="agente" name = "agente" style="display: none">
+						<div class="size-203 respon6">
+							Agente de retención?
+						</div>
+
+						<div class="size-204 respon6-next">
+							<div class="rs1-select2  bg0">
+								<input type="checkbox" name="CheckAgente" id="CheckAgente" onclick="cambios()"> 
+
+								<div class="dropDownSelect2"></div>
+							</div>
+						</div>
+
+
+
+					</div>
+
+					
+<!-- 					<div class="flex-w flex-r-m p-b-10"
+					onmouseover="describeSelectParamAgente()"
+					onmouseout="clearParamDescrAgente();"
+					id="agente" name = "agente" style="display: none;">
+					<div class="size-203 respon6">
+						Agente de retención?
+					</div>
+
+					<div class="size-204 respon6-next">
+						<div class="rs1-select2 bor8 bg0">
+							<select class="js-select2" type="text" name="persona"
+								id="persona" onchange="ShowSelectAgente();" >
+								<option disabled selected>Escoja una opción</option>
+								<option value="Si">Si</option>
+								<option value="No">No</option>
+
+							</select>
+							<div class="dropDownSelect2"></div>
+						</div>
+					</div>
+
+
+
+				</div> -->
 
 					
 		
@@ -280,7 +352,7 @@ require "variables.php";
 
 							
 
-
+<!-- 
 											<div class="flex-w flex-r-m p-b-10"
 												onmouseover="describeSelectParamAgente()"
 												onmouseout="clearParamDescrAgente();"
@@ -304,7 +376,7 @@ require "variables.php";
 
 
 
-											</div>
+											</div> -->
 
 											<div id="descriptionBoxAgente" class="descriptionBox">descripcion de que
 												es un agente de retencion</div>
@@ -417,7 +489,7 @@ require "variables.php";
 												<div class="size-204 flex-w flex-m respon6-next">
 													<div class="wrap-num-product flex-w m-r-20 m-tb-10">
 														<div
-															class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+															class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m" id="BotMenos">
 															<!-- <i class="fs-16 zmdi zmdi-minus menos"></i> -->
 															<button id="menos" type="button" class=" camb fs-16 zmdi
 																	zmdi-minus">
@@ -425,7 +497,7 @@ require "variables.php";
 
 														<input class="mtext-104 cl3 txt-center num-product"
 															type="number" id="num-product" name="num-product" value="1">
-														<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+														<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m" id="BotMas">
 															<!-- <i class="fs-16 zmdi zmdi-plus mas"></i> -->
 															<button id="mas" type="button" class="camb fs-16 zmdi
 																		zmdi-plus">
@@ -734,8 +806,29 @@ require "variables.php";
 												</tr>
 
 												<tr class="table_row">
-													<td class="column-1">
-														<?php echo " {$textCndi}" ?>
+													<td class="column-1">														
+														<p>
+															<?php echo " {$textCndi1}" ?>
+														</p>
+														<p>
+															<?php echo " {$textCndi2}" ?>
+														</p>
+														<p>
+															<?php echo " {$textCndi3}" ?>
+														</p>
+														<p>
+															<?php echo " {$textCndi4}" ?>
+														</p>
+														<p>
+															<?php echo " {$textCndi5}" ?>
+														</p>
+														<p id="alertaIca">
+															
+														</p>
+													</p>
+													<p id="alertaDelivery">
+														
+													</p>
 													</td>
 
 
@@ -948,7 +1041,7 @@ require "variables.php";
 			<!--===============================================================================================-->
 			<script src="js/main.js"></script>
 			<script src="ciudades.js"></script>
-			<script src="departamentos.js"></script>
+			<script src="departamentosDelivery.js"></script>
 
 </body>
 

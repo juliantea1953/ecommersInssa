@@ -6,27 +6,30 @@ switch ($produc) {
     case "bari":
         $img1 = "images/bari/bari1.jpeg";
         $img2 = "images/bari/bari1.jpeg";
-        $img3 = "images/bari/bari1.jpeg";
-        $textCarac = "• Dispensa 6 bebidas: espresso, americano, agua caliente,
+        $img3 = "images/bari/bari.jpeg";
+        $textCarac1 = "• Dispensa 6 bebidas: espresso, americano, agua caliente,
         capuccino, latte, leche caliente.";
-        $textCarac1 = "• Pantalla touch de 9.5 x 5.5 cm.";
-        $textCarac2 = "• Programación digital.";
-        $textCarac3 = "• Contenedor de café con capacidad de 500 gr aprox.";
-        $textCarac4 = "• Ideal para dispensar hasta 70 bebidas al día.";
-        $textCarac5 = "• Temperatura programable.";
-        $textCarac6 = "• Bandeja de residuos.";
-        $textCarac7 = "• Registro de ventas por selección.";
-        $textCarac8 = "• Fácil manejo y limpieza.";
-        $textCarac9 = "• Dimensiones: Ancho 27cm - Fondo 44cm - Alto 53cm";
-        $textCarac10 = "• Peso: 20kg";
-        $textCarac11 = "• Voltaje: 110v";
-        $textCarac12 = "• Garantía 12 meses o 8.000 servicios.";
-        $textCarac13 = "• KIT DE FILTROS ";
-        $textCarac14 = "";
+        $textCarac2 = "• Pantalla touch de 9.5 x 5.5 cm.";
+        $textCarac3 = "• Programación digital.";
+        $textCarac4 = "• Contenedor de café con capacidad de 500 gr aprox.";
+        $textCarac5 = "• Ideal para dispensar hasta 70 bebidas al día.";
+        $textCarac6 = "• Temperatura programable.";
+        $textCarac7 = "• Bandeja de residuos.";
+        $textCarac8 = "• Registro de ventas por selección.";
+        $textCarac9 = "• Fácil manejo y limpieza.";
+        $textCarac10 = "• Dimensiones: Ancho 27cm - Fondo 44cm - Alto 53cm";
+        $textCarac11 = "• Peso: 20kg";
+        $textCarac12 = "• Voltaje: 110v";
+        $textCarac13 = "• Garantía 12 meses o 8.000 servicios.";
+        $textCarac14 = "• KIT DE FILTROS ";
         $textCarac15 = "";
         $textCarac16 = "";
-        $textCndi = "• AL UTILIZAR EL SISTEMA DE LECHE FRESCA, SE REQUIERE ENJUAGUE 
+        $textCndi1 = "• AL UTILIZAR EL SISTEMA DE LECHE FRESCA, SE REQUIERE ENJUAGUE 
         CON UN PRODUCTO DESINCRUSTANTE DE SARRO (PRODUCTO RINZA)";
+        $textCndi2 = "";
+        $textCndi3 = "";
+        $textCndi4 = "";
+        $textCndi5 = "";
 
   
       break;
@@ -52,7 +55,11 @@ switch ($produc) {
         $textCarac14 = "• Incluye Kit acoples";
         $textCarac15 = "• Incluye caja de mezcladores";
         $textCarac16 = "";
-        $textCndi = "";
+        $textCndi1 = "";
+        $textCndi2 = "";
+        $textCndi3 = "";
+        $textCndi4 = "";
+        $textCndi5 = "";
   
       break;
   
@@ -76,14 +83,18 @@ switch ($produc) {
        $textCarac14 = "";
        $textCarac15 = "";
        $textCarac16 = "";
-       $textCndi = "";
+       $textCndi1 = "";
+       $textCndi2 = "";
+       $textCndi3 = "";
+       $textCndi4 = "";
+       $textCndi5 = "";
        
       break;
   
     case "berna12L":
-        $img1 = "images/berna12l/berna12l1.jpeg";
-        $img2 = "images/berna12l/berna12l1.jpeg";
-        $img3 = "images/berna12l/berna12l1.jpeg";
+        $img1 = "images/berna12l/Berna12L-ecommerce.png";
+        $img2 = "images/berna12l/Berna12Lsensacion.png";
+        $img3 = "images/berna12l/stiker-para-Berna12L-1080.png";
         $textCarac1 = "• dispensadora especializada para cafeterías, restaurantes, fruterías, 
         empresas y centros deportivos.";
         $textCarac2 = "• Agitador central por medio de aspa.";
@@ -101,12 +112,16 @@ switch ($produc) {
         $textCarac14 = "• Polo a tierra.";
         $textCarac15 = "• Garantía 12 meses.";
         $textCarac16 = "";
-        $textCndi = "";
+        $textCndi1 = "";
+        $textCndi2 = "";
+        $textCndi3 = "";
+        $textCndi4 = "";
+        $textCndi5 = "";
       break;
   
     case "berna20L":
-        $img1 = "images/berna20l/berna20l1.jpeg";
-        $img2 = "images/berna20l/berna20l1.jpeg";
+        $img1 = "images/berna20l/berna20L1.jpeg";
+        $img2 = "images/berna20l/berna20l2.jpeg";
         $img3 = "images/berna20l/berna20l1.jpeg";
         $textCarac1 = "• Dispensadora especializada para cafeterías, restaurantes, 
         fruterías, empresas y centros deportivos. ";
@@ -125,7 +140,11 @@ switch ($produc) {
         $textCarac14 = "• Frecuencia 60 hz.";
         $textCarac15 = "• Polo a tierra.";
         $textCarac16 = "• Garantía 12 meses.";
-        $textCndi = "";
+        $textCndi1 = "";
+        $textCndi2 = "";
+        $textCndi3 = "";
+        $textCndi4 = "";
+        $textCndi5 = "";
       break;
   
     default:

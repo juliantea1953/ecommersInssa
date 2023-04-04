@@ -45,6 +45,15 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   margin-top: 55px;
 
 }
+
+.linkPago{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
 .contPago{
   justify-content: center;
     display: flex;
