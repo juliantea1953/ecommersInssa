@@ -7,6 +7,7 @@ switch ($produc) {
         $img1 = "images/bari/bari1.jpeg";
         $img2 = "images/bari/bari1.jpeg";
         $img3 = "images/bari/bari.jpeg";
+        $imgvideo1 = "images/bari/bari.jpeg";
         $textCarac1 = "• Dispensa 6 bebidas: espresso, americano, agua caliente,
         capuccino, latte, leche caliente.";
         $textCarac2 = "• Pantalla touch de 9.5 x 5.5 cm.";
@@ -30,6 +31,9 @@ switch ($produc) {
         $textCndi3 = "";
         $textCndi4 = "";
         $textCndi5 = "";
+        $video1 = "images/bari/videoBari.mp4";
+        $hrefCapacitacion = "https://inssa.com.co/capacitacion-bari/";
+        $hrefManual = "images/bari/Manual de operacion Bari V2 .pdf";
 
   
       break;
@@ -38,6 +42,7 @@ switch ($produc) {
         $img1 = "images/paris/paris1.jpeg";
         $img2 = "images/paris/paris1.jpeg";
         $img3 = "images/paris/paris1.jpeg";
+        $imgvideo1 = "images/paris/paris1.jpeg";
         $textCarac1 = "• Dispensa 7 bebidas: café con leche, largo, corto y cortado, 
         capuccino, mocaccino, chocolate, y botón para lavado automático.";
         $textCarac2 = "• Pantalla LCD integrada de 10.1” para visualización de imágenes.";
@@ -60,6 +65,9 @@ switch ($produc) {
         $textCndi3 = "";
         $textCndi4 = "";
         $textCndi5 = "";
+        $video1 = "";
+        $hrefCapacitacion = "";
+        $hrefManual = "";
   
       break;
   
@@ -67,6 +75,7 @@ switch ($produc) {
        $img1 = "images/Turin/Turin.png";
        $img2 = "images/Turin/turin-sensacion.png";
        $img3 = "images/Turin/stiker-para-turin1080.png";
+       $imgvideo1 = "images/Turin/stiker-para-turin1080.png";
        $textCarac1 = "• Dispensa 3 bebidas diferentes.";
        $textCarac2 = "• 3 Contenedores para producto soluble.";
        $textCarac3 = "• Conexión al punto de agua (opcional bomba autónoma).";
@@ -88,6 +97,9 @@ switch ($produc) {
        $textCndi3 = "";
        $textCndi4 = "";
        $textCndi5 = "";
+       $video1 = "";
+       $hrefCapacitacion = "";
+       $hrefManual = "";
        
       break;
   
@@ -95,6 +107,7 @@ switch ($produc) {
         $img1 = "images/berna12l/Berna12L-ecommerce.png";
         $img2 = "images/berna12l/Berna12Lsensacion.png";
         $img3 = "images/berna12l/stiker-para-Berna12L-1080.png";
+        $imgvideo1 = "images/berna12l/stiker-para-Berna12L-1080.png";
         $textCarac1 = "• dispensadora especializada para cafeterías, restaurantes, fruterías, 
         empresas y centros deportivos.";
         $textCarac2 = "• Agitador central por medio de aspa.";
@@ -117,12 +130,16 @@ switch ($produc) {
         $textCndi3 = "";
         $textCndi4 = "";
         $textCndi5 = "";
+        $video1 = "";
+        $hrefCapacitacion = "";
+        $hrefManual = "";
       break;
   
     case "berna20L":
         $img1 = "images/berna20l/berna20L1.jpeg";
         $img2 = "images/berna20l/berna20l2.jpeg";
         $img3 = "images/berna20l/berna20l1.jpeg";
+        $imgvideo1 = "images/berna20l/berna20l1.jpeg";
         $textCarac1 = "• Dispensadora especializada para cafeterías, restaurantes, 
         fruterías, empresas y centros deportivos. ";
         $textCarac2 = "• Capacidad de 20 litros.";
@@ -145,6 +162,9 @@ switch ($produc) {
         $textCndi3 = "";
         $textCndi4 = "";
         $textCndi5 = "";
+        $video1 = "";
+        $hrefCapacitacion = "";
+        $hrefManual = "";
       break;
   
     default:

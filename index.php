@@ -198,89 +198,42 @@ require "variables.php";
 
 											</div>
 
-											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
+											<div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													
-													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
-													</iframe>
-													
-													
-							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
-																						trans-04" href="<?php echo " {$img3}" ?>">
-														<i class="fa fa-expand"></i>
-													</a>
-												</div>
+													<video src="<?php echo " {$video1}" ?>" width="100%" height="480" controls>
 
-											</div>
-											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
-												<div class="wrap-pic-w pos-relative">
+													</video>
 													
-													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
-													</iframe>
 													
 													
 							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
-																						trans-04" href="<?php echo " {$img3}" ?>">
+												<!-- 	<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" src="images/bari/videoBari.mp4">
 														<i class="fa fa-expand"></i>
-													</a>
-												</div>
-
-											</div>
-											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
-												<div class="wrap-pic-w pos-relative">
-													
-													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
-													</iframe>
-													
-													
-							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
-																						trans-04" href="<?php echo " {$img3}" ?>">
-														<i class="fa fa-expand"></i>
-													</a>
-												</div>
-
-											</div>
-											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
-												<div class="wrap-pic-w pos-relative">
-													
-													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
-													</iframe>
-													
-													
-							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
-																						trans-04" href="<?php echo " {$img3}" ?>">
-														<i class="fa fa-expand"></i>
-													</a>
-												</div>
-
-											</div>
-											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
-												<div class="wrap-pic-w pos-relative">
-													
-													<iframe src="https://www.youtube.com/embed/ooFKpioJcL4?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Finssa.com.co&widgetid=1" width="560" height="315">
-													</iframe>
-													
-													
-							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
-																						trans-04" href="<?php echo " {$img3}" ?>">
-														<i class="fa fa-expand"></i>
-													</a>
+													</a> -->
 												</div>
 
 											</div>
 
-											
 										</div>
 
 										
 
 										
 
+										
+									</div>
+
+									<div class="masDatos">
+										<a href="<?php echo " {$hrefCapacitacion}" ?>">
+											<button type="button" class="botonDatos waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
+											p-lr-15 trans-04">Capacitación Bari</button>
+										</a>
+
+										<a href="<?php echo " {$hrefManual}" ?>">
+											<button type="button" class="botonDatos waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
+											p-lr-15 trans-04">Manual Bari</button>
+										</a>
 										
 									</div>
 
