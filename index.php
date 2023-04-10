@@ -117,7 +117,7 @@ require "variables.php";
 						<div class="left-top-bar">
 							<a href="https://inssa.com.co/" class="navbar-brand d-flex align-items-center">
 								<h1 class="m-0">
-									<img class="w-100" src="images/logoInssa.png" width="50" height="50" alt="Image"
+									<img class="w-100" src="images/logoInssa.png" width="50" height="50" alt="Logo Inssa"
 										style="max-width: 80px" />
 								</h1>
 							</a>
@@ -161,37 +161,34 @@ require "variables.php";
 										
 							
 										<div class="slick3 gallery-lb">
-											<div class="item-slick3" data-thumb="<?php echo " {$img1}" ?>">
+											<div class="item-slick3" alt = "Imagen producto 1" data-thumb="<?php echo " {$img1}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img src="<?php echo " {$img1}" ?>" alt="IMG-PRODUCT">
+													<img alt = "Imagen producto 1" src="<?php echo " {$img1}" ?>">
 							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
-																						trans-04" href="<?php echo " {$img1}" ?>">
+													<a alt = "Imagen producto 1" class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo " {$img1}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
 											</div>
 							
-											<div class="item-slick3" data-thumb="<?php echo " {$img2}" ?>">
+											<div alt = "Imagen producto 2" class="item-slick3" data-thumb="<?php echo " {$img2}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img src="<?php echo " {$img2}" ?>" alt="IMG-PRODUCT">
+													<img alt = "Imagen producto 2" src="<?php echo " {$img2}" ?>" >
 							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
-																						trans-04" href="<?php echo " {$img2}" ?>">
+													<a alt = "Imagen producto 2" class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo " {$img2}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
 											</div>
 							
-											<div class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
+											<div alt = "Imagen producto 3" class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													
-														<img href = "" src="<?php echo " {$img3}" ?>" alt="IMG-PRODUCT">
+														<img alt = "Imagen producto 3" src="<?php echo " {$img3}" ?>">
 													
 													
 							
-													<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3
-																						trans-04" href="<?php echo " {$img3}" ?>">
+													<a alt = "Imagen producto 3" class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo " {$img3}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>

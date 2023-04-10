@@ -311,16 +311,18 @@ switch (producto) {
 
 async function funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuente) {
 
-  console.log("ica func", reteika);
+
 
   var totalPrecioNeto = precioNeto * cantidadProducto;
   totalIva = iva * cantidadProducto;
   totalFlete = flete * cantidadProducto;
-  reteika = reteika * cantidadProducto;
+  reteika = ((precioNeto * reteika)/100) * cantidadProducto;
   reteFuente = reteFuente * cantidadProducto;
-  indescuento = (reteFuente + Number(reteika))* cantidadProducto;
+  indescuento = (reteFuente + Number(reteika));
   total = totalPrecioNeto + totalIva + totalFlete - indescuento;
   tatalWompi = total * 100;
+
+  console.log("ica func", reteika);
 
     envioTotalWompii = document.getElementById("totalWompi").value = tatalWompi;
     envioTotalWompiii = document.getElementById("totalWompi").innerHTML = tatalWompi;

@@ -10,7 +10,7 @@ const temp = [
       { ciudad: "Armenia Antioquia",
       variables: [
         {
-          ica: "100",
+          ica: "1",
           fleteBari: "63000",
           fleteParis: "111000",
           fleteTurin: "49600",
@@ -22,7 +22,7 @@ const temp = [
       { ciudad: "Caucasia",
       variables: [
         {
-          ica: "100",
+          ica: "2",
           fleteBari: "118125",
           fleteParis: "118125",
           fleteTurin: "90000",
@@ -35,7 +35,7 @@ const temp = [
         ciudad: "Medellín",
         variables: [
           {
-            ica: "100",
+            ica: "3",
             fleteBari: "65500",
             fleteParis: "114000",
             fleteTurin: "52500",
@@ -48,7 +48,7 @@ const temp = [
       { ciudad: "Tarazá",
       variables: [
         {
-          ica: "100",
+          ica: "4",
           fleteBari: "141750",
           fleteParis: "141750",
           fleteTurin: "108000",
@@ -60,7 +60,7 @@ const temp = [
       { ciudad: "Yarumal",
       variables: [
         {
-          ica: "100",
+          ica: "5",
           fleteBari: "141750",
           fleteParis: "141750",
           fleteTurin: "108000",
@@ -72,7 +72,7 @@ const temp = [
       { ciudad: "Baranoa",
       variables: [
         {
-          ica: "100",
+          ica: "6",
           fleteBari: "86000",
           fleteParis: "86000",
           fleteTurin: "86625",
@@ -84,7 +84,7 @@ const temp = [
         ciudad: "Barranquilla",
         variables: [
           {
-            ica: "100",
+            ica: "7",
             fleteBari: "70800",
             fleteParis: "122000",
             fleteTurin: "59000",
@@ -97,7 +97,7 @@ const temp = [
       { ciudad: "Sabanalarga",
       variables: [
         {
-          ica: "100",
+          ica: "8",
           fleteBari: "86625",
           fleteParis: "86625",
           fleteTurin: "79000",
@@ -110,7 +110,7 @@ const temp = [
         ciudad: "Bogotá Dc",
         variables: [
           {
-            ica: "100",
+            ica: "9",
             fleteBari: "57800",
             fleteParis: "103000",
             fleteTurin: "43000",
@@ -125,7 +125,7 @@ const temp = [
         ciudad: "Cartagena de Indias",
         variables: [
           {
-            ica: "100",
+            ica: "10",
             fleteBari: "76000",
             fleteParis: "129000",
             fleteTurin: "65000",
@@ -138,7 +138,7 @@ const temp = [
       { ciudad: "El Carmen de Bolívar",
       variables: [
         {
-          ica: "100",
+          ica: "11",
           fleteBari: "118125",
           fleteParis: "118125",
           fleteTurin: "90000",
@@ -150,7 +150,7 @@ const temp = [
       { ciudad: "Magangué",
       variables: [
         {
-          ica: "100",
+          ica: "12",
           fleteBari: "118125",
           fleteParis: "118125",
           fleteTurin: "90000",
@@ -162,7 +162,7 @@ const temp = [
       { ciudad: "Mompós",
       variables: [
         {
-          ica: "100",
+          ica: "13",
           fleteBari: "157500",
           fleteParis: "157500",
           fleteTurin: "120000",
@@ -174,7 +174,7 @@ const temp = [
       { ciudad: "San Jacinto",
       variables: [
         {
-          ica: "100",
+          ica: "14",
           fleteBari: "141750",
           fleteParis: "141750",
           fleteTurin: "108000",
@@ -185,7 +185,7 @@ const temp = [
       { ciudad: "San Juan Nepomuceno",
       variables: [
         {
-          ica: "100",
+          ica: "15",
           fleteBari: "108125",
           fleteParis: "108125",
           fleteTurin: "90000",
@@ -197,7 +197,7 @@ const temp = [
       { ciudad: "Puerto Boyacá",
       variables: [
         {
-          ica: "100",
+          ica: "16",
           fleteBari: "118125",
           fleteParis: "118125",
           fleteTurin: "90000",
@@ -210,7 +210,7 @@ const temp = [
         ciudad: "Tunja",
         variables: [
           {
-            ica: "100",
+            ica: "17",
             fleteBari: "66000",
             fleteParis: "114000",
             fleteTurin: "52000",
@@ -224,7 +224,7 @@ const temp = [
         ciudad: "Manizales",
         variables: [
           {
-            ica: "100",
+            ica: "18",
             fleteBari: "68200",
             fleteParis: "118000",
             fleteTurin: "55000",
@@ -238,7 +238,7 @@ const temp = [
         ciudad: "Florencia Caquetá",
         variables: [
           {
-            ica: "100",
+            ica: "19",
             fleteBari: "87000",
             fleteParis: "146000",
             fleteTurin: "79000",
@@ -251,7 +251,7 @@ const temp = [
       { ciudad: "Yopal",
       variables: [
         {
-          ica: "100",
+          ica: "20",
           fleteBari: "75000",
           fleteParis: "129000",
           fleteTurin: "65000",
@@ -266,7 +266,7 @@ const temp = [
         ciudad: "Popayán",
         variables: [
           {
-            ica: "100",
+            ica: "21",
             fleteBari: "71000",
             fleteParis: "122000",
             fleteTurin: "59000",
@@ -280,7 +280,7 @@ const temp = [
       { ciudad: "Aguachica",
       variables: [
         {
-          ica: "100",
+          ica: "22",
           fleteBari: "74000",
           fleteParis: "74000",
           fleteTurin: "67500",
@@ -292,7 +292,7 @@ const temp = [
       { ciudad: "Agustín Codazzi",
       variables: [
         {
-          ica: "100",
+          ica: "23",
           fleteBari: "110250",
           fleteParis: "110250",
           fleteTurin: "84000",
@@ -304,7 +304,7 @@ const temp = [
       { ciudad: "Bosconia",
       variables: [
         {
-          ica: "100",
+          ica: "24",
           fleteBari: "82000",
           fleteParis: "82000",
           fleteTurin: "67250",
@@ -316,7 +316,7 @@ const temp = [
       { ciudad: "La Jagua de Ibirico",
       variables: [
         {
-          ica: "100",
+          ica: "25",
           fleteBari: "67250",
           fleteParis: "67250",
           fleteTurin: "66000",
@@ -328,7 +328,7 @@ const temp = [
       { ciudad: "Pailitas",
       variables: [
         {
-          ica: "100",
+          ica: "26",
           fleteBari: "78750",
           fleteParis: "78750",
           fleteTurin: "60000",
@@ -340,7 +340,7 @@ const temp = [
       { ciudad: "San Alberto",
       variables: [
         {
-          ica: "100",
+          ica: "27",
           fleteBari: "67250",
           fleteParis: "67250",
           fleteTurin: "66000",
@@ -353,7 +353,7 @@ const temp = [
         ciudad: "Valledupar",
         variables: [
           {
-            ica: "100",
+            ica: "28",
             fleteBari: "81000",
             fleteParis: "136000",
             fleteTurin: "70800",
@@ -368,7 +368,7 @@ const temp = [
         ciudad: "Agua de Dios",
         variables: [
           {
-            ica: "100",
+            ica: "29",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -380,7 +380,7 @@ const temp = [
       { ciudad: "Albán",
       variables: [
         {
-          ica: "100",
+          ica: "30",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -392,7 +392,7 @@ const temp = [
       { ciudad: "Anapoima",
       variables: [
         {
-          ica: "100",
+          ica: "31",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -404,7 +404,7 @@ const temp = [
       { ciudad: "Anolaima",
       variables: [
         {
-          ica: "100",
+          ica: "32",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -416,7 +416,7 @@ const temp = [
       { ciudad: "Apulo",
       variables: [
         {
-          ica: "100",
+          ica: "33",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -428,7 +428,7 @@ const temp = [
       { ciudad: "Arbeláez",
       variables: [
         {
-          ica: "100",
+          ica: "34",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -440,7 +440,7 @@ const temp = [
       { ciudad: "Beltrán",
       variables: [
         {
-          ica: "100",
+          ica: "35",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -452,7 +452,7 @@ const temp = [
       { ciudad: "Bituima",
       variables: [
         {
-          ica: "100",
+          ica: "36",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -464,7 +464,7 @@ const temp = [
       { ciudad: "Bojacá",
       variables: [
         {
-          ica: "100",
+          ica: "37",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -476,7 +476,7 @@ const temp = [
       { ciudad: "Cabrera",
       variables: [
         {
-          ica: "100",
+          ica: "38",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -488,7 +488,7 @@ const temp = [
       { ciudad: "Cachipay",
       variables: [
         {
-          ica: "100",
+          ica: "39",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -500,7 +500,7 @@ const temp = [
       { ciudad: "Cajicá",
       variables: [
         {
-          ica: "100",
+          ica: "40",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -512,7 +512,7 @@ const temp = [
       { ciudad: "Caparrapí",
       variables: [
         {
-          ica: "100",
+          ica: "41",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -524,7 +524,7 @@ const temp = [
       { ciudad: "Cáqueza",
       variables: [
         {
-          ica: "100",
+          ica: "42",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -536,7 +536,7 @@ const temp = [
       { ciudad: "Carmen de Carupa",
       variables: [
         {
-          ica: "100",
+          ica: "43",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -548,7 +548,7 @@ const temp = [
       { ciudad: "Chaguaní",
       variables: [
         {
-          ica: "100",
+          ica: "44",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -560,7 +560,7 @@ const temp = [
       { ciudad: "Chía",
       variables: [
         {
-          ica: "100",
+          ica: "45",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -572,7 +572,7 @@ const temp = [
       { ciudad: "Chipaque",
       variables: [
         {
-          ica: "100",
+          ica: "46",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -584,7 +584,7 @@ const temp = [
       { ciudad: "Choachí",
       variables: [
         {
-          ica: "100",
+          ica: "47",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -596,7 +596,7 @@ const temp = [
       { ciudad: "Chocontá",
       variables: [
         {
-          ica: "100",
+          ica: "48",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -608,7 +608,7 @@ const temp = [
       { ciudad: "Cogua",
       variables: [
         {
-          ica: "100",
+          ica: "49",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -620,7 +620,7 @@ const temp = [
       { ciudad: "Cota",
       variables: [
         {
-          ica: "100",
+          ica: "50",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -632,7 +632,7 @@ const temp = [
       { ciudad: "Cucunubá",
       variables: [
         {
-          ica: "100",
+          ica: "51",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -644,7 +644,7 @@ const temp = [
       { ciudad: "El Colegio",
       variables: [
         {
-          ica: "100",
+          ica: "52",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -656,7 +656,7 @@ const temp = [
       { ciudad: "El Peñón",
       variables: [
         {
-          ica: "100",
+          ica: "53",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -668,7 +668,7 @@ const temp = [
       { ciudad: "El Rosal",
       variables: [
         {
-          ica: "100",
+          ica: "54",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -680,7 +680,7 @@ const temp = [
       { ciudad: "Facatativá",
       variables: [
         {
-          ica: "100",
+          ica: "55",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -692,7 +692,7 @@ const temp = [
       { ciudad: "Fómeque",
       variables: [
         {
-          ica: "100",
+          ica: "56",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -704,7 +704,7 @@ const temp = [
       { ciudad: "Fosca",
       variables: [
         {
-          ica: "100",
+          ica: "57",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -716,7 +716,7 @@ const temp = [
       { ciudad: "Funza",
       variables: [
         {
-          ica: "100",
+          ica: "58",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -728,7 +728,7 @@ const temp = [
       { ciudad: "Fúquene",
       variables: [
         {
-          ica: "100",
+          ica: "59",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -740,7 +740,7 @@ const temp = [
       { ciudad: "Fusagasugá",
       variables: [
         {
-          ica: "100",
+          ica: "60",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -752,7 +752,7 @@ const temp = [
       { ciudad: "Gachalá",
       variables: [
         {
-          ica: "100",
+          ica: "61",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -764,7 +764,7 @@ const temp = [
       { ciudad: "Gachancipá",
       variables: [
         {
-          ica: "100",
+          ica: "62",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -776,7 +776,7 @@ const temp = [
       { ciudad: "Gachetá",
       variables: [
         {
-          ica: "100",
+          ica: "63",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -788,7 +788,7 @@ const temp = [
       { ciudad: "Gama",
       variables: [
         {
-          ica: "100",
+          ica: "64",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -800,7 +800,7 @@ const temp = [
       { ciudad: "Girardot",
       variables: [
         {
-          ica: "100",
+          ica: "65",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -812,7 +812,7 @@ const temp = [
       { ciudad: "Granada",
       variables: [
         {
-          ica: "100",
+          ica: "66",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -824,7 +824,7 @@ const temp = [
       { ciudad: "Guachetá",
       variables: [
         {
-          ica: "100",
+          ica: "67",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -836,7 +836,7 @@ const temp = [
       { ciudad: "Guaduas",
       variables: [
         {
-          ica: "100",
+          ica: "68",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -848,7 +848,7 @@ const temp = [
       { ciudad: "Guasca",
       variables: [
         {
-          ica: "100",
+          ica: "69",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -860,7 +860,7 @@ const temp = [
       { ciudad: "Guataquí",
       variables: [
         {
-          ica: "100",
+          ica: "70",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -872,7 +872,7 @@ const temp = [
       { ciudad: "Guatavita",
       variables: [
         {
-          ica: "100",
+          ica: "71",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -884,7 +884,7 @@ const temp = [
       { ciudad: "Guayabal de Síquima",
       variables: [
         {
-          ica: "100",
+          ica: "72",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -896,7 +896,7 @@ const temp = [
       { ciudad: "Guayabetal",
       variables: [
         {
-          ica: "100",
+          ica: "73",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -908,7 +908,7 @@ const temp = [
       { ciudad: "Gutiérrez",
       variables: [
         {
-          ica: "100",
+          ica: "74",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -920,7 +920,7 @@ const temp = [
       { ciudad: "Jerusalén",
       variables: [
         {
-          ica: "100",
+          ica: "75",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -932,7 +932,7 @@ const temp = [
       { ciudad: "Junín",
       variables: [
         {
-          ica: "100",
+          ica: "76",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -944,7 +944,7 @@ const temp = [
       { ciudad: "La Calera",
       variables: [
         {
-          ica: "100",
+          ica: "77",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -956,7 +956,7 @@ const temp = [
       { ciudad: "La Mesa",
       variables: [
         {
-          ica: "100",
+          ica: "78",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -968,7 +968,7 @@ const temp = [
       { ciudad: "La Palma",
       variables: [
         {
-          ica: "100",
+          ica: "79",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -980,7 +980,7 @@ const temp = [
       { ciudad: "La Peña",
       variables: [
         {
-          ica: "100",
+          ica: "80",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -992,7 +992,7 @@ const temp = [
       { ciudad: "La Vega",
       variables: [
         {
-          ica: "100",
+          ica: "81",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -1004,7 +1004,7 @@ const temp = [
       { ciudad: "Lenguazaque",
       variables: [
         {
-          ica: "100",
+          ica: "82",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -1016,7 +1016,7 @@ const temp = [
       { ciudad: "Machetá",
         variables: [
           {
-            ica: "100",
+            ica: "83",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1028,7 +1028,7 @@ const temp = [
       { ciudad: "Madrid",
         variables: [
           {
-            ica: "100",
+            ica: "84",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1040,7 +1040,7 @@ const temp = [
       { ciudad: "Manta",
         variables: [
           {
-            ica: "100",
+            ica: "85",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1052,7 +1052,7 @@ const temp = [
       { ciudad: "Medina",
         variables: [
           {
-            ica: "100",
+            ica: "86",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1064,7 +1064,7 @@ const temp = [
       { ciudad: "Mosquera",
         variables: [
           {
-            ica: "100",
+            ica: "87",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1076,7 +1076,7 @@ const temp = [
       { ciudad: "Nariño",
         variables: [
           {
-            ica: "100",
+            ica: "88",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1088,7 +1088,7 @@ const temp = [
       { ciudad: "Nemocón",
         variables: [
           {
-            ica: "100",
+            ica: "89",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1100,7 +1100,7 @@ const temp = [
       { ciudad: "Nilo",
         variables: [
           {
-            ica: "100",
+            ica: "90",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1112,7 +1112,7 @@ const temp = [
       { ciudad: "Nimaima",
         variables: [
           {
-            ica: "100",
+            ica: "91",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1124,7 +1124,7 @@ const temp = [
       { ciudad: "Nocaima",
         variables: [
           {
-            ica: "100",
+            ica: "92",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1136,7 +1136,7 @@ const temp = [
       { ciudad: "Pacho",
         variables: [
           {
-            ica: "100",
+            ica: "93",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1148,7 +1148,7 @@ const temp = [
       { ciudad: "Paime",
         variables: [
           {
-            ica: "100",
+            ica: "94",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1160,7 +1160,7 @@ const temp = [
       { ciudad: "Pandi",
         variables: [
           {
-            ica: "100",
+            ica: "95",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1172,7 +1172,7 @@ const temp = [
       { ciudad: "Paratebueno",
         variables: [
           {
-            ica: "100",
+            ica: "96",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1184,7 +1184,7 @@ const temp = [
       { ciudad: "Pasca",
         variables: [
           {
-            ica: "100",
+            ica: "97",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1196,7 +1196,7 @@ const temp = [
       { ciudad: "Puerto Salgar",
         variables: [
           {
-            ica: "100",
+            ica: "98",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1208,7 +1208,7 @@ const temp = [
       { ciudad: "Pulí",
         variables: [
           {
-            ica: "100",
+            ica: "99",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1244,7 +1244,7 @@ const temp = [
       { ciudad: "Quipile",
         variables: [
           {
-            ica: "100",
+            ica: "101",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1256,7 +1256,7 @@ const temp = [
       { ciudad: "Ricaurte",
         variables: [
           {
-            ica: "100",
+            ica: "102",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1268,7 +1268,7 @@ const temp = [
       { ciudad: "San Antonio del Tequendama",
         variables: [
           {
-            ica: "100",
+            ica: "103",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1280,7 +1280,7 @@ const temp = [
       { ciudad: "San Bernardo",
         variables: [
           {
-            ica: "100",
+            ica: "104",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1292,7 +1292,7 @@ const temp = [
       { ciudad: "San Cayetano",
         variables: [
           {
-            ica: "100",
+            ica: "105",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1304,7 +1304,7 @@ const temp = [
       { ciudad: "San Francisco",
         variables: [
           {
-            ica: "100",
+            ica: "106",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1316,7 +1316,7 @@ const temp = [
       { ciudad: "San Juan de Rioseco",
         variables: [
           {
-            ica: "100",
+            ica: "107",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1328,7 +1328,7 @@ const temp = [
       { ciudad: "Sasaima",
         variables: [
           {
-            ica: "100",
+            ica: "108",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1340,7 +1340,7 @@ const temp = [
       { ciudad: "Sesquilé",
         variables: [
           {
-            ica: "100",
+            ica: "109",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1352,7 +1352,7 @@ const temp = [
       { ciudad: "Sibaté",
         variables: [
           {
-            ica: "100",
+            ica: "110",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1364,7 +1364,7 @@ const temp = [
       { ciudad: "Silvania",
         variables: [
           {
-            ica: "100",
+            ica: "111",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1376,7 +1376,7 @@ const temp = [
       { ciudad: "Simijaca",
         variables: [
           {
-            ica: "100",
+            ica: "112",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1388,7 +1388,7 @@ const temp = [
       { ciudad: "Soacha",
         variables: [
           {
-            ica: "100",
+            ica: "113",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1400,7 +1400,7 @@ const temp = [
       { ciudad: "Sopó",
         variables: [
           {
-            ica: "100",
+            ica: "114",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1412,7 +1412,7 @@ const temp = [
       { ciudad: "Subachoque",
         variables: [
           {
-            ica: "100",
+            ica: "115",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1424,7 +1424,7 @@ const temp = [
       { ciudad: "Suesca",
         variables: [
           {
-            ica: "100",
+            ica: "116",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1436,7 +1436,7 @@ const temp = [
       { ciudad: "Supatá",
         variables: [
           {
-            ica: "100",
+            ica: "117",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1445,7 +1445,7 @@ const temp = [
           },
         ],
        },
-      { ciudad: "Susa",
+      { ciudad: "118",
         variables: [
           {
             ica: "100",
@@ -1460,7 +1460,7 @@ const temp = [
       { ciudad: "Sutatausa",
         variables: [
           {
-            ica: "100",
+            ica: "119",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1472,7 +1472,7 @@ const temp = [
       { ciudad: "Tabio",
         variables: [
           {
-            ica: "100",
+            ica: "120",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1484,7 +1484,7 @@ const temp = [
       { ciudad: "Tausa",
         variables: [
           {
-            ica: "100",
+            ica: "121",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1496,7 +1496,7 @@ const temp = [
       { ciudad: "Tena",
         variables: [
           {
-            ica: "100",
+            ica: "122",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1508,7 +1508,7 @@ const temp = [
       { ciudad: "Tenjo",
         variables: [
           {
-            ica: "100",
+            ica: "123",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1520,7 +1520,7 @@ const temp = [
       { ciudad: "Tibacuy",
         variables: [
           {
-            ica: "100",
+            ica: "124",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1532,7 +1532,7 @@ const temp = [
       { ciudad: "Tibirita",
         variables: [
           {
-            ica: "100",
+            ica: "125",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1544,7 +1544,7 @@ const temp = [
       { ciudad: "Tocaima",
         variables: [
           {
-            ica: "100",
+            ica: "126",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1556,7 +1556,7 @@ const temp = [
       { ciudad: "Tocancipá",
         variables: [
           {
-            ica: "100",
+            ica: "127",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1568,7 +1568,7 @@ const temp = [
       { ciudad: "Topaipí",
         variables: [
           {
-            ica: "100",
+            ica: "128",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1580,7 +1580,7 @@ const temp = [
       { ciudad: "Ubalá",
         variables: [
           {
-            ica: "100",
+            ica: "129",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1592,7 +1592,7 @@ const temp = [
       { ciudad: "Ubaque",
         variables: [
           {
-            ica: "100",
+            ica: "130",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1604,7 +1604,7 @@ const temp = [
       { ciudad: "Ubaté",
         variables: [
           {
-            ica: "100",
+            ica: "131",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1616,7 +1616,7 @@ const temp = [
       { ciudad: "Une",
         variables: [
           {
-            ica: "100",
+            ica: "132",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1628,7 +1628,7 @@ const temp = [
       { ciudad: "útica",
         variables: [
           {
-            ica: "100",
+            ica: "133",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1640,7 +1640,7 @@ const temp = [
       { ciudad: "Venecia",
         variables: [
           {
-            ica: "100",
+            ica: "134",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1652,7 +1652,7 @@ const temp = [
       { ciudad: "Vergara",
         variables: [
           {
-            ica: "100",
+            ica: "135",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1664,7 +1664,7 @@ const temp = [
       { ciudad: "Vianí",
         variables: [
           {
-            ica: "100",
+            ica: "136",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1676,7 +1676,7 @@ const temp = [
       { ciudad: "Villagómez",
         variables: [
           {
-            ica: "100",
+            ica: "137",
             fleteBari: "68800",
             fleteParis: "119000",
             fleteTurin: "57000",
@@ -1688,7 +1688,7 @@ const temp = [
       { ciudad: "Villapinzón",
       variables: [
         {
-          ica: "100",
+          ica: "138",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -1699,7 +1699,7 @@ const temp = [
       { ciudad: "Villeta",
       variables: [
         {
-          ica: "100",
+          ica: "139",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -1710,7 +1710,7 @@ const temp = [
       { ciudad: "Viotá",
       variables: [
         {
-          ica: "100",
+          ica: "140",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -1721,7 +1721,7 @@ const temp = [
       { ciudad: "Yacopí",
       variables: [
         {
-          ica: "100",
+          ica: "141",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -1732,7 +1732,7 @@ const temp = [
       { ciudad: "Zipacón",
       variables: [
         {
-          ica: "100",
+          ica: "142",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -1743,7 +1743,7 @@ const temp = [
       { ciudad: "Zipaquirá",
       variables: [
         {
-          ica: "100",
+          ica: "143",
           fleteBari: "68800",
           fleteParis: "119000",
           fleteTurin: "57000",
@@ -1756,7 +1756,7 @@ const temp = [
       { ciudad: "Cereté",
       variables: [
         {
-          ica: "100",
+          ica: "144",
           fleteBari: "110250",
           fleteParis: "110250",
           fleteTurin: "84000",
@@ -1768,7 +1768,7 @@ const temp = [
       { ciudad: "Chinú",
       variables: [
         {
-          ica: "100",
+          ica: "145",
           fleteBari: "126000",
           fleteParis: "126000",
           fleteTurin: "96000",
@@ -1779,7 +1779,7 @@ const temp = [
       { ciudad: "Ciénaga de Oro",
       variables: [
         {
-          ica: "100",
+          ica: "146",
           fleteBari: "112125",
           fleteParis: "112125",
           fleteTurin: "90000",
@@ -1791,7 +1791,7 @@ const temp = [
       { ciudad: "La Apartada",
       variables: [
         {
-          ica: "100",
+          ica: "147",
           fleteBari: "126000",
           fleteParis: "126000",
           fleteTurin: "96000",
@@ -1802,7 +1802,7 @@ const temp = [
       { ciudad: "Lorica",
       variables: [
         {
-          ica: "100",
+          ica: "148",
           fleteBari: "126000",
           fleteParis: "126000",
           fleteTurin: "96000",
@@ -1814,7 +1814,7 @@ const temp = [
       { ciudad: "Montelíbano",
       variables: [
         {
-          ica: "100",
+          ica: "149",
           fleteBari: "126000",
           fleteParis: "126000",
           fleteTurin: "96000",
@@ -1826,7 +1826,7 @@ const temp = [
         ciudad: "Montería",
         variables: [
           {
-            ica: "100",
+            ica: "150",
             fleteBari: "83000",
             fleteParis: "139800",
             fleteTurin: "74000",
@@ -1839,7 +1839,7 @@ const temp = [
       { ciudad: "Planeta Rica",
         variables: [
           {
-            ica: "100",
+            ica: "151",
             fleteBari: "118125",
             fleteParis: "118125",
             fleteTurin: "90000",
@@ -1852,7 +1852,7 @@ const temp = [
       { ciudad: "San Antero",
         variables: [
           {
-            ica: "100",
+            ica: "152",
             fleteBari: "126000",
             fleteParis: "126000",
             fleteTurin: "86000",
@@ -1865,7 +1865,7 @@ const temp = [
       { ciudad: "Tierralta",
         variables: [
           {
-            ica: "100",
+            ica: "153",
             fleteBari: "149625",
             fleteParis: "149625",
             fleteTurin: "114000",
@@ -1878,7 +1878,7 @@ const temp = [
       { ciudad: "Neiva",
       variables: [
         {
-          ica: "100",
+          ica: "154",
           fleteBari: "70000",
           fleteParis: "121000",
           fleteTurin: "58000",
@@ -1891,7 +1891,7 @@ const temp = [
       { ciudad: "Albania",
       variables: [
         {
-          ica: "100",
+          ica: "155",
           fleteBari: "103000",
           fleteParis: "103000",
           fleteTurin: "94500",
@@ -1903,7 +1903,7 @@ const temp = [
       { ciudad: "Barrancas",
       variables: [
         {
-          ica: "100",
+          ica: "156",
           fleteBari: "84000",
           fleteParis: "84000",
           fleteTurin: "72500",
@@ -1915,7 +1915,7 @@ const temp = [
       { ciudad: "Fonseca",
       variables: [
         {
-          ica: "100",
+          ica: "157",
           fleteBari: "78750",
           fleteParis: "78750",
           fleteTurin: "60000",
@@ -1926,7 +1926,7 @@ const temp = [
       { ciudad: "Hatonuevo",
       variables: [
         {
-          ica: "100",
+          ica: "158",
           fleteBari: "78750",
           fleteParis: "78750",
           fleteTurin: "60000",
@@ -1938,7 +1938,7 @@ const temp = [
       { ciudad: "Maicao",
       variables: [
         {
-          ica: "100",
+          ica: "159",
           fleteBari: "86625",
           fleteParis: "86625",
           fleteTurin: "66000",
@@ -1950,7 +1950,7 @@ const temp = [
       { ciudad: "Riohacha",
       variables: [
         {
-          ica: "100",
+          ica: "160",
           fleteBari: "126000",
           fleteParis: "126000",
           fleteTurin: "96000",
@@ -1962,7 +1962,7 @@ const temp = [
       { ciudad: "Ciénaga",
       variables: [
         {
-          ica: "100",
+          ica: "161",
           fleteBari: "86625",
           fleteParis: "86625",
           fleteTurin: "66000",
@@ -1974,7 +1974,7 @@ const temp = [
       { ciudad: "El Banco",
       variables: [
         {
-          ica: "100",
+          ica: "162",
           fleteBari: "141750",
           fleteParis: "141750",
           fleteTurin: "108000",
@@ -1986,7 +1986,7 @@ const temp = [
       { ciudad: "Fundación",
       variables: [
         {
-          ica: "100",
+          ica: "163",
           fleteBari: "110250",
           fleteParis: "110250",
           fleteTurin: "84000",
@@ -1999,7 +1999,7 @@ const temp = [
       { ciudad: "Plato",
       variables: [
         {
-          ica: "100",
+          ica: "164",
           fleteBari: "149625",
           fleteParis: "149625",
           fleteTurin: "114000",
@@ -2011,7 +2011,7 @@ const temp = [
       { ciudad: "Santa Marta",
       variables: [
         {
-          ica: "100",
+          ica: "165",
           fleteBari: "75000",
           fleteParis: "129000",
           fleteTurin: "65000",
@@ -2024,7 +2024,7 @@ const temp = [
       { ciudad: "Villavicencio",
       variables: [
         {
-          ica: "100",
+          ica: "166",
           fleteBari: "65500",
           fleteParis: "116000",
           fleteTurin: "54000",
@@ -2037,7 +2037,7 @@ const temp = [
       { ciudad: "Pasto",
       variables: [
         {
-          ica: "100",
+          ica: "167",
           fleteBari: "84000",
           fleteParis: "142000",
           fleteTurin: "75500",
@@ -2050,7 +2050,7 @@ const temp = [
       { ciudad: "Cúcuta",
       variables: [
         {
-          ica: "100",
+          ica: "168",
           fleteBari: "72000",
           fleteParis: "124000",
           fleteTurin: "60000",
@@ -2063,7 +2063,7 @@ const temp = [
       { ciudad: "Los Patios",
       variables: [
         {
-          ica: "100",
+          ica: "169",
           fleteBari: "69375",
           fleteParis: "69375",
           fleteTurin: "60000",
@@ -2075,7 +2075,7 @@ const temp = [
       { ciudad: "Pamplona",
       variables: [
         {
-          ica: "100",
+          ica: "170",
           fleteBari: "69375",
           fleteParis: "69375",
           fleteTurin: "60000",
@@ -2087,7 +2087,7 @@ const temp = [
       { ciudad: "Armenia Quindío",
       variables: [
         {
-          ica: "100",
+          ica: "171",
           fleteBari: "92000",
           fleteParis: "92000",
           fleteTurin: "86625",
@@ -2100,7 +2100,7 @@ const temp = [
       { ciudad: "Pereira",
       variables: [
         {
-          ica: "100",
+          ica: "172",
           fleteBari: "67000",
           fleteParis: "115000",
           fleteTurin: "54000",
@@ -2113,7 +2113,7 @@ const temp = [
       { ciudad: "Barrancabermeja",
       variables: [
         {
-          ica: "100",
+          ica: "173",
           fleteBari: "93000",
           fleteParis: "93000",
           fleteTurin: "69375",
@@ -2125,7 +2125,7 @@ const temp = [
       { ciudad: "Bucaramanga",
       variables: [
         {
-          ica: "100",
+          ica: "174",
           fleteBari: "66000",
           fleteParis: "115000",
           fleteTurin: "53500",
@@ -2138,7 +2138,7 @@ const temp = [
       { ciudad: "El Socorro",
       variables: [
         {
-          ica: "100",
+          ica: "175",
           fleteBari: "69375",
           fleteParis: "69375",
           fleteTurin: "60000",
@@ -2150,7 +2150,7 @@ const temp = [
       { ciudad: "San Gil",
       variables: [
         {
-          ica: "100",
+          ica: "176",
           fleteBari: "69375",
           fleteParis: "69375",
           fleteTurin: "60000",
@@ -2162,7 +2162,7 @@ const temp = [
       { ciudad: "Corozal",
       variables: [
         {
-          ica: "100",
+          ica: "177",
           fleteBari: "204750",
           fleteParis: "204750",
           fleteTurin: "156000",
@@ -2174,7 +2174,7 @@ const temp = [
       { ciudad: "Ovejas",
       variables: [
         {
-          ica: "100",
+          ica: "178",
           fleteBari: "149625",
           fleteParis: "149625",
           fleteTurin: "114000",
@@ -2186,7 +2186,7 @@ const temp = [
       { ciudad: "San Marcos",
       variables: [
         {
-          ica: "100",
+          ica: "179",
           fleteBari: "157500",
           fleteParis: "157500",
           fleteTurin: "120000",
@@ -2197,7 +2197,7 @@ const temp = [
       { ciudad: "San Onofre",
       variables: [
         {
-          ica: "100",
+          ica: "180",
           fleteBari: "141750",
           fleteParis: "141750",
           fleteTurin: "108000",
@@ -2208,7 +2208,7 @@ const temp = [
       { ciudad: "San Pedro",
       variables: [
         {
-          ica: "100",
+          ica: "181",
           fleteBari: "126000",
           fleteParis: "126000",
           fleteTurin: "96000",
@@ -2220,7 +2220,7 @@ const temp = [
       { ciudad: "Sincelejo",
       variables: [
         {
-          ica: "100",
+          ica: "182",
           fleteBari: "83000",
           fleteParis: "131000",
           fleteTurin: "73500",
@@ -2233,7 +2233,7 @@ const temp = [
       { ciudad: "Tolú",
       variables: [
         {
-          ica: "100",
+          ica: "183",
           fleteBari: "126000",
           fleteParis: "126000",
           fleteTurin: "96000",
@@ -2245,7 +2245,7 @@ const temp = [
       { ciudad: "Honda",
       variables: [
         {
-          ica: "100",
+          ica: "184",
           fleteBari: "102375",
           fleteParis: "102375",
           fleteTurin: "78000",
@@ -2256,7 +2256,7 @@ const temp = [
       { ciudad: "Ibagué",
       variables: [
         {
-          ica: "100",
+          ica: "185",
           fleteBari: "65000",
           fleteParis: "112000",
           fleteTurin: "52000",
@@ -2269,7 +2269,7 @@ const temp = [
       { ciudad: "Buga",
       variables: [
         {
-          ica: "100",
+          ica: "186",
           fleteBari: "78000",
           fleteParis: "78000",
           fleteTurin: "72500",
@@ -2281,7 +2281,7 @@ const temp = [
       { ciudad: "Cali",
       variables: [
         {
-          ica: "100",
+          ica: "187",
           fleteBari: "63000",
           fleteParis: "110000",
           fleteTurin: "49000",
