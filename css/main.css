@@ -38,6 +38,12 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
+
+.video{
+  width: 100%;
+  padding-top: 25%;
+}
+
 .qr{
   width: 100%;
   display: flex;
@@ -87,6 +93,10 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   width: 50%;
     display: flex;
     justify-content: space-around;
+}
+
+.contImgProve{
+  width: 100%;
 }
 
 .btn {

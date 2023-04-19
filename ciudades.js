@@ -19,7 +19,7 @@ var descuento = document.getElementById("divDescuento");
 var descuentoIca = document.getElementById("divDescuentoIca");
 var descuentoFuente = document.getElementById("divDescuentoFuente");
 var total;
-
+var kit;
 
 new QRious({
   element: document.getElementById("codigo"),
@@ -35,68 +35,138 @@ async function wompiapi() {
   totalwompi = document.getElementById("totalWompi").value
   sku = document.getElementById("nombre").innerHTML
   tot = parseInt(totalwompi) 
-  var settings = await {
-    "url": "https://sandbox.wompi.co/v1/payment_links",
-    "method": "POST",
-    "timeout": 0,
-    "headers": {
-      "Authorization": "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
-      "Content-Type": "application/json"
-    },
-    "data": JSON.stringify({
-      "name": sku,
-      "description": "Compra de " + sku + " por medio de INSSA Prime",
-      "single_use": true,
-      "collect_shipping": true,
-      "collect_customer_legal_id": false,
-      "amount_in_cents": tot,
-      "currency": "COP",
-      "sku": sku,
-      "redirect_url": "https://api.whatsapp.com/send?phone=573102242724&text=Hola%2C%20hice%20una%20compra%20por%20INSSA%20Prime%2C%20quisiera%20confirmar%20mis%20datos."
-    }),
-  };
+  validarDelivery = document.getElementById("delivery").value
+kit = document.getElementById("kit").value
+console.log("kit", kit);
   
-  $.ajax(settings).done(function (response) {
-    console.log("response",response.data.id);
-var id = response.data.id;
-var raiz = "https://checkout.wompi.co/l/"
-var url = raiz + id
-/* console.log("link", url); */
 
-var envioUrl = document.getElementById("link").value = url
-var envioHrefQr = document.getElementById("aQr").href = url
-var envioHrefPago = document.getElementById("linkPago").href = url
-var envioHrefPago = document.getElementById("linkPago").innerHTML = url
-
-
-
-/* console.log("envioUrlValue", envioUrl, envioHrefQr); */
-
-
-return new Promise((resolve, reject) => {
+  if (validarDelivery === "Domicilio") {
+    var settings = await {
+      "url": "https://sandbox.wompi.co/v1/payment_links",
+      "method": "POST",
+      "timeout": 0,
+      "headers": {
+        "Authorization": "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
+        "Content-Type": "application/json"
+      },
+      "data": JSON.stringify({
+        "name": sku,
+        "description": "Compra de " + sku + " "+ kit + " por medio de INSSA Prime",
+        "single_use": true,
+        "collect_shipping": true,
+        "collect_customer_legal_id": false,
+        "amount_in_cents": tot,
+        "currency": "COP",
+        "sku": sku,
+        "redirect_url": "https://api.whatsapp.com/send?phone=573102242724&text=Hola%2C%20hice%20una%20compra%20por%20INSSA%20Prime%2C%20quisiera%20confirmar%20mis%20datos."
+      }),
+    };
+    
+    $.ajax(settings).done(function (response) {
+      console.log("response",response.data.id);
+  var id = response.data.id;
+  var raiz = "https://checkout.wompi.co/l/"
+  var url = raiz + id
+  /* console.log("link", url); */
   
-  setTimeout(()=>{
-/*     console.log("Cargando datos...."); */
-    resolve (response);
-
-    new QRious({
-      element: document.getElementById("codigo"),
-      value: url, // La URL o el texto
-      size: 250,
-      backgroundAlpha: 0, // 0 para fondo transparente
-      foreground: "black", // Color del QR
-      level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
-    }); 
-  }, 000)
+  var envioUrl = document.getElementById("link").value = url
+  var envioHrefQr = document.getElementById("aQr").href = url
+  var envioHrefPago = document.getElementById("linkPago").href = url
+  var envioHrefPago = document.getElementById("linkPago").innerHTML = url
   
-});
-
-/* location.href = raiz + id; */
-
-
-
-
+  
+  
+  /* console.log("envioUrlValue", envioUrl, envioHrefQr); */
+  
+  
+  return new Promise((resolve, reject) => {
+    
+    setTimeout(()=>{
+  /*     console.log("Cargando datos...."); */
+      resolve (response);
+  
+      new QRious({
+        element: document.getElementById("codigo"),
+        value: url, // La URL o el texto
+        size: 250,
+        backgroundAlpha: 0, // 0 para fondo transparente
+        foreground: "black", // Color del QR
+        level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+      }); 
+    }, 000)
+    
   });
+  
+  /* location.href = raiz + id; */
+  
+  
+    });
+  }
+  else{
+    var settings = await {
+      "url": "https://sandbox.wompi.co/v1/payment_links",
+      "method": "POST",
+      "timeout": 0,
+      "headers": {
+        "Authorization": "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
+        "Content-Type": "application/json"
+      },
+      "data": JSON.stringify({
+        "name": sku,
+        "description": "Compra de " + sku + " " + kit + "por medio de INSSA Prime",
+        "single_use": true,
+        "collect_shipping": false,
+        "collect_customer_legal_id": false,
+        "amount_in_cents": tot,
+        "currency": "COP",
+        "sku": sku,
+        "redirect_url": "https://api.whatsapp.com/send?phone=573102242724&text=Hola%2C%20hice%20una%20compra%20por%20INSSA%20Prime%2C%20quisiera%20confirmar%20mis%20datos."
+      }),
+    };
+    
+    $.ajax(settings).done(function (response) {
+      console.log("response",response.data.id);
+  var id = response.data.id;
+  var raiz = "https://checkout.wompi.co/l/"
+  var url = raiz + id
+  /* console.log("link", url); */
+  
+  var envioUrl = document.getElementById("link").value = url
+  var envioHrefQr = document.getElementById("aQr").href = url
+  var envioHrefPago = document.getElementById("linkPago").href = url
+  var envioHrefPago = document.getElementById("linkPago").innerHTML = url
+  
+  
+  
+  /* console.log("envioUrlValue", envioUrl, envioHrefQr); */
+  
+  
+  return new Promise((resolve, reject) => {
+    
+    setTimeout(()=>{
+  /*     console.log("Cargando datos...."); */
+      resolve (response);
+  
+      new QRious({
+        element: document.getElementById("codigo"),
+        value: url, // La URL o el texto
+        size: 250,
+        backgroundAlpha: 0, // 0 para fondo transparente
+        foreground: "black", // Color del QR
+        level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+      }); 
+    }, 000)
+    
+  });
+  
+  /* location.href = raiz + id; */
+  
+  
+  
+  
+    });
+  }
+ 
 
 
 }
@@ -154,6 +224,15 @@ function describeSelectCiudadSucursal() {
   descriptionBoxCiudadSucursal.style.display = "block";
 }
 
+function clearParamDescrproveedor() {
+  // Description
+  descriptionBoxproveedor.style.display = "none";
+}
+
+function describeSelectproveedor() {
+  descriptionBoxproveedor.style.display = "block";
+}
+
 
 
 function selectRadioB() {
@@ -201,13 +280,13 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COP 3,960,000.00";
+      "$3,960,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COP 3,960,000.00";
+      "$3,960,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Bari";
-    envioIva = document.getElementById("iva").innerHTML = "COP 752,400.00";
+    envioIva = document.getElementById("iva").innerHTML = "$752,400.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COP 4,712,400.00";
+      "$4,712,400.00";
 
     totalwompiP = document.getElementById("totalWompi").value = 4712400 * 100;
     wompiapi();
@@ -223,13 +302,13 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COP 6,216,000.00";
+      "$6,216,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COP 6,216,000.00";
+      "$6,216,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Paris";
-    envioIva = document.getElementById("iva").innerHTML = "COP 752,400.00";
+    envioIva = document.getElementById("iva").innerHTML = "$752,400.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COP 7,397,040.00";
+      "$7,397,040.00";
 
       totalwompiP = document.getElementById("totalWompi").value = 7397040 * 100;
 
@@ -246,13 +325,13 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COP 3,205,000.00";
+      "$3,205,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COP 3,205,000.00";
+      "$3,205,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Turin";
-    envioIva = document.getElementById("iva").innerHTML = "COP 608,950.00";
+    envioIva = document.getElementById("iva").innerHTML = "$608,950.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COP 3,813,950.00";
+      "$3,813,950.00";
 
       totalwompiP = document.getElementById("totalWompi").value = 3813950 * 100;
 
@@ -268,13 +347,13 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COP 2,779,000.00";
+      "$2,779,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COP 2,779,000.00";
+      "$2,779,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Dispensadora de jugos Berna 12 litros";
-    envioIva = document.getElementById("iva").innerHTML = "COP 528,010.00";
+    envioIva = document.getElementById("iva").innerHTML = "$528,010.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COP 3,307,010.00";
+      "$3,307,010.00";
 
       totalwompiP = document.getElementById("totalWompi").value = 3307010 * 100;
 
@@ -290,13 +369,13 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "COP 3,016,000.00";
+      "$3,016,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "COP 3,016,000.00";
+      "$3,016,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Dispensadora de jugos Berna 20 litros";
-    envioIva = document.getElementById("iva").innerHTML = "COP 573,40.00";
+    envioIva = document.getElementById("iva").innerHTML = "$573,40.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "COP 3,589,040.00";
+      "$3,589,040.00";
       
     totalwompiP = document.getElementById("totalWompi").value = 3589040 * 100;
     
@@ -328,51 +407,51 @@ async function funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuen
     envioTotalWompiii = document.getElementById("totalWompi").innerHTML = tatalWompi;
 
   envioNeto = document.getElementById("subtotal");
-  const formateadoNeto = totalPrecioNeto.toLocaleString("en", {
+  const formateadoNeto = totalPrecioNeto.toLocaleString("en-CO", {
     style: "currency",
-    currency: "COP",
+    currency: "USD",
   });
   envioNeto.innerHTML = formateadoNeto;
 
   envioIva = document.getElementById("iva");
   const formateadoIva = totalIva.toLocaleString("en", {
     style: "currency",
-    currency: "COP",
+    currency: "USD",
   });
   envioIva.innerHTML = formateadoIva;
 
   var envioFlete = document.getElementById("flete");
   var formateadoFlete = totalFlete.toLocaleString("en", {
     style: "currency",
-    currency: "COP",
+    currency: "USD",
   });
   envioFlete.innerHTML = formateadoFlete;
 
   var envioica = document.getElementById("reteica");
   var formateadoica = Number(reteika).toLocaleString("en", {
     style: "currency",
-    currency: "COP",
+    currency: "USD",
   });
   envioica.innerHTML = formateadoica;
 
   var envioFuente = document.getElementById("retefuente");
   var formateadoFuente = (reteFuente).toLocaleString("en", {
     style: "currency",
-    currency: "COP",
+    currency: "USD",
   });
   envioFuente.innerHTML = formateadoFuente;
 
   var envioDescuento = document.getElementById("descuento");
   var formateadoDescuento = indescuento.toLocaleString("en", {
     style: "currency",
-    currency: "COP",
+    currency: "USD",
   });
   envioDescuento.innerHTML = formateadoDescuento;
 
   var envioTotal = document.getElementById("total");
   const formateadoTotal = total.toLocaleString("en", {
     style: "currency",
-    currency: "COP",
+    currency: "USD",
   });
   envioTotal.innerHTML = formateadoTotal;
 
@@ -414,6 +493,10 @@ async function cambios(selectPersona) {
   var cantidadProducto = document.getElementById("num-product").value;
   var ciudadSucursal = document.getElementById("ciudadSucursal").value;
   var botonMas = document.getElementById("mas")
+
+  if (ciudadDelivery === "Medellín") {
+    console.log("medellin");
+  }
   var botonMenos = document.getElementById("menos")
 
  
@@ -431,6 +514,18 @@ async function cambios(selectPersona) {
   }
   else{
     botonMenos.disabled = false;
+
+  }
+
+  if (document.getElementById("Checkproveedor").checked) {
+    document.getElementById("imgProve").src="images/bari/bari1.jpeg"
+    document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor"
+    document.getElementById("kit").value = "+ kit de proveedor"
+  }
+  else{
+    document.getElementById("imgProve").src=""
+    document.getElementById("textProv").innerHTML = ""
+    document.getElementById("kit").value = ""
 
   }
 
@@ -765,7 +860,7 @@ function ShowSelectedMunicipios() {
   var alerta = document.getElementById("alertaIca")
   if (selectCiudad == "Otra") {
 
-    alerta.innerHTML = "• pailas ica"
+    alerta.innerHTML = "• Sin ica"
     alerta.style.color = "red"
     Swal.fire({
       title: "Titulo:",
@@ -794,7 +889,7 @@ function ShowSelectedCiudadDelivery() {
   var alerta = document.getElementById("alertaDelivery")
   if (ciudadDelivery == "Otra") {
 
-    alerta.innerHTML = "• pailas delivery"
+    alerta.innerHTML = "• Sin delivery"
     alerta.style.color = "red"
     Swal.fire({
       title: "Titulo :",

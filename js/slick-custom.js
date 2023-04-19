@@ -160,7 +160,7 @@
                 dotsClass:'slick3-dots',
                 customPaging: function(slick, index) {
                     var portrait = $(slick.$slides[index]).data('thumb');
-                    return '<img src=" ' + portrait + ' "/><div class="slick3-dot-overlay"></div>';
+                    return '<img id = "' + portrait + '" src=" ' + portrait + ' "/><div id = "' + portrait + '" class="slick3-dot-overlay"></div>';
                 },  
             });
         });

@@ -184,7 +184,7 @@ require "variables.php";
 											<div alt = "Imagen producto 3" class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													
-														<img alt = "Imagen producto 3" src="<?php echo " {$img3}" ?>">
+														<img alt = "Imagen proveedor" src="<?php echo " {$img3}" ?>">
 													
 													
 							
@@ -198,7 +198,7 @@ require "variables.php";
 											<div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													
-													<video src="<?php echo " {$video1}" ?>" width="100%" height="480" controls>
+													<video class ="video" src="<?php echo " {$video1}" ?>"  controls>
 
 													</video>
 													
@@ -211,6 +211,20 @@ require "variables.php";
 												</div>
 
 											</div>
+
+				<!-- 							<div   alt = "Imagen producto 3" id="proveedor" class="item-slick3" data-thumb="<?php echo " {$imgProv}" ?>">
+												<div  class="wrap-pic-w pos-relative">
+													
+														<img id="proveedor"  alt = "Imagen producto 3" src="<?php echo " {$imgProv}" ?>">
+													
+													
+							
+													<a id="aProveedor"  alt = "Imagen producto 3" class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo " {$imgProv}" ?>">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+
+											</div> -->
 
 										</div>
 
@@ -267,6 +281,10 @@ require "variables.php";
 									<input type="hidden" id="ica" name="ica" require />
 
 									<input type="hidden" id="fleteI" name="fleteI" require />
+
+									<input type="hidden" id="kit" name="kit" require />
+
+									
 									
 
 
@@ -432,7 +450,7 @@ require "variables.php";
 												onmouseover="describeSelectParamDelivery()"
 												onmouseout="clearParamDescrDelivery();" name="cDelivery" id="cDelivery">
 												<div class="size-203 respon6">
-													Delivery
+													Envió
 												</div>
 
 												<div class="size-204 respon6-next">
@@ -450,7 +468,7 @@ require "variables.php";
 											</div>
 
 											<div id="descriptionBoxDelivery" class="descriptionBox">descripcion de
-												delivery</div>
+												Envió</div>
 
 											<div class="flex-w flex-r-m p-b-10 cCiudadDelivery"
 												onmouseover="describeSelectCiudadDelivery()"
@@ -502,6 +520,31 @@ require "variables.php";
 											<div id="descriptionBoxCiudadSucursal" class="descriptionBox">descripcion de
 												ciudad de recogida maquina</div>
 
+
+											<div class="flex-w flex-r-m p-b-10 cproveedor"
+												onmouseover="describeSelectproveedor()"
+												onmouseout="clearParamDescrproveedor();" name="cproveedor"
+												id="cproveedor" style="display: ">
+												<div class="size-203 respon6">
+													Kit
+												</div>
+												<div class="size-204 respon6-next">
+													<div class="rs1-select2  bg0">
+													<input type="checkbox" name="Checkproveedor" id="Checkproveedor" onclick="cambios()"> 
+
+														<div class="dropDownSelect2"></div>
+													</div>
+												</div>
+
+											</div>
+
+											<div id="descriptionBoxproveedor" class="descriptionBox">descripcion de proveedor</div>
+
+
+<div class = "contImgProve">
+
+	<img  class = "contImgProve" id = "imgProve" src="" alt="">
+</div>
 
 
 
@@ -564,7 +607,7 @@ require "variables.php";
 								<div class=" m-b-30">
 									<div class="bor10 p-lr-40 p-t-30 p-b-40 m-lr-0-xl p-lr-15-sm">
 										<h4 class="mtext-109 cl2 p-b-30">
-											Total
+											BALANCE 
 										</h4>
 
 										<div class="flex-w flex-t bor12 p-b-13">
@@ -599,7 +642,7 @@ require "variables.php";
 											</div>
 
 											<div class="size-209">
-												<label id="flete" name="flete" class="mtext-110 cl2">COL 0.00</label>
+												<label id="flete" name="flete" class="mtext-110 cl2">$0.00</label>
 											</div>
 										</div>
 
@@ -612,7 +655,7 @@ require "variables.php";
 											</div>
 
 											<div class="size-209">
-												<label id="reteica" name="reteica" class="mtext-110 cl2">COL
+												<label id="reteica" name="reteica" class="mtext-110 cl2">$
 												</label>
 											</div>
 										</div>
@@ -626,7 +669,7 @@ require "variables.php";
 											</div>
 
 											<div class="size-209">
-												<label id="retefuente" name="retefuente" class="mtext-110 cl2">COL
+												<label id="retefuente" name="retefuente" class="mtext-110 cl2">$
 												</label>
 											</div>
 										</div>
@@ -640,7 +683,7 @@ require "variables.php";
 											</div>
 
 											<div class="size-209">
-												<label id="descuento" name="descuento" class="mtext-110 cl2">COL
+												<label id="descuento" name="descuento" class="mtext-110 cl2">$
 												</label>
 											</div>
 										</div>
@@ -654,7 +697,7 @@ require "variables.php";
 											</div>
 
 											<div class="size-209 p-t-1">
-												<label id="total" name="total" class="mtext-110 cl2">COL
+												<label id="total" name="total" class="mtext-110 cl2">$
 												</label>
 											</div>
 										</div>
@@ -801,6 +844,9 @@ require "variables.php";
 														</p>
 														<p>
 															<?php echo " {$textCarac16}" ?>
+														</p>
+														<p id = "textProv">
+															
 														</p>
 													</td>
 
