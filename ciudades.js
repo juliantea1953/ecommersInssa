@@ -534,19 +534,19 @@ async function cambios(selectPersona) {
        
         switch (ciudadSucursal) {
           case "Medellín" :
-            document.getElementById("imgProve").src="images/bari/bari1.jpeg"
+            document.getElementById("imgProve").src="images/bari/proveedorMedellin.jpeg"
          document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
          document.getElementById("kit").value = "+ kit de proveedor"
             break;
     
             case "Bogotá Dc":
-              document.getElementById("imgProve").src="images/paris/paris1.jpeg"
+              document.getElementById("imgProve").src="images/bari/proveedorBogota.png"
               document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
               document.getElementById("kit").value = "+ kit de proveedor"
               break
     
               case "Cali":
-                document.getElementById("imgProve").src="images/Turin/stiker-para-turin1080.png"
+                document.getElementById("imgProve").src="images/bari/proveedosCali.jpeg"
                 document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Cali"
                 document.getElementById("kit").value = "+ kit de proveedor"
                 break
@@ -566,19 +566,19 @@ async function cambios(selectPersona) {
             document.getElementById("kit").value = ""
       switch (ciudadDelivery) {
         case "Medellín" :
-          document.getElementById("imgProve").src="images/bari/bari1.jpeg"
-       document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
+          document.getElementById("imgProve").src="images/bari/proveedorMedellin.jpeg"
+          document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
        document.getElementById("kit").value = "+ kit de proveedor"
           break;
   
           case "Bogotá Dc":
-            document.getElementById("imgProve").src="images/paris/paris1.jpeg"
+            document.getElementById("imgProve").src="images/bari/proveedorBogota.png"
             document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
             document.getElementById("kit").value = "+ kit de proveedor"
             break
   
             case "Cali":
-              document.getElementById("imgProve").src="images/Turin/stiker-para-turin1080.png"
+              document.getElementById("imgProve").src="images/bari/proveedosCali.jpeg"
               document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Cali"
               document.getElementById("kit").value = "+ kit de proveedor"
               break

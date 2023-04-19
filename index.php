@@ -318,7 +318,7 @@ require "variables.php";
 							<input type="hidden" id="totalWompi" name="totalWompi" value = "" />
 							
 									<label>
-										<input class="radio1" id="cc" type="radio" name="identificacion" checked value="Cedula"  onclick="selectRadioB()"> Cedula
+										<input class="radio1" id="cc" type="radio" name="identificacion" checked value="Cedula"  onclick="selectRadioB()"> Cédula
 									</label>
 
 					
@@ -345,7 +345,7 @@ require "variables.php";
 						onmouseout="clearParamDescrAgente();"
 						id="agente" name = "agente" style="display: none">
 						<div class="labelForm size-203 respon6">
-							Agente de retención?
+						¿Agente de retención?
 						</div>
 
 						<div class="selecForm size-204 respon6-next">
@@ -418,8 +418,8 @@ require "variables.php";
 
 											</div> -->
 
-											<div id="descriptionBoxAgente" class="descriptionBox">descripcion de que
-												es un agente de retencion</div>
+											<div id="descriptionBoxAgente" class="descriptionBox">Descripción  de que
+												es un agente de retención</div>
 
 
 											<div class="flex-w flex-r-m p-b-10"
@@ -442,8 +442,8 @@ require "variables.php";
 
 											</div>
 
-											<div id="descriptionBoxMunicipios" class="descriptionBox">descripcion de
-												municipio de retencion</div>
+											<div id="descriptionBoxMunicipios" class="descriptionBox">Descripción de
+												municipio de retención</div>
 
 
 											<div class="flex-w flex-r-m p-b-10 cDelivery"
@@ -459,7 +459,7 @@ require "variables.php";
 															id="delivery" onchange="ShowSelectedDelivery();" require>
 															<option disabled selected>Escoja una opción</option>
 															<option value="Domicilio">Domicilio</option>
-															<option value="fisico">Recoger en punto fisico</option>
+															<option value="fisico">Recoger en punto físico</option>
 
 														</select>
 														<div class="dropDownSelect2"></div>
@@ -467,7 +467,7 @@ require "variables.php";
 												</div>
 											</div>
 
-											<div id="descriptionBoxDelivery" class="descriptionBox">descripcion de
+											<div id="descriptionBoxDelivery" class="descriptionBox">Descripción de
 												Envió</div>
 
 											<div class="flex-w flex-r-m p-b-10 cCiudadDelivery"
@@ -475,7 +475,7 @@ require "variables.php";
 												onmouseout="clearParamDescrCiudadDelivery();" name="cCiudadDelivery"
 												id="cCiudadDelivery" style="display: none ;">
 												<div class="labelForm size-203 respon6">
-													Ciudad de envio
+													Ciudad de envío
 												</div>
 												<div class="selecForm size-204 respon6-next">
 													<div class="rs1-select2 bor8 bg0">
@@ -490,7 +490,7 @@ require "variables.php";
 
 											</div>
 
-											<div id="descriptionBoxCiudadDelivery" class="descriptionBox">descripcion de
+											<div id="descriptionBoxCiudadDelivery" class="descriptionBox">Descripción de
 												ciudad delivery</div>
 
 
@@ -517,8 +517,8 @@ require "variables.php";
 
 											</div>
 
-											<div id="descriptionBoxCiudadSucursal" class="descriptionBox">descripcion de
-												ciudad de recogida maquina</div>
+											<div id="descriptionBoxCiudadSucursal" class="descriptionBox">Descripción de
+												ciudad de recogida máquina</div>
 
 
 											<div class="flex-w flex-r-m p-b-10 cproveedor"
@@ -538,7 +538,7 @@ require "variables.php";
 
 											</div>
 
-											<div id="descriptionBoxproveedor" class="descriptionBox">descripcion de proveedor</div>
+											<div id="descriptionBoxproveedor" class="descriptionBox">Descripción de proveedor</div>
 
 
 <div class = "contImgProve">
