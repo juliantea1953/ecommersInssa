@@ -44,6 +44,17 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   padding-top: 25%;
 }
 
+.selecForm{
+  width: 65% !important;
+}
+.labelForm{
+  margin-right: auto;
+}
+
+.slick3{
+  background-color: #0000001f;
+}
+
 .qr{
   width: 100%;
   display: flex;

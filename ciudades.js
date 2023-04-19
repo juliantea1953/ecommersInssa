@@ -494,9 +494,7 @@ async function cambios(selectPersona) {
   var ciudadSucursal = document.getElementById("ciudadSucursal").value;
   var botonMas = document.getElementById("mas")
 
-  if (ciudadDelivery === "Medellín") {
-    console.log("medellin");
-  }
+
   var botonMenos = document.getElementById("menos")
 
  
@@ -518,9 +516,82 @@ async function cambios(selectPersona) {
   }
 
   if (document.getElementById("Checkproveedor").checked) {
-    document.getElementById("imgProve").src="images/bari/bari1.jpeg"
-    document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor"
-    document.getElementById("kit").value = "+ kit de proveedor"
+    
+    console.log("asdasda", ciudadDelivery);
+    console.log("sucursal", ciudadSucursal);
+
+    if (ciudadDelivery === "Escoja una opción" ) {
+     
+      
+      if (ciudadSucursal === "Escoja una opción") {
+        document.getElementById("imgProve").src=""
+            document.getElementById("textProv").innerHTML = ""
+            document.getElementById("kit").value = ""
+      }
+      
+      else{
+       
+       
+        switch (ciudadSucursal) {
+          case "Medellín" :
+            document.getElementById("imgProve").src="images/bari/bari1.jpeg"
+         document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
+         document.getElementById("kit").value = "+ kit de proveedor"
+            break;
+    
+            case "Bogotá Dc":
+              document.getElementById("imgProve").src="images/paris/paris1.jpeg"
+              document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
+              document.getElementById("kit").value = "+ kit de proveedor"
+              break
+    
+              case "Cali":
+                document.getElementById("imgProve").src="images/Turin/stiker-para-turin1080.png"
+                document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Cali"
+                document.getElementById("kit").value = "+ kit de proveedor"
+                break
+        
+          default:
+            document.getElementById("imgProve").src=""
+            document.getElementById("textProv").innerHTML = ""
+            document.getElementById("kit").value = ""
+    
+            break;
+        }
+      }
+    }
+    else{
+      document.getElementById("imgProve").src=""
+            document.getElementById("textProv").innerHTML = ""
+            document.getElementById("kit").value = ""
+      switch (ciudadDelivery) {
+        case "Medellín" :
+          document.getElementById("imgProve").src="images/bari/bari1.jpeg"
+       document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
+       document.getElementById("kit").value = "+ kit de proveedor"
+          break;
+  
+          case "Bogotá Dc":
+            document.getElementById("imgProve").src="images/paris/paris1.jpeg"
+            document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
+            document.getElementById("kit").value = "+ kit de proveedor"
+            break
+  
+            case "Cali":
+              document.getElementById("imgProve").src="images/Turin/stiker-para-turin1080.png"
+              document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Cali"
+              document.getElementById("kit").value = "+ kit de proveedor"
+              break
+      
+        default:
+          document.getElementById("imgProve").src=""
+          document.getElementById("textProv").innerHTML = ""
+          document.getElementById("kit").value = ""
+  
+          break;
+      }
+    }
+    
   }
   else{
     document.getElementById("imgProve").src=""
@@ -564,6 +635,9 @@ async function cambios(selectPersona) {
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "";
           cCiudadSucursal.style.display = "none";
+          document.getElementById("cproveedor").style.display = ""
+          document.getElementById("ciudadSucursal").selectedIndex = "0";
+          document.getElementById("select2-ciudadSucursal-container").innerHTML = "Escoja una opción"
   
           if (ciudadDelivery == "Escoja una opción") {
             console.log("ciudadDelivery",ciudadDelivery);
@@ -603,6 +677,8 @@ async function cambios(selectPersona) {
           cCiudadSucursal.style.display = "";
           console.log("flete",flete);
           flete = 0;
+          document.getElementById("cproveedor").style.display = ""
+          document.getElementById("cproveedor").style.display = ""
   
           if (ciudadSucursal == "Escoja una opción") {
             console.log("ciudadSucursal",ciudadSucursal);
@@ -652,6 +728,10 @@ async function cambios(selectPersona) {
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "";
           cCiudadSucursal.style.display = "none";
+          document.getElementById("cproveedor").style.display = ""
+          document.getElementById("ciudadSucursal").selectedIndex = "0";
+          document.getElementById("select2-ciudadSucursal-container").innerHTML = "Escoja una opción"
+
   
           if (ciudadDelivery == "Escoja una opción") {
             console.log("ciudadDelivery",ciudadDelivery);
@@ -691,6 +771,7 @@ async function cambios(selectPersona) {
           cCiudadSucursal.style.display = "";
           console.log("flete",flete);
           flete = 0;
+          document.getElementById("cproveedor").style.display = ""
   
           if (ciudadSucursal == "Escoja una opción") {
             console.log("ciudadSucursal",ciudadSucursal);
@@ -760,6 +841,9 @@ async function cambios(selectPersona) {
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "";
           cCiudadSucursal.style.display = "none";
+          document.getElementById("cproveedor").style.display = ""
+ 
+
 
           if (ciudadDelivery == "Escoja una opción") {
             var ica = 0;
@@ -799,6 +883,7 @@ async function cambios(selectPersona) {
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "none";
           cCiudadSucursal.style.display = "";
+          document.getElementById("cproveedor").style.display = ""
 
           if (ciudadSucursal == "Escoja una opción") {
             var ica = 0;

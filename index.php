@@ -344,11 +344,11 @@ require "variables.php";
 						onmouseover="describeSelectParamAgente()"
 						onmouseout="clearParamDescrAgente();"
 						id="agente" name = "agente" style="display: none">
-						<div class="size-203 respon6">
+						<div class="labelForm size-203 respon6">
 							Agente de retención?
 						</div>
 
-						<div class="size-204 respon6-next">
+						<div class="selecForm size-204 respon6-next">
 							<div class="rs1-select2  bg0">
 								<input type="checkbox" name="CheckAgente" id="CheckAgente" onclick="cambios()"> 
 
@@ -426,10 +426,10 @@ require "variables.php";
 												onmouseover="describeSelectParamDepart()"
 												onmouseout="clearParamDescrDepart();" name="CMunicipios"
 												id="CMunicipios" style="display: none;">
-												<div class="size-203 respon6">
+												<div class="labelForm size-203 respon6">
 													Departamento de retención
 												</div>
-												<div class="size-204 respon6-next">
+												<div class="selecForm selecForm size-204 respon6-next">
 													<div class="rs1-select2 bor8 bg0">
 														<select class="js-select2" type="text"
 															onchange="ShowSelectedMunicipios(), ShowSelectedCMunicipios();"
@@ -449,11 +449,11 @@ require "variables.php";
 											<div class="flex-w flex-r-m p-b-10 cDelivery"
 												onmouseover="describeSelectParamDelivery()"
 												onmouseout="clearParamDescrDelivery();" name="cDelivery" id="cDelivery">
-												<div class="size-203 respon6">
+												<div class="labelForm labelForm size-203 respon6">
 													Envió
 												</div>
 
-												<div class="size-204 respon6-next">
+												<div class="selecForm selecForm size-204 respon6-next">
 													<div class="rs1-select2 bor8 bg0">
 														<select class="js-select2" type="text" name="delivery"
 															id="delivery" onchange="ShowSelectedDelivery();" require>
@@ -474,10 +474,10 @@ require "variables.php";
 												onmouseover="describeSelectCiudadDelivery()"
 												onmouseout="clearParamDescrCiudadDelivery();" name="cCiudadDelivery"
 												id="cCiudadDelivery" style="display: none ;">
-												<div class="size-203 respon6">
+												<div class="labelForm size-203 respon6">
 													Ciudad de envio
 												</div>
-												<div class="size-204 respon6-next">
+												<div class="selecForm size-204 respon6-next">
 													<div class="rs1-select2 bor8 bg0">
 														<select class="js-select2" type="text"
 															onchange="ShowSelectedCiudadDelivery(), ShowSelectedCDelivery();"
@@ -498,17 +498,17 @@ require "variables.php";
 												onmouseover="describeSelectCiudadSucursal()"
 												onmouseout="clearParamDescrCiudadSucursal();" name="cCiudadSucursal"
 												id="cCiudadSucursal" style="display: none;">
-												<div class="size-203 respon6">
+												<div class="labelForm size-203 respon6">
 													Sucursal a recoger
 												</div>
-												<div class="size-204 respon6-next">
+												<div class="selecForm size-204 respon6-next">
 													<div class="rs1-select2 bor8 bg0">
 														<select class="js-select2" type="text"
 															onchange="ShowSelectedCiudadSucursal()" id="ciudadSucursal"
 															require>
 															<option disabled selected>Escoja una opción</option>
-															<option value="Bogota">Bogota</option>
-															<option value="Medellin">Medellin</option>
+															<option value="Bogotá Dc">Bogotá Dc</option>
+															<option value="Medellín">Medellín</option>
 															<option value="Cali">Cali</option>
 														</select>
 														<div class="dropDownSelect2"></div>
@@ -524,11 +524,11 @@ require "variables.php";
 											<div class="flex-w flex-r-m p-b-10 cproveedor"
 												onmouseover="describeSelectproveedor()"
 												onmouseout="clearParamDescrproveedor();" name="cproveedor"
-												id="cproveedor" style="display: ">
-												<div class="size-203 respon6">
+												id="cproveedor" style="display: none" >
+												<div class="labelForm size-203 respon6">
 													Kit
 												</div>
-												<div class="size-204 respon6-next">
+												<div class="selecForm size-204 respon6-next">
 													<div class="rs1-select2  bg0">
 													<input type="checkbox" name="Checkproveedor" id="Checkproveedor" onclick="cambios()"> 
 
