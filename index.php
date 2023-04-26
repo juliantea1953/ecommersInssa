@@ -1,13 +1,8 @@
 <?php
 
-
-$produc= $_GET['producto'];
-
+$produc = $_GET['producto'];
 
 require "variables.php";
-
-
-
 
 ?>
 
@@ -49,28 +44,18 @@ require "variables.php";
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
 	<!-- Customized Bootstrap Stylesheet -->
-
-
 	<!-- Icon Font Stylesheet -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-
 	<!-- Libraries Stylesheet -->
 	<script src="https://cdn.wompi.co/libs/js/v1.js"
 		data-public-key="pub_prod_jzoTpu9Es1mhKUKrbNw3ezvzImlD8AYb"></script>
-
 </head>
-
 <body class="animsition ">
-
 	<!-- Header -->
 	<header class="header-v4">
 		<!-- Header desktop -->
-
-
 		<!-- Modal1 -->
-
-
 		<!-- Header -->
 		<header>
 			<!-- Header desktop -->
@@ -89,339 +74,176 @@ require "variables.php";
 							<small>Lun - Vie : 07 AM - 05 PM Sab 07 AM - 10 AM</small>
 						</div>
 						<div class="left-top-bar">
-
 						</div>
-
 						<div class="right-top-bar flex-w h-full">
 							<a href="https://www.facebook.com/INSSASAS" class="flex-c-m trans-04 p-lr-25">
 								<i class="fab fa-facebook-f"></i></a>
 							</a>
-
 							<a href="https://www.youtube.com/@inssasas/videos" class="flex-c-m trans-04 p-lr-25">
 								<i class="fab fa-youtube"></i>
 							</a>
-
 							<a href="https://www.instagram.com/inssasas/" class="flex-c-m trans-04 p-lr-25">
 								<i class="fab fa-instagram"></i>
 							</a>
-
-
 						</div>
 					</div>
 				</div>
-
-
-
 				<div class=" ">
 					<div class="content-topbar flex-sb-m h-full container">
 						<div class="left-top-bar">
 							<a href="https://inssa.com.co/" class="navbar-brand d-flex align-items-center">
 								<h1 class="m-0">
-									<img class="w-100" src="images/logoInssa.png" width="50" height="50" alt="Logo Inssa"
-										style="max-width: 80px" />
+									<img class="w-100" src="images/logoInssa.png" width="50" height="50"
+										alt="Logo Inssa" style="max-width: 80px" />
 								</h1>
 							</a>
 						</div>
-
 						<div class="left-top-bar">
-
 						</div>
-
-
 					</div>
 				</div>
-
 			</div>
-
-
-
-
-
-
-
-
 			<!-- <form  method ="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>"  > -->
 			<div class=" js-modal1 ">
 				<div class=" js-hide-modal1"></div>
-
 				<div class="container">
 					<div class="bg0 p-t-60 p-lr-15-lg how-pos3-parent">
 						<!-- <button class="how-pos3 hov3 trans-04 js-hide-modal1">
 						<img src="images/icons/icon-close.png" alt="CLOSE">
 					</button> -->
-
 						<div class="row">
 							<div class="col-md-6 col-lg-7">
 								<div class="p-l-25 p-r-30 p-lr-0-lg">
 									<div class="wrap-slick3 flex-sb flex-w">
 										<div class="wrap-slick3-dots"></div>
-										
 										<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
-
-										
-							
 										<div class="slick3 gallery-lb">
-											<div class="item-slick3" alt = "Imagen producto 1" data-thumb="<?php echo " {$img1}" ?>">
+											<div class="item-slick3" alt="Imagen producto 1" data-thumb="<?php echo "{$img1}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img alt = "Imagen producto 1" src="<?php echo " {$img1}" ?>">
-							
-													<a alt = "Imagen producto 1" class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo " {$img1}" ?>">
+													<img alt="Imagen producto 1" src="<?php echo " {$img1}" ?>">
+													<a alt="Imagen producto 1"
+														class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
+														href="<?php echo " {$img1}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
 											</div>
-							
-											<div alt = "Imagen producto 2" class="item-slick3" data-thumb="<?php echo " {$img2}" ?>">
+											<div alt="Imagen producto 2" class="item-slick3" data-thumb="<?php echo "
+												{$img2}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img alt = "Imagen producto 2" src="<?php echo " {$img2}" ?>" >
-							
-													<a alt = "Imagen producto 2" class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo " {$img2}" ?>">
+													<img alt="Imagen producto 2" src="<?php echo " {$img2}" ?>" >
+													<a alt="Imagen producto 2"
+														class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
+														href="<?php echo " {$img2}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
 											</div>
-							
-											<div alt = "Imagen producto 3" class="item-slick3" data-thumb="<?php echo " {$img3}" ?>">
+											<div alt="Imagen producto 3" class="item-slick3" data-thumb="<?php echo "
+												{$img3}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													
-														<img alt = "Imagen proveedor" src="<?php echo " {$img3}" ?>">
-													
-													
-							
-													<a alt = "Imagen producto 3" class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo " {$img3}" ?>">
+													<img alt="Imagen proveedor" src="<?php echo " {$img3}" ?>">
+													<a alt="Imagen producto 3"
+														class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
+														href="<?php echo " {$img3}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-
 											</div>
-
 											<div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													
-													<video class ="video" src="<?php echo " {$video1}" ?>"  controls>
-
-													</video>
-													
-													
-													
-							
-												<!-- 	<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" src="images/bari/videoBari.mp4">
-														<i class="fa fa-expand"></i>
-													</a> -->
+													<div class="video">
+														<video style="width: 100%;" class="" src="<?php echo " {$video1}" ?>" controls>
+														</video>
+													</div>
 												</div>
-
 											</div>
-
-				<!-- 							<div   alt = "Imagen producto 3" id="proveedor" class="item-slick3" data-thumb="<?php echo " {$imgProv}" ?>">
-												<div  class="wrap-pic-w pos-relative">
-													
-														<img id="proveedor"  alt = "Imagen producto 3" src="<?php echo " {$imgProv}" ?>">
-													
-													
-							
-													<a id="aProveedor"  alt = "Imagen producto 3" class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="<?php echo " {$imgProv}" ?>">
-														<i class="fa fa-expand"></i>
-													</a>
-												</div>
-
-											</div> -->
-
 										</div>
-
-										
-
-										
-
-										
 									</div>
-
 									<div class="masDatos">
 										<a href="<?php echo " {$hrefCapacitacion}" ?>">
 											<button type="button" class="botonDatos waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
 											p-lr-15 trans-04">Capacitación Bari</button>
 										</a>
-
 										<a href="<?php echo " {$hrefManual}" ?>">
 											<button type="button" class="botonDatos waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
 											p-lr-15 trans-04">Manual Bari</button>
 										</a>
-										
 									</div>
-
+									<div class="ayuda">
+										<h5>Ayuda e información</h5>
+										<a
+											href="https://wa.me/3102242724?text=Hola,%20estoy%20interesado%20en%20un%20producto%20de%20Inssa%20Prime">
+											<img class="imgAyuda" src="images/ayuda.png" alt="">
+										</a>
+									</div>
 									<div class="qr">
-										
 										<a id="aQr" href="">
 											<img alt="Código QR" id="codigo">
 										</a>
-
-										
 									</div>
-
 									<div class="linkPago">
 										<a id="linkPago" href="">
 											<label readonly type="url" id="link" name="link" for=""></label>
 										</a>
 									</div>
-
-									
-								
-									<input  type="hidden" id="link" name="link" require />
-									
+									<input type="hidden" id="link" name="link" require />
 								</div>
-								
-							
 							</div>
-
-
 							<div class="col-md-6 col-lg-5 ">
 								<div class="p-r-50 p-t-5 p-lr-0-lg">
-
 									<input type="hidden" id="producto" name="producto" require value="<?php echo "{$produc}" ?>"/>
-
 									<input type="hidden" id="ica" name="ica" require />
-
 									<input type="hidden" id="fleteI" name="fleteI" require />
-
 									<input type="hidden" id="kit" name="kit" require />
-
-									
-									
-
-
-
 									<h4 class="mtext-105 cl2 js-name-detail p-b-14" id="nombre">
-
 									</h4>
-
 									<span class="mtext-106 cl2" id="subtotalText">
-
 									</span>
-
-									<p class="stext-102 cl3 p-t-23">
-
+									<p id="stock">
+										Cantidad en stock 14
 									</p>
-
+									<p class="stext-102 cl3 p-t-23">
+									</p>
 									<!--  -->
 									<form id="formulario" name="formulario" action="wompi.php" method="post">
 										<input type="hidden" id="ciudad1" name="ciudad1">
-
 										<div class="p-t-33">
-
-											
-
-
-						<div class="contRadio">
-
-							<div class="radio">
-
-							
-							<input type="hidden" id="totalWompi" name="totalWompi" value = "" />
-							
-									<label>
-										<input class="radio1" id="cc" type="radio" name="identificacion" checked value="Cedula"  onclick="selectRadioB()"> Cédula
-									</label>
-
-					
-
-							</div>
-							<div class="radio">
-								<label>
-									<input class="radio2" id="nit" type="radio" name="identificacion" value="NIT" onclick="selectRadioB()" > NIT
-								</label>
-								
-							</div>
-							<fieldset >
-		
-
-							
-					
-							</fieldset>
-						</div>
-											
-
-
-						<div class="flex-w flex-r-m p-b-10"
-						onmouseover="describeSelectParamAgente()"
-						onmouseout="clearParamDescrAgente();"
-						id="agente" name = "agente" style="display: none">
-						<div class="labelForm size-203 respon6">
-						¿Agente de retención?
-						</div>
-
-						<div class="selecForm size-204 respon6-next">
-							<div class="rs1-select2  bg0">
-								<input type="checkbox" name="CheckAgente" id="CheckAgente" onclick="cambios()"> 
-
-								<div class="dropDownSelect2"></div>
-							</div>
-						</div>
-
-
-
-					</div>
-
-					
-<!-- 					<div class="flex-w flex-r-m p-b-10"
-					onmouseover="describeSelectParamAgente()"
-					onmouseout="clearParamDescrAgente();"
-					id="agente" name = "agente" style="display: none;">
-					<div class="size-203 respon6">
-						Agente de retención?
-					</div>
-
-					<div class="size-204 respon6-next">
-						<div class="rs1-select2 bor8 bg0">
-							<select class="js-select2" type="text" name="persona"
-								id="persona" onchange="ShowSelectAgente();" >
-								<option disabled selected>Escoja una opción</option>
-								<option value="Si">Si</option>
-								<option value="No">No</option>
-
-							</select>
-							<div class="dropDownSelect2"></div>
-						</div>
-					</div>
-
-
-
-				</div> -->
-
-					
-		
-
-
-							
-
-<!-- 
+											<div class="contRadio">
+												<div class="radio">
+													<input type="hidden" id="totalWompi" name="totalWompi" value="" />
+													<label>
+														<input class="radio1" id="cc" type="radio" name="identificacion"
+															checked value="Cedula" onclick="selectRadioB()"> Cédula
+													</label>
+												</div>
+												<div class="radio">
+													<label>
+														<input class="radio2" id="nit" type="radio"
+															name="identificacion" value="NIT" onclick="selectRadioB()">
+														NIT
+													</label>
+												</div>
+												<fieldset>
+												</fieldset>
+											</div>
 											<div class="flex-w flex-r-m p-b-10"
 												onmouseover="describeSelectParamAgente()"
-												onmouseout="clearParamDescrAgente();"
-												id="agente" name = "agente" style="display: none;">
-												<div class="size-203 respon6">
-													Agente de retención?
+												onmouseout="clearParamDescrAgente();" id="agente" name="agente"
+												style="display: none">
+												<div class="labelForm size-203 respon6">
+													¿Agente de retención?
 												</div>
-
-												<div class="size-204 respon6-next">
-													<div class="rs1-select2 bor8 bg0">
-														<select class="js-select2" type="text" name="persona"
-															id="persona" onchange="ShowSelectAgente();" >
-															<option disabled selected>Escoja una opción</option>
-															<option value="Si">Si</option>
-															<option value="No">No</option>
-
-														</select>
+												<div class="selecForm size-204 respon6-next">
+													<div class="rs1-select2  bg0">
+														<input type="checkbox" name="CheckAgente" id="CheckAgente"
+															onclick="cambios()">
 														<div class="dropDownSelect2"></div>
 													</div>
 												</div>
-
-
-
-											</div> -->
-
-											<div id="descriptionBoxAgente" class="descriptionBox">Descripción  de que
+											</div>
+											<div id="descriptionBoxAgente" class="descriptionBox">Descripción de que
 												es un agente de retención</div>
-
-
 											<div class="flex-w flex-r-m p-b-10"
 												onmouseover="describeSelectParamDepart()"
 												onmouseout="clearParamDescrDepart();" name="CMunicipios"
@@ -439,20 +261,15 @@ require "variables.php";
 														<div class="dropDownSelect2"></div>
 													</div>
 												</div>
-
 											</div>
-
 											<div id="descriptionBoxMunicipios" class="descriptionBox">Descripción de
 												municipio de retención</div>
-
-
 											<div class="flex-w flex-r-m p-b-10 cDelivery"
 												onmouseover="describeSelectParamDelivery()"
 												onmouseout="clearParamDescrDelivery();" name="cDelivery" id="cDelivery">
 												<div class="labelForm labelForm size-203 respon6">
 													Envió
 												</div>
-
 												<div class="selecForm selecForm size-204 respon6-next">
 													<div class="rs1-select2 bor8 bg0">
 														<select class="js-select2" type="text" name="delivery"
@@ -460,22 +277,19 @@ require "variables.php";
 															<option disabled selected>Escoja una opción</option>
 															<option value="Domicilio">Domicilio</option>
 															<option value="fisico">Recoger en punto físico</option>
-
 														</select>
 														<div class="dropDownSelect2"></div>
 													</div>
 												</div>
 											</div>
-
 											<div id="descriptionBoxDelivery" class="descriptionBox">Descripción de
 												Envió</div>
-
 											<div class="flex-w flex-r-m p-b-10 cCiudadDelivery"
 												onmouseover="describeSelectCiudadDelivery()"
 												onmouseout="clearParamDescrCiudadDelivery();" name="cCiudadDelivery"
 												id="cCiudadDelivery" style="display: none ;">
 												<div class="labelForm size-203 respon6">
-													Ciudad de envío
+													Ciudad de envío por cargger
 												</div>
 												<div class="selecForm size-204 respon6-next">
 													<div class="rs1-select2 bor8 bg0">
@@ -487,13 +301,9 @@ require "variables.php";
 														<div class="dropDownSelect2"></div>
 													</div>
 												</div>
-
 											</div>
-
 											<div id="descriptionBoxCiudadDelivery" class="descriptionBox">Descripción de
 												ciudad delivery</div>
-
-
 											<div class="flex-w flex-r-m p-b-10 cCiudadSucursal"
 												onmouseover="describeSelectCiudadSucursal()"
 												onmouseout="clearParamDescrCiudadSucursal();" name="cCiudadSucursal"
@@ -514,138 +324,93 @@ require "variables.php";
 														<div class="dropDownSelect2"></div>
 													</div>
 												</div>
-
 											</div>
-
 											<div id="descriptionBoxCiudadSucursal" class="descriptionBox">Descripción de
 												ciudad de recogida máquina</div>
-
-
 											<div class="flex-w flex-r-m p-b-10 cproveedor"
 												onmouseover="describeSelectproveedor()"
 												onmouseout="clearParamDescrproveedor();" name="cproveedor"
-												id="cproveedor" style="display: none" >
+												id="cproveedor" style="display: none">
 												<div class="labelForm size-203 respon6">
-													Kit
+													Solicita tu kit aliado
 												</div>
 												<div class="selecForm size-204 respon6-next">
 													<div class="rs1-select2  bg0">
-													<input type="checkbox" name="Checkproveedor" id="Checkproveedor" onclick="cambios()"> 
-
+														<input type="checkbox" name="Checkproveedor" id="Checkproveedor"
+															onclick="cambios()">
 														<div class="dropDownSelect2"></div>
 													</div>
 												</div>
-
 											</div>
-
-											<div id="descriptionBoxproveedor" class="descriptionBox">Descripción de proveedor</div>
-
-
-<div class = "contImgProve">
-
-	<img  class = "contImgProve" id = "imgProve" src="" alt="">
-</div>
-
-
-
-
-
-											<div class="flex-w flex-r-m p-b-10">
-												<div class="size-204 flex-w flex-m respon6-next">
+											<div id="descriptionBoxproveedor" class="descriptionBox">Descripción de
+												proveedor</div>
+											<div>
+												<h6 id="textImgProve"></h6>
+												<div class="contImgProve">
+													<img class="imgProve" id="imgProve" src="" alt="">
+												</div>
+											</div>
+											<div class=" contContador flex-w flex-r-m p-b-10">
+												<div class=" flex-w flex-m respon6-next">
 													<div class="wrap-num-product flex-w m-r-20 m-tb-10">
-														<div
-															class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m" id="BotMenos">
+														<div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m"
+															id="BotMenos">
 															<!-- <i class="fs-16 zmdi zmdi-minus menos"></i> -->
 															<button id="menos" type="button" class=" camb fs-16 zmdi
 																	zmdi-minus">
 														</div>
-
 														<input class="mtext-104 cl3 txt-center num-product"
 															type="number" id="num-product" name="num-product" value="1">
-														<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m" id="BotMas">
+														<div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m"
+															id="BotMas">
 															<!-- <i class="fs-16 zmdi zmdi-plus mas"></i> -->
 															<button id="mas" type="button" class="camb fs-16 zmdi
 																		zmdi-plus">
-
 															</button>
 														</div>
-													</div>
-
-																	<!-- <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
-																p-lr-15 trans-04 js-addcart-detail" type="button" id =botonpagar name = "botonpagar" >
-													Pagar
-												</button>
-
-												<input class="btn  w-100 py-3 contac" type="" onclick="generarQr()" id = "boton" name="submit" value="Enviar" /> -->
-
-
-
-
-
+													</div>		
 												</div>
 											</div>
-
 										</div>
-
-
 										<input type="hidden" id="f1t1" name="f1t1" class="mtext-110 cl2">
 										</input>
-
-
-
 									</form>
-
-
-
-
-
 								</div>
-
-
-
-
 								<div class=" m-b-30">
 									<div class="bor10 p-lr-40 p-t-30 p-b-40 m-lr-0-xl p-lr-15-sm">
 										<h4 class="mtext-109 cl2 p-b-30">
-											BALANCE 
+											BALANCE
 										</h4>
-
 										<div class="flex-w flex-t bor12 p-b-13">
 											<div class="size-208">
 												<span class="stext-110 cl2">
 													Subtotal:
 												</span>
 											</div>
-
 											<div class="size-209">
 												<label id="subtotal" name="subtotal" class="mtext-110 cl2"></label>
 											</div>
 										</div>
-
 										<div class="flex-w flex-t bor12 p-b-13">
 											<div class="size-208">
 												<span class="stext-110 cl2">
 													Iva:
 												</span>
 											</div>
-
 											<div class="size-209">
 												<label id="iva" name="iva" class="mtext-110 cl2"></label>
 											</div>
 										</div>
-
 										<div class="flex-w flex-t bor12 p-b-13">
 											<div class="size-208">
 												<span class="stext-110 cl2">
 													Flete:
 												</span>
 											</div>
-
 											<div class="size-209">
 												<label id="flete" name="flete" class="mtext-110 cl2">$0.00</label>
 											</div>
 										</div>
-
 										<div id="divDescuentoIca" name="divDescuentoIca" class="flex-w flex-t
 														bor12 p-b-13" style="display: none;">
 											<div class="size-208">
@@ -653,13 +418,11 @@ require "variables.php";
 													Reteica:
 												</span>
 											</div>
-
 											<div class="size-209">
 												<label id="reteica" name="reteica" class="mtext-110 cl2">$
 												</label>
 											</div>
 										</div>
-
 										<div id="divDescuentoFuente" name="divDescuentoFuente" class="flex-w flex-t
 														bor12 p-b-13" style="display: none;">
 											<div class="size-208">
@@ -667,13 +430,11 @@ require "variables.php";
 													Retefuente:
 												</span>
 											</div>
-
 											<div class="size-209">
 												<label id="retefuente" name="retefuente" class="mtext-110 cl2">$
 												</label>
 											</div>
 										</div>
-
 										<div id="divDescuento" name="divDescuento" class="flex-w flex-t
 														bor12 p-b-13" style="display: none;">
 											<div class="size-208">
@@ -681,94 +442,26 @@ require "variables.php";
 													Total retención:
 												</span>
 											</div>
-
 											<div class="size-209">
 												<label id="descuento" name="descuento" class="mtext-110 cl2">$
 												</label>
 											</div>
 										</div>
-
-
 										<div class="flex-w flex-t p-t-27 p-b-33">
 											<div class="size-208">
 												<span class="mtext-101 cl2">
 													Total:
 												</span>
 											</div>
-
 											<div class="size-209 p-t-1">
 												<label id="total" name="total" class="mtext-110 cl2">$
 												</label>
 											</div>
 										</div>
-
-										<!-- <div class="contPago">
-											<form action="https://checkout.wompi.co/p/" method="GET" class="wompi"
-												name="wompi" id="wompi"> -->
-
-												<!-- OBLIGATORIOS -->
-
-												<!-- <input type="hidden" name="public-key"
-													value="pub_prod_jzoTpu9Es1mhKUKrbNw3ezvzImlD8AYb" />
-
-												<input type="hidden" name="currency" value="COP" />
-
-												<input type="hidden" name="amount-in-cents" id="amount-in-cents"
-													value="" />
-
-												<input type="hidden" name="reference" value="REFERENA_DE_PAGO144554551555" />
-
-												<input type="hidden" name="collect-shipping" value="true" />
-												<input type="hidden" name="collect-customer-legal-id" value="true" /> -->
-
-												<!-- OPCIONALES -->
-												<!-- <input type="hidden" name="signature:integrity"
-													value="FIRMA_DE_INTEGRIDAD" />
-													
-												<input type="hidden" name="redirect-url" value="https://inssa.com.co/" />
-												
-												
-												<input type="hidden" name="customer-data:email"
-													value="CORREO_DEL_PAGADOR" />
-
-												<input type="hidden" name="customer-data:full-name"
-													value="NOMBRE_DEL_PAGADOR" />
-
-												<input type="hidden" name="customer-data:phone-number"
-													value="NUMERO_DE_TELEFONO_DEL_PAGADOR" />
-
-												<input type="hidden" name="customer-data:legal-id"
-													value="DOCUMENTO_DE_IDENTIDAD_DEL_PAGADOR" />
-
-												<input type="hidden" name="customer-data:legal-id-type"
-													value="TIPO_DEL_DOCUMENTO_DE_IDENTIDAD_DEL_PAGADOR" />
-
-												<input type="hidden" name="shipping-address:address-line-1"
-													value="DIRECCION_DE_ENVIO" />
-
-												<input type="hidden" name="shipping-address:country"
-													value="PAIS_DE_ENVIO" />
-
-												<input type="hidden" name="shipping-address:phone-number"
-													value="NUMERO_DE_TELEFONO_DE_QUIEN_RECIBE" />
-
-												<input type="hidden" name="shipping-address:city"
-													value="CIUDAD_DE_ENVIO" />
-
-												<input type="hidden" name="shipping-address:region"
-													value="REGION_DE_ENVIO" />
-
-												<button class="waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
-																		p-lr-15 trans-04 " type="submit">Pagar con Wompi</button>
-											</form> -->
-										
-											<button class="waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
-											p-lr-15 trans-04 " type="button" id =botonpagar name = "botonpagar"  onclick="generarQr()" >
-													Pagar
-												</button>
-										</div>
-
-
+										<button class="waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
+											p-lr-15 trans-04 " type="button" id=botonpagar name="botonpagar" onclick="generarQr()">
+											Pagar
+										</button>
 									</div>
 								</div>
 							</div>
@@ -776,13 +469,10 @@ require "variables.php";
 					</div>
 				</div>
 			</div>
-
-
+			</div>
 			<div class=" js-hide-modal1">
 				<div class="container">
 					<div class="bg0 p-lr-15-lg how-pos3-parent">
-
-
 						<div class="row">
 							<div class=" col-md-6 colum">
 								<div class=" ">
@@ -791,10 +481,7 @@ require "variables.php";
 											<table class="table-shopping-cart">
 												<tr class="table_head">
 													<th class="columnT-1">Características</th>
-
-
 												</tr>
-
 												<tr class="table_row">
 													<td class="column-1">
 														<p>
@@ -845,23 +532,15 @@ require "variables.php";
 														<p>
 															<?php echo " {$textCarac16}" ?>
 														</p>
-														<p id = "textProv">
-															
+														<p id="textProv">
 														</p>
 													</td>
-
-
 												</tr>
-
-
 											</table>
 										</div>
-
-
 									</div>
 								</div>
 							</div>
-
 							<div class=" col-md-6 colum">
 								<div class=" ">
 									<div class=" m-lr-0-xl">
@@ -869,12 +548,9 @@ require "variables.php";
 											<table class="table-shopping-cart">
 												<tr class="table_head">
 													<th class="columnT-1">Condiciones</th>
-
-
 												</tr>
-
 												<tr class="table_row">
-													<td class="column-1">														
+													<td class="column-1">
 														<p>
 															<?php echo " {$textCndi1}" ?>
 														</p>
@@ -891,36 +567,25 @@ require "variables.php";
 															<?php echo " {$textCndi5}" ?>
 														</p>
 														<p id="alertaIca">
-															
 														</p>
-													</p>
-													<p id="alertaDelivery">
-														
-													</p>
+														</p>
+														<p id="alertaDelivery">
+														</p>
 													</td>
-
-
 												</tr>
-
-
 											</table>
 										</div>
-
-
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
-
-
-
-
-
+			<div class="aliados">
+				<img class="imgAliados" src="images/Wompi_LogoPrincipal.png" alt="">
+				<img class="imgAliados" src="images/logoCargger.jpeg" alt="">
+			</div>
 			<!-- Footer Start -->
 			<div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
 				<div class="container py-5">
@@ -935,16 +600,10 @@ require "variables.php";
 								Asesoramos, gestionamos, conseguimos y ofrecemos oportunidades de nuevos negocios.
 							</p>
 							<div class="d-flex pt-4">
-								<!--               <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-twitter"></i
-              ></a> -->
 								<a class="btn btn-square btn-outline-primary me-1"
 									href="https://www.facebook.com/INSSASAS"><i class="fab fa-facebook-f"></i></a>
 								<a class="btn btn-square btn-outline-primary me-1"
 									href="https://www.youtube.com/@inssasas/videos"><i class="fab fa-youtube"></i></a>
-								<!--          <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a> -->
 								<a class="btn btn-square btn-outline-primary me-0"
 									href="https://www.instagram.com/inssasas/"><i class="fab fa-instagram"></i></a>
 							</div>
@@ -963,63 +622,11 @@ require "variables.php";
 							<p><i class="fa fa-phone-alt me-3"></i> 310 224 2724</p>
 							<p><i class="fa fa-envelope me-3"></i> mercadeo@inssa.com.co</p>
 						</div>
-						<!--           <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Quick Links</h4>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
-          </div> -->
-						<!--           <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Newsletter</h4>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
-          </div> -->
+		
 					</div>
 				</div>
-				<!--       <div class="container-fluid copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a href="#">Your Site Name</a>, All Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-
-				Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-              <br />Distributed By:
-              <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
 			</div>
 			<!-- Footer End -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 			<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 			<!--===============================================================================================-->
@@ -1032,12 +639,10 @@ require "variables.php";
 			<!--===============================================================================================-->
 			<script src="vendor/select2/select2.min.js"></script>
 			<script>
-
 				$(".js-select2").each(function () {
 					$(this).select2({
 						minimumResultsForSearch: 20,
 						dropdownParent: $(this).next('.dropDownSelect2')
-
 					});
 				})
 			</script>
@@ -1072,50 +677,28 @@ require "variables.php";
 			<!--===============================================================================================-->
 			<script src="vendor/sweetalert/sweetalert.min.js"></script>
 			<script>
-
 				$('.js-addcart-detail').each(function () {
-
 					var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
-
 					$(this).on('click', function () {
-
-
-
 						var selectCiudad = document.getElementById("delivery").value;
 						console.log("delivery", selectCiudad);
-
-
 						var selectPersona = document.getElementById("persona").value;
 						console.log("persona", selectPersona);
-
 						if (selectCiudad == "Escoja una opción" && selectPersona == "Escoja una opción") {
 							console.log("pailas");
 							Swal.fire('No puedes dejar campos vacios')
 						} else {
-
-
-
 							mensaje()
 							console.log("bn", selectCiudad, selectPersona);
 						}
-
 					});
 				});
-
 			</script>
-
 			<!--===============================================================================================-->
 			<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 			<!--===============================================================================================-->
 			<script src="js/main.js"></script>
 			<script src="ciudades.js"></script>
 			<script src="departamentosDelivery.js"></script>
-
 </body>
-
 </html>
-
-<?php
-
-
-?>

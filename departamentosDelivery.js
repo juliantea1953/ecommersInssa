@@ -10,7 +10,7 @@ const temp = [
       { ciudad: "Armenia Antioquia",
       variables: [
         {
-          ica: "1",
+          ica: "",
           fleteBari: "63000",
           fleteParis: "111000",
           fleteTurin: "49600",
@@ -110,7 +110,7 @@ const temp = [
         ciudad: "Bogotá Dc",
         variables: [
           {
-            ica: "9",
+            ica: "11.04",
             fleteBari: "57800",
             fleteParis: "103000",
             fleteTurin: "43000",
@@ -2281,7 +2281,7 @@ const temp = [
       { ciudad: "Cali",
       variables: [
         {
-          ica: "187",
+          ica: "7.7",
           fleteBari: "63000",
           fleteParis: "110000",
           fleteTurin: "49000",

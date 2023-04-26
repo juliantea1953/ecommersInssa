@@ -4,10 +4,10 @@ $produc= $_GET['producto'];
 
 switch ($produc) {
     case "bari":
-        $img1 = "images/bari/bari1.jpeg";
-        $img2 = "images/bari/bari1.jpeg";
+        $img1 = "images/bari/bari1.jpg";
+        $img2 = "images/bari/bari.jpeg";
         $img3 = "images/bari/bari.jpeg";
-        $imgvideo1 = "images/bari/bari.jpeg";
+        $imgvideo1 = "images/bari/miniVideoBari.jpeg";
         $textCarac1 = "• Dispensa 6 bebidas: espresso, americano, agua caliente,
         capuccino, latte, leche caliente.";
         $textCarac2 = "• Pantalla touch de 9.5 x 5.5 cm.";
@@ -23,7 +23,7 @@ switch ($produc) {
         $textCarac12 = "• Voltaje: 110v";
         $textCarac13 = "• Garantía 12 meses o 8.000 servicios.";
         $textCarac14 = "• KIT DE FILTROS ";
-        $textCarac15 = "";
+        $textCarac15 = "• KIT DE BOMBA AUTÓNOMA";
         $textCarac16 = "";
         $textCndi1 = "• AL UTILIZAR EL SISTEMA DE LECHE FRESCA, SE REQUIERE ENJUAGUE 
         CON UN PRODUCTO DESINCRUSTANTE DE SARRO (PRODUCTO RINZA)";

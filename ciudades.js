@@ -32,6 +32,7 @@ new QRious({
 }); 
 
 async function wompiapi() {
+  
   totalwompi = document.getElementById("totalWompi").value
   sku = document.getElementById("nombre").innerHTML
   tot = parseInt(totalwompi) 
@@ -170,8 +171,16 @@ console.log("kit", kit);
 
 
 }
-
+var stock = 14 
 async function generarQr() {
+
+
+cantidadProducto = document.getElementById("num-product").value
+
+stockTotal = stock - cantidadProducto
+stock = stockTotal
+  console.log("asssssssssssssssssssssssssssssssss",stock);
+  document.getElementById("stock").innerHTML = "Cantidad en stock "+stockTotal+""
 var url = document.getElementById("linkPago").innerHTML
 window.open(url, '_blank');
 
@@ -271,7 +280,7 @@ function selectRadioB() {
 
 switch (producto) {
   case "bari":
-    var precioNeto = 3960000 * cantidadProducto;
+    var precioNeto = 4250000 * cantidadProducto;
 
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
@@ -280,15 +289,15 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "$3,960,000.00";
+      "$4,250,000.00";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "$3,960,000.00";
+      "$4,250,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Bari";
-    envioIva = document.getElementById("iva").innerHTML = "$752,400.00";
+    envioIva = document.getElementById("iva").innerHTML = "$807,500.00";
     envioTotal = document.getElementById("total").innerHTML =
-      "$4,712,400.00";
+      "$5,057,500.00";
 
-    totalwompiP = document.getElementById("totalWompi").value = 4712400 * 100;
+    totalwompiP = document.getElementById("totalWompi").value = 5057500 * 100;
     wompiapi();
 
     break;
@@ -516,6 +525,7 @@ async function cambios(selectPersona) {
   }
 
   if (document.getElementById("Checkproveedor").checked) {
+
     
     console.log("asdasda", ciudadDelivery);
     console.log("sucursal", ciudadSucursal);
@@ -524,6 +534,7 @@ async function cambios(selectPersona) {
      
       
       if (ciudadSucursal === "Escoja una opción") {
+        document.getElementById("textImgProve").innerHTML = ""
         document.getElementById("imgProve").src=""
             document.getElementById("textProv").innerHTML = ""
             document.getElementById("kit").value = ""
@@ -534,24 +545,28 @@ async function cambios(selectPersona) {
        
         switch (ciudadSucursal) {
           case "Medellín" :
+            document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
             document.getElementById("imgProve").src="images/bari/proveedorMedellin.jpeg"
-         document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
+         document.getElementById("textProv").innerHTML = "• Especificación de productos aliado Medellín 'Shaddai Insumos'"
          document.getElementById("kit").value = "+ kit de proveedor"
             break;
     
             case "Bogotá Dc":
+              document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
               document.getElementById("imgProve").src="images/bari/proveedorBogota.png"
-              document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
+              document.getElementById("textProv").innerHTML = "• Especificación de productos aliado Bogotá 'Capuccino al paso'"
               document.getElementById("kit").value = "+ kit de proveedor"
               break
     
               case "Cali":
+                document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
                 document.getElementById("imgProve").src="images/bari/proveedosCali.jpeg"
-                document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Cali"
+                document.getElementById("textProv").innerHTML = "• Especificación de aliado Cali 'Arabica Insumos'"
                 document.getElementById("kit").value = "+ kit de proveedor"
                 break
         
           default:
+            document.getElementById("textImgProve").innerHTML = ""
             document.getElementById("imgProve").src=""
             document.getElementById("textProv").innerHTML = ""
             document.getElementById("kit").value = ""
@@ -561,29 +576,34 @@ async function cambios(selectPersona) {
       }
     }
     else{
+      document.getElementById("textImgProve").innerHTML = ""
       document.getElementById("imgProve").src=""
             document.getElementById("textProv").innerHTML = ""
             document.getElementById("kit").value = ""
       switch (ciudadDelivery) {
         case "Medellín" :
+          document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
           document.getElementById("imgProve").src="images/bari/proveedorMedellin.jpeg"
           document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
        document.getElementById("kit").value = "+ kit de proveedor"
           break;
   
           case "Bogotá Dc":
+            document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
             document.getElementById("imgProve").src="images/bari/proveedorBogota.png"
             document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
             document.getElementById("kit").value = "+ kit de proveedor"
             break
   
             case "Cali":
+              document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
               document.getElementById("imgProve").src="images/bari/proveedosCali.jpeg"
               document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Cali"
               document.getElementById("kit").value = "+ kit de proveedor"
               break
       
         default:
+          document.getElementById("textImgProve").innerHTML = ""
           document.getElementById("imgProve").src=""
           document.getElementById("textProv").innerHTML = ""
           document.getElementById("kit").value = ""
@@ -594,6 +614,7 @@ async function cambios(selectPersona) {
     
   }
   else{
+    document.getElementById("textImgProve").innerHTML = ""
     document.getElementById("imgProve").src=""
     document.getElementById("textProv").innerHTML = ""
     document.getElementById("kit").value = ""
