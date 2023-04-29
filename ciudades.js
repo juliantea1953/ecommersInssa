@@ -404,13 +404,14 @@ async function funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuen
   var totalPrecioNeto = precioNeto * cantidadProducto;
   totalIva = iva * cantidadProducto;
   totalFlete = flete * cantidadProducto;
-  reteika = ((precioNeto * reteika)/100) * cantidadProducto;
+  reteika = ((precioNeto * reteika)/1000) * cantidadProducto;
   reteFuente = reteFuente * cantidadProducto;
   indescuento = (reteFuente + Number(reteika));
   total = totalPrecioNeto + totalIva + totalFlete - indescuento;
   tatalWompi = total * 100;
 
   console.log("ica func", reteika);
+  console.log("neto", precioNeto);
 
     envioTotalWompii = document.getElementById("totalWompi").value = tatalWompi;
     envioTotalWompiii = document.getElementById("totalWompi").innerHTML = tatalWompi;
@@ -963,8 +964,24 @@ function ShowSelectAgente() {
 
 function ShowSelectedMunicipios() {
   selectCiudad = document.getElementById("municipios").value
+
   var alerta = document.getElementById("alertaIca")
-  if (selectCiudad == "Otra") {
+
+  if (selectCiudad === "Bogota") {
+    x = 11.04
+    reteika = x
+    document.getElementById("ica").value = reteika
+    
+  }
+
+  if (selectCiudad === "Cali") {
+    x = 7.7
+    reteika = x
+    document.getElementById("ica").value = reteika
+    
+  }
+
+  `if (selectCiudad != "Bogotá Dc" && selectCiudad != "Cali") {
 
     alerta.innerHTML = "• Sin ica"
     alerta.style.color = "red"
@@ -977,7 +994,7 @@ function ShowSelectedMunicipios() {
       cancelButtonColor: "#d33",
       confirmButtonText: "ok",
     })
-  }
+  }`
 
   setTimeout(cambios, 3);
 
@@ -991,6 +1008,24 @@ function ShowSelectedDelivery() {
 }
 
 function ShowSelectedCiudadDelivery() {
+  selectCiudad = document.getElementById("municipios").value
+
+  var alerta = document.getElementById("alertaIca")
+
+  if (selectCiudad === "Bogota") {
+    x = 11.04
+    reteika = x
+    document.getElementById("ica").value = reteika
+    
+  }
+
+  if (selectCiudad === "Cali") {
+    x = 7.7
+    reteika = x
+    document.getElementById("ica").value = reteika
+    
+  }
+  
   ciudadDelivery = document.getElementById("ciudadDelivery").value
   var alerta = document.getElementById("alertaDelivery")
   if (ciudadDelivery == "Otra") {

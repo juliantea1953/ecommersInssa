@@ -5,7 +5,7 @@ $produc= $_GET['producto'];
 switch ($produc) {
     case "bari":
         $img1 = "images/bari/bari1.jpg";
-        $img2 = "images/bari/bari.jpeg";
+        $img2 = "images/bari/Bari2.jpg";
         $img3 = "images/bari/bari.jpeg";
         $imgvideo1 = "images/bari/miniVideoBari.jpeg";
         $textCarac1 = "• Dispensa 6 bebidas: espresso, americano, agua caliente,

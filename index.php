@@ -10,7 +10,7 @@ require "variables.php";
 <html lang="en">
 
 <head>
-	<title>Producto</title>
+	<title>INSSA PRIME</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -254,9 +254,11 @@ require "variables.php";
 												<div class="selecForm selecForm size-204 respon6-next">
 													<div class="rs1-select2 bor8 bg0">
 														<select class="js-select2" type="text"
-															onchange="ShowSelectedMunicipios(), ShowSelectedCMunicipios();"
+															onchange="ShowSelectedMunicipios();"
 															name="municipios" id="municipios" require>
 															<option disabled selected>Escoja una opción</option>
+															<option value="Bogota">Bogotá DC</option>
+															<option value="Cali">Cali</option>
 														</select>
 														<div class="dropDownSelect2"></div>
 													</div>
