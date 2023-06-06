@@ -2,7 +2,7 @@
 
 
 var producto = document.getElementById("producto").value;
-console.log(producto);
+console.log(producto,"aaaaaaaaaa");
 
 var cantidadProducto = document.getElementById("num-product").value;
 var cantidadProducto = parseInt(cantidadProducto);
@@ -42,19 +42,32 @@ console.log("kit", kit);
   
 
   if (validarDelivery === "Domicilio") {
+    console.log("acaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
     var settings = await {
-      "url": "https://sandbox.wompi.co/v1/payment_links",
+       "url": "https://sandbox.wompi.co/v1/payment_links",
+      //"url": "https://production.wompi.co/v1/payment_links",
       "method": "POST",
       "timeout": 0,
       "headers": {
-        "Authorization": "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
+         "Authorization": "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
+        //"Authorization": "Bearer prv_prod_1ZVu4OhiyKTGLRO5SyIqWRWb3q7b8i8t",
+
         "Content-Type": "application/json"
       },
       "data": JSON.stringify({
         "name": sku,
         "description": "Compra de " + sku + " "+ kit + " por medio de INSSA Prime",
         "single_use": true,
-        "collect_shipping": true,
+        "collect_shipping": false,
+        "shipping_address": {
+          "city": "Medell",
+          "name": "56465asdasd",
+          "region": "Cesar",
+          "country": "CO",
+          "phone_number": "319 3531729",
+          "address_line_1": "carrera 74I # 60A - 28 sur",
+          "address_line_2": "asdasd"
+        },
         "collect_customer_legal_id": false,
         "amount_in_cents": tot,
         "currency": "COP",
@@ -105,11 +118,14 @@ console.log("kit", kit);
   }
   else{
     var settings = await {
-      "url": "https://sandbox.wompi.co/v1/payment_links",
+       "url": "https://sandbox.wompi.co/v1/payment_links",
+      //"url": "https://production.wompi.co/v1/payment_links",
+      
       "method": "POST",
       "timeout": 0,
       "headers": {
-        "Authorization": "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
+         "Authorization": "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
+        //"Authorization": "Bearer prv_prod_1ZVu4OhiyKTGLRO5SyIqWRWb3q7b8i8t",
         "Content-Type": "application/json"
       },
       "data": JSON.stringify({
@@ -180,7 +196,7 @@ cantidadProducto = document.getElementById("num-product").value
 stockTotal = stock - cantidadProducto
 stock = stockTotal
   console.log("asssssssssssssssssssssssssssssssss",stock);
-  document.getElementById("stock").innerHTML = "Cantidad en stock "+stockTotal+""
+  // document.getElementById("stock").innerHTML = "Cantidad en stock "+stockTotal+""
 var url = document.getElementById("linkPago").innerHTML
 window.open(url, '_blank');
 
@@ -525,101 +541,127 @@ async function cambios(selectPersona) {
 
   }
 
-  if (document.getElementById("Checkproveedor").checked) {
+  // if (document.getElementById("Checkproveedor").checked) {
 
     
-    console.log("asdasda", ciudadDelivery);
-    console.log("sucursal", ciudadSucursal);
+  //   console.log("asdasda", ciudadDelivery);
+  //   console.log("sucursal", ciudadSucursal);
 
-    if (ciudadDelivery === "Escoja una opción" ) {
+  //   if (ciudadDelivery === "Escoja una opción" ) {
      
       
-      if (ciudadSucursal === "Escoja una opción") {
-        document.getElementById("textImgProve").innerHTML = ""
-        document.getElementById("imgProve").src=""
-            document.getElementById("textProv").innerHTML = ""
-            document.getElementById("kit").value = ""
-      }
+  //     if (ciudadSucursal === "Escoja una opción") {
+  //       document.getElementById("textImgProve").innerHTML = ""
+  //       document.getElementById("imgProve").src=""
+  //           document.getElementById("textProv").innerHTML = ""
+  //           document.getElementById("kit").value = ""
+  //     }
       
-      else{
+  //     else{
        
        
-        switch (ciudadSucursal) {
-          case "Medellín" :
-            document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
-            document.getElementById("imgProve").src="images/bari/proveedorMedellin.jpeg"
-         document.getElementById("textProv").innerHTML = "• Especificación de productos aliado Medellín 'Shaddai Insumos'"
-         document.getElementById("kit").value = "+ kit de proveedor"
-            break;
+  //       switch (ciudadSucursal) {
+  //       //   case "Medellín" :
+  //       //     document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
+  //       //     document.getElementById("imgProve").src="images/bari/proveedorMedellin.jpeg"
+  //       //  document.getElementById("textProv").innerHTML = "• Especificación de productos aliado Medellín 'Shaddai Insumos'"
+  //       //  document.getElementById("kit").value = "+ kit de proveedor"
+  //       //     break;
     
-            case "Bogotá Dc":
-              document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
-              document.getElementById("imgProve").src="images/bari/proveedorBogota.png"
-              document.getElementById("textProv").innerHTML = "• Especificación de productos aliado Bogotá 'Capuccino al paso'"
-              document.getElementById("kit").value = "+ kit de proveedor"
-              break
+  //           case "Bogotá Dc":
+  //             document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
+  //             document.getElementById("imgProve").src="images/bari/proveedorBogota.png"
+  //             document.getElementById("textProv").innerHTML = "• Especificación de productos aliado Bogotá 'Capuccino al paso'"
+  //             document.getElementById("kit").value = "+ kit de proveedor"
+  //             break
     
-              case "Cali":
-                document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
-                document.getElementById("imgProve").src="images/bari/proveedosCali.jpeg"
-                document.getElementById("textProv").innerHTML = "• Especificación de aliado Cali 'Arabica Insumos'"
-                document.getElementById("kit").value = "+ kit de proveedor"
-                break
+  //             // case "Cali":
+  //             //   document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
+  //             //   document.getElementById("imgProve").src="images/bari/proveedosCali.jpeg"
+  //             //   document.getElementById("textProv").innerHTML = "• Especificación de aliado Cali 'Arabica Insumos'"
+  //             //   document.getElementById("kit").value = "+ kit de proveedor"
+  //             //   break
         
-          default:
-            document.getElementById("textImgProve").innerHTML = ""
-            document.getElementById("imgProve").src=""
-            document.getElementById("textProv").innerHTML = ""
-            document.getElementById("kit").value = ""
+  //         default:
+  //           document.getElementById("textImgProve").innerHTML = ""
+  //           document.getElementById("imgProve").src=""
+  //           document.getElementById("textProv").innerHTML = ""
+  //           document.getElementById("kit").value = ""
     
-            break;
-        }
-      }
-    }
-    else{
-      document.getElementById("textImgProve").innerHTML = ""
-      document.getElementById("imgProve").src=""
-            document.getElementById("textProv").innerHTML = ""
-            document.getElementById("kit").value = ""
-      switch (ciudadDelivery) {
-        case "Medellín" :
-          document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
-          document.getElementById("imgProve").src="images/bari/proveedorMedellin.jpeg"
-          document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
-       document.getElementById("kit").value = "+ kit de proveedor"
-          break;
+  //           break;
+  //       }
+  //     }
+  //   }
+  //   else{
+  //     document.getElementById("textImgProve").innerHTML = ""
+  //     document.getElementById("imgProve").src=""
+  //           document.getElementById("textProv").innerHTML = ""
+  //           document.getElementById("kit").value = ""
+  //     switch (ciudadDelivery) {
+  //     //   case "Medellín" :
+  //     //     document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
+  //     //     document.getElementById("imgProve").src="images/bari/proveedorMedellin.jpeg"
+  //     //     document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Medellín"
+  //     //  document.getElementById("kit").value = "+ kit de proveedor"
+  //     //     break;
   
-          case "Bogotá Dc":
-            document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
-            document.getElementById("imgProve").src="images/bari/proveedorBogota.png"
-            document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
-            document.getElementById("kit").value = "+ kit de proveedor"
-            break
+  //         case "Bogotá Dc":
+  //           document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
+  //           document.getElementById("imgProve").src="images/bari/proveedorBogota.png"
+  //           document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
+  //           document.getElementById("kit").value = "+ kit de proveedor"
+  //           break
   
-            case "Cali":
-              document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
-              document.getElementById("imgProve").src="images/bari/proveedosCali.jpeg"
-              document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Cali"
-              document.getElementById("kit").value = "+ kit de proveedor"
-              break
+  //           // case "Cali":
+  //           //   document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
+  //           //   document.getElementById("imgProve").src="images/bari/proveedosCali.jpeg"
+  //           //   document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Cali"
+  //           //   document.getElementById("kit").value = "+ kit de proveedor"
+  //           //   break
       
-        default:
-          document.getElementById("textImgProve").innerHTML = ""
-          document.getElementById("imgProve").src=""
-          document.getElementById("textProv").innerHTML = ""
-          document.getElementById("kit").value = ""
+  //       default:
+  //         document.getElementById("textImgProve").innerHTML = ""
+  //         document.getElementById("imgProve").src=""
+  //         document.getElementById("textProv").innerHTML = ""
+  //         document.getElementById("kit").value = ""
   
-          break;
-      }
-    }
+  //         break;
+  //     }
+  //   }
     
-  }
-  else{
+  // }
+  // else{
+  //   document.getElementById("textImgProve").innerHTML = ""
+  //   document.getElementById("imgProve").src=""
+  //   document.getElementById("textProv").innerHTML = ""
+  //   document.getElementById("kit").value = ""
+
+  // }
+
+
+  if (ciudadDelivery != "Bogotá Dc"&& ciudadSucursal != "Bogotá Dc") {
+    console.log("ninguna de las dos");
     document.getElementById("textImgProve").innerHTML = ""
     document.getElementById("imgProve").src=""
     document.getElementById("textProv").innerHTML = ""
     document.getElementById("kit").value = ""
+    document.getElementById("Checkproveedor").checked = false
+    document.getElementById("cproveedor").style.display = "none"
+  }
+  else{
+    console.log("alguna de las dos");
 
+    document.getElementById("textImgProve").innerHTML = "* Prueba de concepto, definir si incluir precio o enrutar al sitio del aliado."
+            document.getElementById("imgProve").src="images/bari/alpaso.png"
+            document.getElementById("textProv").innerHTML = "• Especificación de productos proveedor Bogotá"
+            document.getElementById("kit").value = "+ kit de proveedor"
+            document.getElementById("cproveedor").style.display = ""
+    
+  }
+
+  if (document.getElementById("Checkproveedor").checked) {
+    console.log("hace check proveedor");
+    /* window.open('https://www.capuccinoalpaso.com/', '_blank'); */
   }
 
   if (document.getElementById("CheckAgente").checked) {
@@ -657,7 +699,7 @@ async function cambios(selectPersona) {
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "";
           cCiudadSucursal.style.display = "none";
-          document.getElementById("cproveedor").style.display = ""
+          // document.getElementById("cproveedor").style.display = ""
           document.getElementById("ciudadSucursal").selectedIndex = "0";
           document.getElementById("select2-ciudadSucursal-container").innerHTML = "Escoja una opción"
   
@@ -699,8 +741,8 @@ async function cambios(selectPersona) {
           cCiudadSucursal.style.display = "";
           console.log("flete",flete);
           flete = 0;
-          document.getElementById("cproveedor").style.display = ""
-          document.getElementById("cproveedor").style.display = ""
+          // document.getElementById("cproveedor").style.display = ""
+          // document.getElementById("cproveedor").style.display = ""
   
           if (ciudadSucursal == "Escoja una opción") {
             console.log("ciudadSucursal",ciudadSucursal);
@@ -736,6 +778,11 @@ async function cambios(selectPersona) {
       var delivery = document.getElementById("delivery").value;
       var reteika = document.getElementById("ica").value;
       var flete = 0;
+      console.log("reteicaaaaa",reteika);
+      funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuente);
+   
+
+
 
       switch (delivery) {
         case "Escoja una opción":
@@ -750,7 +797,7 @@ async function cambios(selectPersona) {
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "";
           cCiudadSucursal.style.display = "none";
-          document.getElementById("cproveedor").style.display = ""
+          // document.getElementById("cproveedor").style.display = ""
           document.getElementById("ciudadSucursal").selectedIndex = "0";
           document.getElementById("select2-ciudadSucursal-container").innerHTML = "Escoja una opción"
 
@@ -793,7 +840,7 @@ async function cambios(selectPersona) {
           cCiudadSucursal.style.display = "";
           console.log("flete",flete);
           flete = 0;
-          document.getElementById("cproveedor").style.display = ""
+          // document.getElementById("cproveedor").style.display = ""
   
           if (ciudadSucursal == "Escoja una opción") {
             console.log("ciudadSucursal",ciudadSucursal);
@@ -836,9 +883,16 @@ async function cambios(selectPersona) {
   } else {
 
     console.log("no Hace check");
-
+    var reteika = document.getElementById("ica").value = 0;
+    var ica = 0;
+    var flete = 0;
+    var reteFuente = 0;
+    var reteika = 0;
     CMunicipios.style.display = "none";
-    
+
+    console.log("reteica5", reteika);
+    funct(cantidadProducto, precioNeto, iva, flete, reteika, reteFuente);
+
 
     document.getElementById("municipios").selectedIndex = "0";
     document.getElementById("select2-municipios-container").innerHTML = "Escoja una opción"
@@ -863,7 +917,7 @@ async function cambios(selectPersona) {
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "";
           cCiudadSucursal.style.display = "none";
-          document.getElementById("cproveedor").style.display = ""
+          // document.getElementById("cproveedor").style.display = ""
  
 
 
@@ -905,7 +959,7 @@ async function cambios(selectPersona) {
           var delivery = document.getElementById("delivery").value;
           cCiudadDelivery.style.display = "none";
           cCiudadSucursal.style.display = "";
-          document.getElementById("cproveedor").style.display = ""
+          // document.getElementById("cproveedor").style.display = ""
 
           if (ciudadSucursal == "Escoja una opción") {
             var ica = 0;
@@ -971,6 +1025,7 @@ function ShowSelectedMunicipios() {
     x = 11.04
     reteika = x
     document.getElementById("ica").value = reteika
+    console.log("reteicaBogota", reteika);
     
   }
 
@@ -978,6 +1033,8 @@ function ShowSelectedMunicipios() {
     x = 7.7
     reteika = x
     document.getElementById("ica").value = reteika
+    console.log("reteicaCali", reteika);
+
     
   }
 
@@ -1030,11 +1087,11 @@ function ShowSelectedCiudadDelivery() {
   var alerta = document.getElementById("alertaDelivery")
   if (ciudadDelivery == "Otra") {
 
-    alerta.innerHTML = "• Sin delivery"
+    alerta.innerHTML = "• Recuerda que si la ciudad de envío no se encuentra en la lista, ve a ayuda e información para brindarte apoyo."
     alerta.style.color = "red"
     Swal.fire({
-      title: "Titulo :",
-      text: "Mensaje de ciudad sin domicilio",
+      title: "Municipio sin cobertura",
+      text: "Si tu municipio no está listado, ve a ayuda e información para brindarte apoyo.",
       icon: "info",
     
       confirmButtonColor: "#3085d6",

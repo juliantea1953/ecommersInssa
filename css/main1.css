@@ -38,6 +38,219 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
+.direcciones{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ced4da;
+}
+.direccionSucursal{
+  font-family: Arial, sans-serif !important;
+    font-size: 15px;
+    font-weight: 400 !important;
+}
+
+.modal {
+  display: none; /* Por defecto, estará oculto */
+  position: fixed; /* Posición fija */
+  z-index: 1000; /* Se situará por encima de otros elementos de la página*/
+  padding-top: 50px; /* El contenido estará situado a 200px de la parte superior */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Algura completa */
+  overflow: auto; /* Se activará el scroll si es necesario */
+  background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+}
+
+.modal-content {
+  position: relative; /* Relativo con respecto al contenedor -modal- */
+  background-color: white;
+  margin: auto; /* Centrada */
+  padding: 20px;
+  width: 80%;
+  -webkit-animation-name: animarsuperior;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animarsuperior;
+  animation-duration: 0.5s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animarsuperior {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.cerrarDomi, .cerrarFisico {
+  color: black;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 95%;
+}
+.cerrarDomi, .cerrarFisico:hover,
+.cerrarDomi, .cerrarFisico:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+contForm{
+  --bs-gutter-y: 1rem;
+  --bs-gutter-x: 1rem;
+}
+
+.col-sm-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-floating>.form-control, .form-floating>.form-select {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 0.75rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: #8D9297; */
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 0px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: white;
+}
+.bg-dark {
+  border-radius: 1rem!important;
+  border-color: rgba(122, 122, 122, 0.658) !important;
+  border-width: 0.1px!important;
+  background-color: #000102c9 !important;
+}
+
+
+.contTextWhat {
+  position:fixed;
+  width:auto;
+  height:60px;
+  bottom:40px;
+  margin-top: 15px;
+  left:110px;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+  background-color: white;
+  border: 1px solid #000000;
+}
+
+@media (max-width: 575px) {
+  .contTextWhat {
+    position:fixed;
+    width:auto;
+    height:60px;
+    bottom:40px;
+    margin-top: 15px;
+    left:110px;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    background-color: white;
+    border: 1px solid #000000;
+    display: none;
+  }
+  .formModal {
+    margin: 10px;
+    display: block !important; 
+}
+.contLefth, .contRight {
+  width: 100% !important;
+  /* background-color: blue; */
+}
+.modal-content {
+
+  padding: 10px;
+  width: 100%;
+
+}
+}
+
+.contCara{
+  margin-top: 50px;
+}
+
+.textWhat{
+  margin: 10px 30px 0px 30px;
+  color: black;
+  font-size: smaller;
+}
+
+.whatsapp {
+  position:fixed;
+  width: 50px;;
+  height:50px;
+  bottom:40px;
+  left:20px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+
+
+
+.alertProve{
+color: red;
+}
+
+.hrefProve{
+display: flex;
+justify-content: space-around;
+}
+
+.contLogo{
+  align-content: center;
+  align-items: center;
+}
+
+.logoNavBar{
+  border-radius: 100px;
+  background-color: #FFED00;
+  height: 50px !important;
+  width: 50px;
+  margin-left: 10px;
+}
 
 .video{
   width: 100%;
@@ -55,23 +268,30 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   background-color: #0000001f;
 }
 
+.care{
+  margin-top: 30px;
+}
+
 .qr{
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 5px;
+  /* margin-left: 45px; */
 
 }
 
 .botonDatos{
-  margin-left: 15px;
+  margin: 7px;
+  margin-top: 10px;
 }
 
 .masDatos{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 55px;
+  margin-top: 35px;
+  /* margin-left: 45px; */
 }
 
 .linkPago{
@@ -80,6 +300,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  /* margin-left: 45px; */
 
 }
 .contPago{
@@ -120,7 +341,7 @@ width: 50%;
 
 .imgAliados, .imgAyuda{
   margin: 10px;
-height: 100px;
+  height: 70px;
 }
 
 .aliados {
@@ -131,9 +352,21 @@ height: 100px;
   align-items: center;
 }
 
+.contAyuda{
+  display: flex;
+
+justify-content: center;
+align-items: center;
+border: 1px solid #000000;
+margin-top: 25px;
+padding-left: 20px;
+border-radius: 5rem;
+margin-bottom: 13px;
+}
+
 .ayuda{
   width: 100%;
-
+  /* margin-left: 45px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,6 +435,12 @@ height: 100px;
 
 .contSedes{
   line-height: 3rem;
+  margin-top: 10px;
+}
+.contSedes1{
+  line-height: 3rem;
+  margin-top: 10px;
+  display: flex;
 }
 
 .contInssa{
@@ -340,6 +579,47 @@ height: 100px;
 }
 
 
+.formModal{
+  margin: 10px;
+  display: flex;
+  /* background-color: rebeccapurple; */
+}
+
+.contLefth, .contRight{
+  margin: 10px;
+  width: 50%;
+  /* background-color: blue; */
+}
+
+.data-input{
+  width: 100%;
+  /* border: 1px solid black; */
+  border-radius: 10rem;
+  border-bottom: 1px solid #42A3DA;
+}
+
+.data-input-select{
+  height: 30px;
+  border-color: #42A3DA;
+  border-radius: 5rem;
+  width: 100%;
+}
+
+.data-email, .data-cel, .data-name, .data-address, .data-address-cel, .data-address-name, .data-address2, .data-region{
+  margin-top: 20px;
+}
+
+.botonModal{
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
 
 /*//////////////////////////////////////////////////////////////////
 [ LOADDING ]*/
@@ -415,6 +695,11 @@ height: 100px;
   }
 }
 
+ul li {
+
+  list-style-type: disc !important;
+}
+
 
 /*//////////////////////////////////////////////////////////////////
 [ Header ]*/
@@ -441,16 +726,17 @@ height: 100px;
 }
 
 .header-v4 .container-menu-desktop {
-  height: 124px;
+  /* height: 124px; */
 }
 
 
 /*==================================================================
 [ Top bar ]*/
 .top-bar {
-  height: 40px;
-  background-color: #F8F9FA ;
-  margin-top: 15px;
+  height: 60px;
+  /* background-color: #F8F9FA ; */
+  /* margin-top: 15px; */
+  background-image: url("../images/fondo5.jpeg");
 }
 
 /*---------------------------------------------*/
@@ -458,7 +744,7 @@ height: 100px;
   font-family: Poppins-Regular;
   font-size: 17px;
   line-height: 1.8;
-  color: #8D9297;
+  color: #ffffff;
 }
 
 
@@ -1659,6 +1945,9 @@ height: 100px;
 [ Slick3 ]*/
 .wrap-slick3 {
   position: relative;
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+  /* background-color: #ffee0065; */
 }
 
 /*---------------------------------------------*/
@@ -1696,6 +1985,12 @@ height: 100px;
 /*---------------------------------------------*/
 .wrap-slick3-dots {
   width: 11.111111%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  
+  
+ 
 }
 
 .slick3 {
@@ -2199,7 +2494,7 @@ input.num-product::-webkit-inner-spin-button {
   font-family: Poppins-Bold;
   font-size: 13px;
   color: #555;
-  text-transform: uppercase;
+  text-transform: capitalize;
   line-height: 1.6;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -3540,8 +3835,12 @@ input.num-product::-webkit-inner-spin-button {
 
   /*---------------------------------------------*/
   .respon6 {
-    width: 65px;
+    width: 100%;
+    margin-bottom: 10px;
   }
+  .selecForm {
+    width: 100% !important;
+}
 
   .respon6-next {
     width: calc(100% - 65px);
