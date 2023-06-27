@@ -1,10 +1,11 @@
 var timePago = new Date();
-let referenciaPago = "Inssa_" + timePago.getTime() + "";
+var producto = document.getElementById("producto").value;
+let referenciaPago = producto + "_" + timePago.getTime() + "";
 document.getElementById("referenciaPago").value = referenciaPago;
 
 // console.log(referenciaPago);
 
-var producto = document.getElementById("producto").value;
+
 
 var cantidadProducto = document.getElementById("num-product").value;
 var cantidadProducto = parseInt(cantidadProducto);
@@ -40,7 +41,7 @@ detectionMovil();
 
 switch (producto) {
   case "bari":
-    var precioNeto = 4250000 * cantidadProducto;
+    var precioNeto = 100 * cantidadProducto;
 
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
@@ -51,33 +52,36 @@ switch (producto) {
     envioNeto2 = document.getElementById("subtotal").innerHTML =
       "$4,250,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Cafetera Bari";
+    sku = "Cafetera Bari"
     envioIva = document.getElementById("iva").innerHTML = "$807,500.00";
     envioTotal = document.getElementById("total").innerHTML = "$5,057,500.00";
 
     total = 5057500;
-    inventario = 10;
-    document.getElementById("redirect-url").value = "http://localhost/ecommerce/postBari.html"
+    inventario = 0;
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postBari.html"
     wompiapi();
 
     break;
 
-  case "paris":
-    var precioNeto = 6216000 * cantidadProducto;
+  case "parisEspresso":
+    var precioNeto = 8657000 * cantidadProducto;
+    // var precioNeto = 10 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
     document.getElementById("fleteI").value = 0;
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "$6,216,000.00 + IVA";
+      "$8,657,000.00 + IVA";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "$6,216,000.00";
+      "$8,657,000.00";
     envioNombre = document.getElementById("nombre").innerHTML =
-      "Cafetera Paris";
-    envioIva = document.getElementById("iva").innerHTML = "$752,400.00";
-    envioTotal = document.getElementById("total").innerHTML = "$7,397,040.00";
+      "Cafetera Paris espresso";
+      sku = "Cafetera Paris"
+    envioIva = document.getElementById("iva").innerHTML = "$1,644,830.00";
+    envioTotal = document.getElementById("total").innerHTML = "$10,301,830.00";
 
-    total = 7397040;
-    inventario = 8;
-    document.getElementById("redirect-url").value = "http://localhost/ecommerce/postParis.php"
+    total = 10301830;
+    inventario = 11;
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postParisEspresso.html"
     wompiapi();
 
     break;
@@ -94,16 +98,36 @@ switch (producto) {
       "$3,205,000.00";
     envioNombre = document.getElementById("nombre").innerHTML =
       "Cafetera Turin";
+      sku = "Cafetera Turin"
     envioIva = document.getElementById("iva").innerHTML = "$608,950.00";
     envioTotal = document.getElementById("total").innerHTML = "$3,813,950.00";
 
     total = 3813950;
-    inventario = 0;
+    inventario = 1;
     wompiapi();
-    document.getElementById("redirect-url").value = "http://localhost/ecommerce/postTurin.php"
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postTurin.html"
     break;
 
   case "berna12L":
+    // var precioNeto = 2779000 * cantidadProducto;
+    // var tasa = 19;
+    // var iva = (precioNeto * tasa) / 100;
+    // document.getElementById("fleteI").value = 0;
+
+    // envioNeto = document.getElementById("subtotalText").innerHTML =
+    // "$2,779,000.00 + IVA";
+    // envioNeto2 = document.getElementById("subtotal").innerHTML =
+    // "$2,779,000.00";
+    // envioNombre = document.getElementById("nombre").innerHTML = "Dispensadora de jugos Berna 12 L";
+    // envioIva = document.getElementById("iva").innerHTML = "$608,950.00";
+    // envioTotal = document.getElementById("total").innerHTML = "$3,813,950.00";
+
+    // total = 3307010;
+    // inventario = 10;
+    // wompiapi();
+    // url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postBerna12L.html"
+
+
     var precioNeto = 2779000 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
@@ -114,14 +138,15 @@ switch (producto) {
     envioNeto2 = document.getElementById("subtotal").innerHTML =
       "$2,779,000.00";
     envioNombre = document.getElementById("nombre").innerHTML =
-      "Dispensadora de jugos Berna 12 litros";
+      "Dispensadora de jugos Berna 12 Litros";
+      sku = " Berna 12 L"
     envioIva = document.getElementById("iva").innerHTML = "$528,010.00";
     envioTotal = document.getElementById("total").innerHTML = "$3,307,010.00";
 
     total = 3307010;
-    inventario = 5;
+    inventario = 8;
     wompiapi();
-    document.getElementById("redirect-url").value = "http://localhost/ecommerce/postBerna12L.php"
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postBerna12L.html"
     break;
 
   case "berna20L":
@@ -135,14 +160,128 @@ switch (producto) {
     envioNeto2 = document.getElementById("subtotal").innerHTML =
       "$3,016,000.00";
     envioNombre = document.getElementById("nombre").innerHTML =
-      "Dispensadora de jugos Berna 20 litros";
-    envioIva = document.getElementById("iva").innerHTML = "$573,40.00";
+      "Dispensadora de jugos Berna 20 Litros";
+      sku = " Berna 20 L"
+    envioIva = document.getElementById("iva").innerHTML = "$573,040.00";
     envioTotal = document.getElementById("total").innerHTML = "$3,589,040.00";
 
     total = 3589040;
-    inventario = 8;
+    inventario = 11;
     wompiapi();
-    document.getElementById("redirect-url").value = "http://localhost/ecommerce/postBerna20L.php"
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postBerna20L.html"
+    break;
+
+    case "grecia151T":
+    var precioNeto = 2772000 * cantidadProducto;
+    var tasa = 19;
+    var iva = (precioNeto * tasa) / 100;
+    document.getElementById("fleteI").value = 0;
+
+    envioNeto = document.getElementById("subtotalText").innerHTML =
+      "$2,772,000.00 + IVA";
+    envioNeto2 = document.getElementById("subtotal").innerHTML =
+      "$2,772,000.00";
+
+    envioNombre = document.getElementById("nombre").innerHTML = "Dispensadora de bebidas Grecia 15 litros 1 tanque";
+    sku = " Grecia 15L1T"
+    envioIva = document.getElementById("iva").innerHTML = "$526,680.00";
+    envioTotal = document.getElementById("total").innerHTML = "$3,298,680.00";
+
+    total = 3298680;
+    inventario = 9;
+    wompiapi();
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postGrecia1T.html"
+    break;
+
+  case "grecia152T":
+    var precioNeto = 4341000 * cantidadProducto;
+    var tasa = 19;
+    var iva = (precioNeto * tasa) / 100;
+    document.getElementById("fleteI").value = 0;
+
+    envioNeto = document.getElementById("subtotalText").innerHTML =
+      "$4,341,000.00 + IVA";
+    envioNeto2 = document.getElementById("subtotal").innerHTML =
+      "$4,341,000.00";
+
+    envioNombre = document.getElementById("nombre").innerHTML = "Dispensadora de bebidas Grecia 15 litros 2 tanques";
+    sku = " Grecia 15L2T"
+    envioIva = document.getElementById("iva").innerHTML = "$824,790.00";
+    envioTotal = document.getElementById("total").innerHTML = "$5,165,790.00";
+
+    total = 5165790;
+    inventario = 1;
+    wompiapi();
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postGrecia2T.html"
+    break;
+
+  case "neve110":
+    var precioNeto = 1881000 * cantidadProducto;
+    var tasa = 19;
+    var iva = (precioNeto * tasa) / 100;
+    document.getElementById("fleteI").value = 0;
+
+    envioNeto = document.getElementById("subtotalText").innerHTML =
+      "$9,900,000.00 + IVA";
+    envioNeto2 = document.getElementById("subtotal").innerHTML =
+      "$9,900,000.00";
+
+    envioNombre = document.getElementById("nombre").innerHTML =
+      "Dispensadora de helado suave Neve 110 V";
+      sku = " Neve 110V"
+    envioIva = document.getElementById("iva").innerHTML = "$1,881,000.00";
+    envioTotal = document.getElementById("total").innerHTML = "$11,781,000.00";
+
+    total = 11781000;
+    inventario = 9;
+    wompiapi();
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postNeve110.html"
+    break;
+
+  case "neve220":
+    var precioNeto = 1881000 * cantidadProducto;
+    var tasa = 19;
+    var iva = (precioNeto * tasa) / 100;
+    document.getElementById("fleteI").value = 0;
+
+    envioNeto = document.getElementById("subtotalText").innerHTML =
+    "$9,900,000.00 + IVA";
+    envioNeto2 = document.getElementById("subtotal").innerHTML =
+    "$9,900,000.00";
+
+    envioNombre = document.getElementById("nombre").innerHTML =
+      "Dispensadora de helado suave Neve 220 V";
+      sku = " Neve 220V"
+    envioIva = document.getElementById("iva").innerHTML = "$1,881,000.00";
+    envioTotal = document.getElementById("total").innerHTML = "$11,781,000.000";
+
+    total = 11781000;
+    inventario = 10;
+    wompiapi();
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postNeve220.html"
+    break;
+
+  case "asis":
+    var precioNeto = 1500000 * cantidadProducto;
+    var tasa = 19;
+    var iva = (precioNeto * tasa) / 100;
+    document.getElementById("fleteI").value = 0;
+
+    envioNeto = document.getElementById("subtotalText").innerHTML =
+      "$1,500,000.00 + IVA";
+    envioNeto2 = document.getElementById("subtotal").innerHTML =
+      "$1,500,000.00";
+
+    envioNombre = document.getElementById("nombre").innerHTML =
+      "Cafetera por goteo Asis";
+      sku = " Cafetera Asis"
+    envioIva = document.getElementById("iva").innerHTML = "$285,000.00";
+    envioTotal = document.getElementById("total").innerHTML = "$1,785,000.00";
+
+    total = 1785000;
+    inventario = 12;
+    wompiapi();
+    url = document.getElementById("redirect-url").value = "http://inssa.com.co/ecommerce/postAsis.html"
     break;
 
   default:
@@ -298,7 +437,7 @@ function validarSucursal() {
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Comunícate con nosotros",
-      cancelButtonText: "Cancelar",
+      cancelButtonText: "Continuar",
     }).then((result) => {
       if (result.isConfirmed) {
         // location.replace('https://api.whatsapp.com/send?phone=573102242724&text=Hola,%20quiero%20hacer%20una%20compra%20por%20INSSA%20Prime,%20pero%20no%20encuentro%20mi%20ciudad.');
@@ -471,31 +610,32 @@ boton2.addEventListener("click", function (evento) {
 
 async function wompiapi() {
   totalwompi = total * 100;
-  sku = document.getElementById("nombre").innerHTML;
+  // sku = document.getElementById("nombre").innerHTML;
   validarDelivery = document.getElementById("delivery").value;
 
   if (validarDelivery === "Domicilio") {
     console.log("entra a domicilioooooooooooo");
+    console.log("sku", sku);
 
     var settings = {
-      // url: "https://sandbox.wompi.co/v1/payment_links",
+      //url: "https://sandbox.wompi.co/v1/payment_links",
       url: "https://production.wompi.co/v1/payment_links",
       method: "POST",
       timeout: 0,
       headers: {
         "Content-Type": "application/json",
-        // Authorization: "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
+        //Authorization: "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
         Authorization: "Bearer prv_prod_1ZVu4OhiyKTGLRO5SyIqWRWb3q7b8i8t",
       },
       data: JSON.stringify({
-        name: sku,
-        description: "Compra de " + sku + "",
+        name: "sku",
+        description: "Compra de ",
         single_use: true,
         collect_shipping: true,
         collect_customer_legal_id: false,
         amount_in_cents: totalwompi,
         currency: "COP",
-        sku: sku,
+        sku: "sku",
         redirect_url:
           "https://api.whatsapp.com/send?phone=573102242724&text=Hola%2C%20hice%20una%20compra%20por%20INSSA%20Prime%2C%20quisiera%20confirmar%20mis%20datos.",
         customer_data: {
@@ -543,19 +683,19 @@ async function wompiapi() {
       /* location.href = raiz + id; */
     });
   } else {
-    // console.log("wompi");
+    console.log("skuFisico",sku);
     // console.log("sku", sku);
 
     // console.log("totalwompi", totalwompi);
 
     var settings = await {
-      // url: "https://sandbox.wompi.co/v1/payment_links",
+      //url: "https://sandbox.wompi.co/v1/payment_links",
       url: "https://production.wompi.co/v1/payment_links",
 
       method: "POST",
       timeout: 0,
       headers: {
-        // Authorization: "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
+        //Authorization: "Bearer prv_test_WDfNEEXbSwMctMtIvaoqCNUOYekfBE7p",
         Authorization: "Bearer prv_prod_1ZVu4OhiyKTGLRO5SyIqWRWb3q7b8i8t",
         "Content-Type": "application/json",
       },
@@ -568,8 +708,7 @@ async function wompiapi() {
         amount_in_cents: totalwompi,
         currency: "COP",
         sku: sku,
-        redirect_url:
-          "https://api.whatsapp.com/send?phone=573102242724&text=Hola%2C%20hice%20una%20compra%20por%20INSSA%20Prime%2C%20quisiera%20confirmar%20mis%20datos.",
+        redirect_url: url,
         customer_data: {
           customer_references: [
             {
@@ -642,34 +781,45 @@ var spanDomi = document.getElementsByClassName("cerrarDomi")[0];
 
 // Cuando el usuario hace clic en el botón, se abre la ventana
 botonn.addEventListener("click", function () {
-  validarSucursal();
-  console.log("asasasdasd", validacion);
-  if (validacion === true) {
-    validarDelivery = document.getElementById("delivery").value;
-    if (validarDelivery === "Domicilio") {
-      var modal = document.getElementById("ventanaModalDomi");
-      console.log("domi");
-      console.log(modal);
-      modal.style.display = "block";
-      document.getElementById("amount-in-cents").value = totalwompi;
-      document.getElementById("reference").value = referenciaPago;
-      document.getElementById("shipping-address:city").value =
-        validarSucursalDe;
+  check = document.getElementById("opt-in")
+  if (check.checked) {
+    validarSucursal();
+    console.log("asasasdasd", validacion);
+    if (validacion === true) {
+      validarDelivery = document.getElementById("delivery").value;
+      if (validarDelivery === "Domicilio") {
+        var modal = document.getElementById("ventanaModalDomi");
+        console.log("domi");
+        console.log(modal);
+        modal.style.display = "block";
+        document.getElementById("amount-in-cents").value = totalwompi;
+        document.getElementById("reference").value = referenciaPago;
+        document.getElementById("shipping-address:city").value =
+          validarSucursalDe;
+      } else {
+        // var modal = document.getElementById("ventanaModalFisico");
+        // console.log("Nodomi");
+        console.log("pailas");
+        generarQr();
+      }
     } else {
-      // var modal = document.getElementById("ventanaModalFisico");
-      // console.log("Nodomi");
-      console.log("pailas");
-      generarQr();
+      console.log("false");
+  
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Tienes que hacer las selecciones requeridas",
+      });
     }
-  } else {
-    console.log("false");
-
+    
+  }else{
     Swal.fire({
       icon: "error",
       title: "Oops...",
-      text: "Tienes que hacer las selecciones requeridas",
+      text: "Acepta términos y condiciones",
     });
   }
+
 });
 // Si el usuario hace clic en la x, la ventana se cierra
 spanDomi.addEventListener("click", function () {

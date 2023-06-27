@@ -7,7 +7,7 @@ require "variables.php";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<title>INSSA PRIME</title>
@@ -172,14 +172,25 @@ require "variables.php";
 													</a>
 												</div>
 											</div>
-											<div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
+											<div alt="Imagen producto 4" class="item-slick3" data-thumb="<?php echo "
+												{$img4}" ?>">
+												<div class="wrap-pic-w pos-relative">
+													<img alt="Imagen proveedor" src="<?php echo " {$img4}" ?>">
+													<a alt="Imagen producto 3"
+														class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
+														href="<?php echo " {$img4}" ?>">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+											</div>
+											<!-- <div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													<div class="video">
 														<video style="width: 100%;" class="" src="<?php echo " {$video1}" ?>" controls>
 														</video>
 													</div>
 												</div>
-											</div>
+											</div> -->
 										</div>
 									</div>
 									<!-- <div class="masDatos">
@@ -226,8 +237,8 @@ require "variables.php";
 									<input type="hidden" id="kit" name="kit" require  />
 									<input type="hidden" id="totalWompi" name="totalWompi" value="" />
 
-									<h4 class="mtext-111 cl2 js-name-detail p-b-14" id="nombre">
-									</h4>
+									<h3 class="mtext-111 cl2 js-name-detail p-b-14 nombreMaquina" id="nombre">
+									</h3>
 									<span class="mtext-111 cl2" id="subtotalText">
 									</span>
 									<!-- <p id="stock">
@@ -530,16 +541,32 @@ require "variables.php";
 											p-lr-15 trans-04 " type="button" id=botonpagar  name="botonpagar" onclick="generarQr()">
 											Pagar
 										</button> -->
+										
 
 
 										<form class="pru">
 
 										</form>
 
+										<div style="display: flex; align-items: baseline;">
+											<input type="checkbox" name="my-checkbox" id="opt-in">
+											<label style="margin-left: 10px;" for="opt-in">He leído y estoy de acuerdo con los <a href=""
+												target="_blank">términos y condiciones</a> de la web *</label>
+										  </div>
+
+										
+
 										
 
 <button class="waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
 p-lr-15 trans-04" id="abrirModal">Pagar</button>
+
+<div style="display: flex; margin-top: 10px; align-items: baseline;">
+	<label style="margin-left: 10px;" for="opt-in">Te informamos que los datos que nos proporciones serán tratados de manera confidencial y utilizados únicamente para fines específicos relacionados con tu compra y otros propósitos descritos en nuestra <a href=""
+		target="_blank">política de privacidad.</a></label>
+  </div>
+
+
 <!-- Ventana modal, por defecto no visiblel -->
 <div id="ventanaModalDomi" class="modal">
 	<div class="modal-content">
@@ -547,8 +574,9 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 
 		<form action="https://checkout.wompi.co/p/" method="GET" class="wompi" name="wompi" id="wompi" target="_blank">
 
-			<!-- <input type="hidden" name="public-key" value="pub_prod_jzoTpu9Es1mhKUKrbNw3ezvzImlD8AYb			" /> -->
-			<input type="hidden" name="public-key" value="pub_test_2YyBHOyazu3p9AlJ2jjdPuLG5YVuX77c" />
+			<input type="hidden" name="public-key" value="pub_prod_jzoTpu9Es1mhKUKrbNw3ezvzImlD8AYb			" />
+			<!-- <input type="hidden" name="public-key" value="pub_test_2YyBHOyazu3p9AlJ2jjdPuLG5YVuX77c" /> -->
+			<input type="hidden" name="sku" value="prueba" />
 			<input type="hidden" name="currency" value="COP" />
 			<input type="hidden" name="amount-in-cents" id="amount-in-cents" value="" />
 			<input type="hidden" name="name" id="name" value="REFERENCIA_DE_PAGO" />

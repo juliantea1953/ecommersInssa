@@ -2394,7 +2394,7 @@ function ShowSelectedCDelivery() {
 
       break;
 
-    case "paris":
+    case "parisEspresso":
       var flete = array_var.fleteParis;
     
       break;
@@ -2410,6 +2410,25 @@ function ShowSelectedCDelivery() {
       break;
 
     case "berna20L":
+      var flete = array_var.fleteBerna20;
+      break;
+
+      case "grecia151T":
+      var flete = array_var.fleteBerna20;
+      break;
+      case "grecia152T":
+      var flete = array_var.fleteBerna20;
+      break;
+
+      case "neve110":
+      var flete = array_var.fleteBerna20;
+      break;
+
+      case "neve220":
+      var flete = array_var.fleteBerna20;
+      break;
+
+      case "asis":
       var flete = array_var.fleteBerna20;
       break;
 

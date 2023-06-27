@@ -394,7 +394,7 @@ switch (producto) {
     var reteFuente = (precioNeto * porcentajeFuente) / 100;
 
     envioNeto = document.getElementById("subtotalText").innerHTML =
-      "$3,016,000.00";
+      "$3,016,000.0";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
       "$3,016,000.00";
     envioNombre = document.getElementById("nombre").innerHTML = "Dispensadora de jugos Berna 20 litros";
