@@ -107,7 +107,7 @@ console.log("kit", kit);
         foreground: "black", // Color del QR
         level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
       }); 
-    }, 000)
+    }, 0)
     
   });
   
@@ -172,7 +172,7 @@ console.log("kit", kit);
         foreground: "black", // Color del QR
         level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
       }); 
-    }, 000)
+    }, 0)
     
   });
   

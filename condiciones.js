@@ -1,5 +1,4 @@
 var producto = document.getElementById("producto").value;
-console.log("bari", producto);
 
 switch (producto) {
   case "bari":

@@ -2,7 +2,12 @@
 
 $produc = $_GET['producto'];
 
-require "variables.php";
+
+$fecha_actual = date("dmYhis");
+include_once("variables1.php");
+noCachePHP();
+
+
 
 ?>
 
@@ -10,9 +15,35 @@ require "variables.php";
 <html lang="es">
 
 <head>
-	<title>INSSA PRIME</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="" />
+	<meta <?php echo "{$og_title}" ?> />
+	<meta <?php echo "{$og_url}" ?> />
+	<meta <?php echo "{$og_desciption}" ?> />
+	<meta <?php echo "{$og_image}" ?> />
+	<meta <?php echo "{$og_image_url}" ?> />
+	<!-- <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EAS Hospitalario">
+  <meta name="twitter:description" content="EAS Hospitalario Tw"> -->
+
+  <!-- <meta http-equiv="Expires" content="0"> -->
+  <!-- <meta http-equiv="Expires" content="Friday, 30-Jun-23 21:44:00 GMT">
+  <meta http-equiv="Last-Modified" content="Friday, 30-Jun-23 21:41:00 GMT"> -->
+  <!-- <meta http-equiv="Cache-Control" content="no-store, mustrevalidate"> -->
+  <!-- <meta http-equiv="Pragma" content="no-cache"> -->
+  <!-- <meta http-equiv="Cache-Control" content="no-cache" />  -->
+  <!-- <meta http-equiv="refresh" content="30"> -->
+
+  <meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" /> 
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Fri, 30 Jun 2023 21:55:00 GMT" />
+	<title>INSSA PRIME</title>
+
+
+
 	<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/logoInssa.png" />
 	<!--===============================================================================================-->
@@ -40,8 +71,8 @@ require "variables.php";
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main1.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css?version= v<?php echo "{$fecha_actual}" ?>">
+	<link rel="stylesheet" type="text/css" href="css/main1.css?version= v<?php echo "{$fecha_actual}" ?>">
 	<!--===============================================================================================-->
 	<!-- Customized Bootstrap Stylesheet -->
 	<!-- Icon Font Stylesheet -->
@@ -73,6 +104,9 @@ require "variables.php";
 		<!-- Header -->
 		<header>
 			<!-- Header desktop -->
+			<!-- <p>
+				<?php echo "{$fecha_actual}" ?>
+			</p> -->
 			<div class="container-menu-desktop">
 				<!-- Topbar -->
 				<div class="top-bar ">
@@ -104,7 +138,7 @@ require "variables.php";
 							<a href="https://www.youtube.com/@inssasas/videos" target = "_blank" class="logoNavBar flex-c-m trans-04 p-lr-25">
 								<i class="fab fa-youtube"></i>
 							</a>
-							<a href="https://www.instagram.com/inssasas/" target = "_blank" class="logoNavBar flex-c-m trans-04 p-lr-25">
+							<a href="https://www.instagram.com/mercadeoinssa/" target = "_blank" class="logoNavBar flex-c-m trans-04 p-lr-25">
 								<i class="fab fa-instagram"></i>
 							</a>
 						</div>
@@ -133,7 +167,14 @@ require "variables.php";
 						<!-- <button class="how-pos3 hov3 trans-04 js-hide-modal1">
 						<img src="images/icons/icon-close.png" alt="CLOSE">
 					</button> -->
+					<div class="contNombreMov" id="contNombreMov" style="margin-bottom: 10px;">
+						<h3 class="mtext-111 cl2 js-name-detail p-b-14 nombreMaquina" id="nombreMov">
+						</h3>
+						<span class="mtext-111 cl2" id="subtotalTextMov">
+						</span>
+					</div>
 						<div class="row">
+							
 							<div class="col-md-6 col-lg-7">
 								<div class="p-l-25 p-r-30 p-lr-0-lg">
 									<div class="wrap-slick3 flex-sb flex-w">
@@ -150,7 +191,7 @@ require "variables.php";
 													</a>
 												</div>
 											</div>
-											<div alt="Imagen producto 2" class="item-slick3" data-thumb="<?php echo "
+											<div alt="Imagen producto 2" id="img2" class="item-slick3" data-thumb="<?php echo "
 												{$img2}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													<img alt="Imagen producto 2" src="<?php echo " {$img2}" ?>" >
@@ -172,7 +213,7 @@ require "variables.php";
 													</a>
 												</div>
 											</div>
-											<div alt="Imagen producto 4" class="item-slick3" data-thumb="<?php echo "
+											<!-- <div alt="Imagen producto 4" class="item-slick3" data-thumb="<?php echo "
 												{$img4}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													<img alt="Imagen proveedor" src="<?php echo " {$img4}" ?>">
@@ -182,7 +223,36 @@ require "variables.php";
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
+											</div> -->
+											<div id="img5" alt="Imagen producto 5" class="item-slick3" data-thumb="<?php echo "
+												{$img5}" ?>">
+												<div class="" style="height: 100%;">
+													<div class="wrap-pic-w pos-relative" id="video">
+											
+												
+													</div>
+
+												</div>
+											
 											</div>
+											<!-- <div alt="Imagen producto video" class="item-slick3" data-thumb="<?php echo "
+												{$img4}" ?>">
+												<div class="wrap-pic-w pos-relative">
+													<div class="video" id="video">
+														
+													</video>
+												</div>
+												</div>
+											</div>
+											<div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
+												<div class="wrap-pic-w pos-relative">
+													<div class="video" id="video">
+														
+														</video>
+													</div>
+												</div>
+											</div> -->
+
 											<!-- <div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													<div class="video">
@@ -193,26 +263,7 @@ require "variables.php";
 											</div> -->
 										</div>
 									</div>
-									<!-- <div class="masDatos">
-										<a href="<?php echo " {$hrefCapacitacion}" ?>">
-											<button type="button" class="botonDatos waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
-											p-lr-15 trans-04">Capacitación Bari</button>
-										</a>
-										<a href="<?php echo " {$hrefManual}" ?>">
-											<button type="button" class="botonDatos waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
-											p-lr-15 trans-04">Manual Bari</button>
-										</a>
-									</div>
-									<div class="ayuda">
-										<div class = "contAyuda">
-										Ayuda e información
-										<a
-											href="https://wa.me/3102242724?text=Hola,%20estoy%20interesado%20en%20un%20producto%20de%20Inssa%20Prime">
-											<img class="imgAyuda" src="images/ayuda.png" alt="">
-										</a>
-										</div>
-										
-									</div> -->
+				
 									<div id = "codigoLink">
 									<div class="qr">
 										<a id="aQr" href="" target = "_blank">
@@ -228,6 +279,81 @@ require "variables.php";
 									</div>
 									
 								</div>
+
+<div class="p-l-25 p-r-30 p-lr-0-lg" style="margin-top: 10px;" id="caracteristicas">
+
+	<div class="contCara">
+		<div class=" js-hide-modal1">
+			<div class="container containerCara">
+				<div class="bg0 p-lr-15-lg how-pos3-parent">
+					<div class="row">
+
+
+						<div class=" col-md-12 colum">
+							<div class=" ">
+								<div class=" m-lr-0-xl">
+									<div class="wrap-table-shopping-cart">
+										<table class="table-shopping-cart">
+											<tbody>
+												<tr class="table_head">
+													<th class="columnT-1">características</th>
+												</tr>
+												<tr class="table_row">
+													<td class="column-1 tdCare">
+														<ul id="care" class="care">
+															
+														</ul>
+
+
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+
+
+						<!-- <div class=" col-md-12 colum">
+							<div class=" ">
+								<div class=" m-lr-0-xl">
+									<div class="wrap-table-shopping-cart">
+										<table class="table-shopping-cart">
+											<tbody>
+												<tr class="table_head">
+													<th class="columnT-1">Documentos</th>
+												</tr>
+												<tr class="table_row">
+													<td class="column-1">
+														<ul>
+															<li><a href=" " target="_blank"> Manual Berna 12 Litros</a>
+															</li>
+													
+														</ul>
+
+
+
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div> -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
 							</div>
 							<div class="col-md-6 col-lg-5 ">
 								<div class="p-r-50 p-t-5 p-lr-0-lg">
@@ -237,10 +363,14 @@ require "variables.php";
 									<input type="hidden" id="kit" name="kit" require  />
 									<input type="hidden" id="totalWompi" name="totalWompi" value="" />
 
-									<h3 class="mtext-111 cl2 js-name-detail p-b-14 nombreMaquina" id="nombre">
-									</h3>
-									<span class="mtext-111 cl2" id="subtotalText">
-									</span>
+									<div class="contNombreDes" id="contNombreDes">
+										<h3 class="mtext-111 cl2 js-name-detail p-b-14 nombreMaquina" id="nombreDes">
+										</h3>
+										<span class="mtext-111 cl2" id="subtotalTextDes">
+										</span>
+									</div>
+
+									
 									<!-- <p id="stock">
 										Cantidad en stock 14
 									</p> -->
@@ -249,7 +379,7 @@ require "variables.php";
 									<!--  -->
 									<form id="formulario" name="formulario" action="wompi.php" method="post">
 										<input type="hidden" id="ciudad1" name="ciudad1">
-										<div class="p-t-33">
+										<div class="p-t-33 contSelec">
 											<!-- <div class="contRadio">
 												<div class="radio">
 													<input type="hidden" id="totalWompi" name="totalWompi" value="" />
@@ -311,7 +441,7 @@ require "variables.php";
 													Envío
 												</div>
 												<div class="selecForm selecForm size-204 respon6-next">
-													<div class="rs1-select2 bor8 bg0">
+													<div class="rs1-select2 bor8 bg0" id="divDelivery">
 														<select class="js-select2" type="text" name="delivery"
 															id="delivery" onchange="ShowSelectedDelivery();" require>
 															<option disabled selected>Escoje una opción</option>
@@ -331,7 +461,7 @@ require "variables.php";
 													Ciudad de destino por cargger
 												</div>
 												<div class="selecForm size-204 respon6-next">
-													<div class="rs1-select2 bor8 bg0">
+													<div class="rs1-select2 bor8 bg0" id="divCiudadDeli">
 														<select class="js-select2" type="text"
 														onchange="ShowSelectedCDelivery(), ShowChangeCDelivery()"
 															id="ciudadDelivery" require>
@@ -350,7 +480,7 @@ require "variables.php";
 													Sucursal a recoger
 												</div>
 												<div class="selecForm size-204 respon6-next">
-													<div class="rs1-select2 bor8 bg0">
+													<div class="rs1-select2 bor8 bg0" id="divSucursal">
 														<select class="js-select2" type="text"
 															onchange="ShowSelectedCiudadSucursal()" id="ciudadSucursal"
 															require>
@@ -550,7 +680,7 @@ require "variables.php";
 
 										<div style="display: flex; align-items: baseline;">
 											<input type="checkbox" name="my-checkbox" id="opt-in">
-											<label style="margin-left: 10px;" for="opt-in">He leído y estoy de acuerdo con los <a href=""
+											<label style="margin-left: 10px;" for="opt-in">He leído y estoy de acuerdo con los <a href="https://inssa.com.co/terminos-y-condiciones-ecommerce-inssa/"
 												target="_blank">términos y condiciones</a> de la web *</label>
 										  </div>
 
@@ -562,7 +692,7 @@ require "variables.php";
 p-lr-15 trans-04" id="abrirModal">Pagar</button>
 
 <div style="display: flex; margin-top: 10px; align-items: baseline;">
-	<label style="margin-left: 10px;" for="opt-in">Te informamos que los datos que nos proporciones serán tratados de manera confidencial y utilizados únicamente para fines específicos relacionados con tu compra y otros propósitos descritos en nuestra <a href=""
+	<label style="margin-left: 10px;" for="opt-in">Te informamos que los datos que nos proporciones serán tratados de manera confidencial y utilizados únicamente para fines específicos relacionados con tu compra y otros propósitos descritos en nuestra <a href="https://inssa.com.co/terminos-y-condiciones-ecommerce-inssa/"
 		target="_blank">política de privacidad.</a></label>
   </div>
 
@@ -583,6 +713,7 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 			<input type="hidden" name="reference" id="reference" value="REFERENCIA_DE_PAGO" />
 			<input type="hidden" name="redirect-url" id = "redirect-url" value="URL_REDIRECCION" />
 			<input type="hidden" name="shipping-address:country" value="CO" />
+			<input type="hidden" name="shipping-address:region" value="N/A" />
 
 			<input type="hidden" name="shipping-address:city" id="shipping-address:city" value="CIUDAD_DE_ENVIO" />
 
@@ -636,9 +767,9 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 							<input class="data-input" required type="text" name="shipping-address:address-line-2"
 								placeholder="Apartamento / Interior / Oficina / etc" />
 						</div>
-						<div class='data-region'>
+						<!-- <div class='data-region'>
 							<label for='data-region'>departamento</label>
-							<select class="data-input-select" required type="" name="shipping-address:region">
+							<select  type="hidden" class="data-input-select" required type="" name="shipping-address:region">
 								<option selected disabled value="">Seleccione un elemento de la lista</option>
 								<option value="Distrito Capital de Bogotá">Distrito Capital de Bogotá</option>
 								<option value="Amazonas">Amazonas</option>
@@ -675,7 +806,7 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 								<option value="Vaupés">Vaupés</option>
 								<option value="Vichada">Vichada</option>
 							</select>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -697,91 +828,7 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 				</div>
 			</div>
 			</div>
-			<!-- <div class=" js-hide-modal1">
-				<div class="container">
-					<div class="bg0 p-lr-15-lg how-pos3-parent">
-						<div class="row">
-							
-						
-							<div class=" col-md-6 colum">
-								<div class=" ">
-									<div class=" m-lr-0-xl">
-										<div class="wrap-table-shopping-cart">
-											<table class="table-shopping-cart">
-												<tr class="table_head">
-													<th class="columnT-1">características</th>
-												</tr>
-												<tr class="table_row">
-													<td class="column-1">
-														<ul id = "care" class = "care">
-														</ul>
-														
-																						
-													</td>
-												</tr>
-												
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class=" col-md-6 colum">
-								<div class=" ">
-									<div class=" m-lr-0-xl">
-										<div class="wrap-table-shopping-cart">
-											<table class="table-shopping-cart">
-												<tr class="table_head">
-													<th class="columnT-1">Condiciones</th>
-												</tr>
-												<tr class="table_row">
-													<td class="column-1">
-														<ul id = "condi">
-
-														</ul>
-												
-
-
-													</td>
-												</tr>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							
-
-
-							<div class=" col-md-6 colum">
-								<div class=" ">
-									<div class=" m-lr-0-xl">
-										<div class="wrap-table-shopping-cart">
-											<table class="table-shopping-cart">
-												<tr class="table_head">
-													<th class="columnT-1">Manuales</th>
-												</tr>
-												<tr class="table_row" >
-													<td class="column-1" >
-														<ul >
-														<li><a href="<?php echo " {$hrefCapacitacion}" ?>" target = "_blank"><?php echo " {$capacitacion}" ?></a> </li>
-															<li><a href="<?php echo " {$hrefManual}" ?>" target = "_blank"><?php echo " {$manual}" ?></a>	 </li>
-														</ul>
-														
-														
-										
-													</td>
-												</tr>
-												
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div> -->
+			
 			<div class="aliados">
 				<img class="imgAliados" src="images/Wompi_LogoPrincipal.png" alt="">
 				<img class="imgAliados" src="images/logoCargger.jpeg" alt="">
@@ -792,8 +839,11 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 					<div class="row g-5">
 						<div class="col-lg-3 col-md-6  ">
 							<h1 class="text-white mb-4">
-								<img class="fa fa-building me-3" src="images/logoInssa.png" width="80" height="60"
-									alt="Image" /> Inssa
+							<a href="https://inssa.com.co/" target = "_blank" class="navbar-brand d-flex align-items-center">
+							<img class="fa fa-building me-3" src="images/logoInssa.png" width="80" height="60"
+									alt="Image" />
+							</a>
+								
 							</h1>
 							<p>
 								Somos una organización que cree en los emprendedores y en las empresas.
@@ -805,7 +855,7 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 								<a class="btn btn-square btn-outline-primary me-1"
 									href="https://www.youtube.com/@inssasas/videos"target = "_blank"><i class="fab fa-youtube" ></i></a>
 								<a class="btn btn-square btn-outline-primary me-0"
-									href="https://www.instagram.com/inssasas/"target = "_blank"><i class="fab fa-instagram" ></i></a>
+									href="https://www.instagram.com/mercadeoinssa/"target = "_blank"><i class="fab fa-instagram" ></i></a>
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6 contSedes ">
@@ -817,7 +867,7 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 								<i class="fa fa-map-marker-alt me-3"></i> Cali: Calle 25nte # 5b-54
 							</p>
 							<p>
-								<i class="fa fa-map-marker-alt me-3"></i> Medellín: Calle 10s # 50ff - 28
+								<i class="fa fa-map-marker-alt me-3"></i> Medellín: Calle 10 sur # 50ff - 28
 							</p>
 							<p><i class="fa fa-phone-alt me-3"></i> 310 224 2724</p>
 							<p><i class="fa fa-envelope me-3"></i> mercadeo@inssa.com.co</p>
@@ -827,7 +877,7 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 				</div>
 			</div>
 
-		<div onmouseover="overWhat()" onmouseout="outWhat()" class = "contWhatsapp">
+		<!-- <div onmouseover="overWhat()" onmouseout="outWhat()" class = "contWhatsapp" style="z-index: 9999; position: fixed;">
 		<a  href="https://wa.link/dpq6x3" class="whatsapp" target="_blank"> <i class="fab fa-whatsapp"></i></a>
 		<div class = "contTextWhat" id = "contTextWhat" style = "display: none">
 			<p class = "textWhat">
@@ -835,7 +885,80 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 			</p>
 		
 		</div>
+		</div> -->
+		
+		<div class = "Antpack" style="z-index: 9999; position: fixed;">
+		<button onclick="myFunction()"
+      style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#F9CD48;color:#000;font-size:18px;border-radius:18px;padding:0 30px;font-weight:bold;height:45px;cursor:pointer;line-height:45px;text-align:center;margin:0;text-decoration:none;">Contactarme!</button>
+     <script >
+      function myFunction() {
+        document.getElementById("formInssa").style.display = "flex"
+      }
+      function closeForm(){
+        document.getElementById("formInssa").style.display = "none"
+      }
+      </script> 
+    
+      
+
+
+   
+<div id="formInssa" style="display: none; z-index: 10001;">
+  <div class="tf-v1-popup" data-testid="tf-v1-popup" style="opacity: 1; position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.75);
+    transition: opacity .25s ease-in-out;
+    display: flex;
+    z-index: 10001;
+    align-items: center;
+    justify-content: center;">
+      <div class="tf-v1-spinner" style="display: none; border: 3px solid #aaa;
+    font-size: 40px;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    animation: spin 1s linear infinite;
+    border-top-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;"></div>
+      <div class="tf-v1-iframe-wrapper" style="opacity: 1; width: calc(70% - 80px); height: calc(70% - 80px); position: relative;
+    transition: opacity .25s ease-in-out;
+    min-width: 360px;
+    min-height: 360px;"><iframe
+          src="https://inssa.com.co/form-scoring/index.html?utm_source=Inssa%20Prime&utm_campaign=NA&utm_medium=Contactarme&utm_content=ContactarmePrime&utm_var=DEFAULT-DEFAULT-DEFAULT&utm_person=lina"
+          data-testid="iframe" allow="microphone; camera" title="Inssa Form"
+          style="border: 0px; transform: translateZ(0px);     width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    border-radius: 8px
+px
+;"></iframe>
+          <a onclick="closeForm()" class="tf-v1-close tf-v1-close-icon" style="color: #fff !important; position: absolute;
+    font-size: 32px;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    cursor: pointer;
+    opacity: .75;
+    transition: opacity .25s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    top: -34px;
+    right: 0;">×</a></div>
+    </div>
+  </div>
 		</div>
+		
+		
+
 
 <div>
 <!-- <button class="waybox-button flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1
@@ -849,6 +972,11 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 
        
     </div>
+  </div>
+
+  <div class="marcaAgua" id="marcaAgua" style="display: none;">
+	<p style="transform: rotate(-25deg);
+    padding: 17px; color:red">No disponible en tienda virtual</p>
   </div>
 
 
@@ -927,10 +1055,10 @@ p-lr-15 trans-04" id="abrirModal">Pagar</button>
 			<!--===============================================================================================-->
 			<script src="js/main.js"></script>
 			<!-- <script src="ciudades.js"></script> -->
-			<script src="departamentosDelivery.js"></script>
-			<script src="procesos.js"></script>
-			<script src="caracteristicas.js"></script>
-			<script src="condiciones.js"></script>
+			<script src="departamentosDelivery.js?version= v<?php echo "{$fecha_actual}" ?>"></script>
+			<script src="procesos.js?version= v<?php echo "{$fecha_actual}" ?>"></script>
+			<script src="caracteristicas.js?version= v<?php echo "{$fecha_actual}" ?>"></script>
+			<script src="condiciones.js?version= v<?php echo "{$fecha_actual}" ?>"></script>
 			<script src="wompi.js"></script>
 </body>
 </html>
