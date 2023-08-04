@@ -323,7 +323,7 @@ switch (producto) {
 
     break;
 
-  case "grecia151T":
+  case "grecia181T":
     var character = [
       {
         Nombre:
@@ -371,7 +371,7 @@ switch (producto) {
 
     break;
 
-  case "grecia152T":
+  case "grecia182T":
     var character = [
       {
         Nombre:

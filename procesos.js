@@ -68,7 +68,7 @@ switch (producto) {
     envioTotal = document.getElementById("total").innerHTML = "$5,057,500.00";
 
     total = 5057500;
-    inventario = 50;
+    inventario = 41;
     url = document.getElementById("redirect-url").value =
       "http://inssa.com.co/ecommerce/postBari.html";
     wompiapi();
@@ -123,7 +123,7 @@ switch (producto) {
     envioTotal = document.getElementById("total").innerHTML = "$10,301,830.00";
 
     total = 10301830;
-    inventario = 6;
+    inventario = 5;
     url = document.getElementById("redirect-url").value =
       "http://inssa.com.co/ecommerce/postParisEspresso.html?ver1";
     wompiapi();
@@ -150,8 +150,8 @@ switch (producto) {
 
   case "parisSoluble":
 
-    // var precioNeto = 8657000 * cantidadProducto;
-    var precioNeto = 6216000 * cantidadProducto;
+    // var precioNeto = 6216000 * cantidadProducto;
+    var precioNeto = 1 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
     document.getElementById("fleteI").value = 0;
@@ -338,7 +338,7 @@ switch (producto) {
     document.getElementById("iA").appendChild(iImg5);
     break;
 
-  case "grecia151T":
+  case "grecia181T":
     var precioNeto = 2772000 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
@@ -368,11 +368,11 @@ switch (producto) {
 
     var imgg5 = document.createElement("img");
 
-    imgg5.src = "images/paris/paris_4.png";
+    imgg5.src = "images/grecia1t/grecia1t4.jpg";
 
     var aImg5 = document.createElement("a");
 
-    aImg5.href = "images/paris/paris_4.png";
+    aImg5.href = "images/grecia1t/grecia1t4.jpg";
     aImg5.id = "iA";
     aImg5.className =
       "flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04";
@@ -385,7 +385,7 @@ switch (producto) {
     document.getElementById("iA").appendChild(iImg5);
     break;
 
-  case "grecia152T":
+  case "grecia182T":
     var precioNeto = 4341000 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
@@ -454,7 +454,7 @@ switch (producto) {
     envioTotal = document.getElementById("total").innerHTML = "$11,781,000.00";
 
     total = 11781000;
-    inventario = 4;
+    inventario = 3;
     
     url = document.getElementById("redirect-url").value =
       "http://inssa.com.co/ecommerce/postNeve110.html";
