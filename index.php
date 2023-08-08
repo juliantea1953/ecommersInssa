@@ -4,10 +4,10 @@ $produc = $_GET['producto'];
 
 
 $fecha_actual = date("dmYhis");
-include_once("variables1.php");
+include("variables1.php");
 noCachePHP();
 
-
+// echo($fecha_actual)
 
 ?>
 
@@ -183,10 +183,10 @@ noCachePHP();
 										<div class="slick3 gallery-lb">
 											<div class="item-slick3" alt="Imagen producto 1" data-thumb="<?php echo "{$img1}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img alt="Imagen producto 1" src="<?php echo " {$img1}" ?>">
+													<img alt="Imagen producto 1" src="<?php echo "{$img1}" ?>">
 													<a alt="Imagen producto 1"
 														class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
-														href="<?php echo " {$img1}" ?>" >
+														href="<?php echo "{$img1}" ?>" >
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
@@ -194,10 +194,10 @@ noCachePHP();
 											<div alt="Imagen producto 2" id="img2" class="item-slick3" data-thumb="<?php echo "
 												{$img2}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img alt="Imagen producto 2" src="<?php echo " {$img2}" ?>" >
+													<img alt="Imagen producto 2" src="<?php echo "{$img2}" ?>" >
 													<a alt="Imagen producto 2"
 														class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
-														href="<?php echo " {$img2}" ?>">
+														href="<?php echo "{$img2}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
@@ -205,25 +205,15 @@ noCachePHP();
 											<div alt="Imagen producto 3" class="item-slick3" data-thumb="<?php echo "
 												{$img3}" ?>">
 												<div class="wrap-pic-w pos-relative">
-													<img alt="Imagen proveedor" src="<?php echo " {$img3}" ?>">
+													<img alt="Imagen proveedor" src="<?php echo "{$img3}" ?>">
 													<a alt="Imagen producto 3"
 														class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
-														href="<?php echo " {$img3}" ?>">
+														href="<?php echo "{$img3}" ?>">
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
 											</div>
-											<!-- <div alt="Imagen producto 4" class="item-slick3" data-thumb="<?php echo "
-												{$img4}" ?>">
-												<div class="wrap-pic-w pos-relative">
-													<img alt="Imagen proveedor" src="<?php echo " {$img4}" ?>">
-													<a alt="Imagen producto 3"
-														class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
-														href="<?php echo " {$img4}" ?>">
-														<i class="fa fa-expand"></i>
-													</a>
-												</div>
-											</div> -->
+										
 											<div id="img5" alt="Imagen producto 5" class="item-slick3" data-thumb="<?php echo "
 												{$img5}" ?>">
 												<div class="" style="height: 100%;">
@@ -244,7 +234,7 @@ noCachePHP();
 												</div>
 												</div>
 											</div>
-											<div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
+											<div class="item-slick3" data-thumb="<?php echo "{$imgvideo1}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													<div class="video" id="video">
 														
@@ -253,10 +243,10 @@ noCachePHP();
 												</div>
 											</div> -->
 
-											<!-- <div class="item-slick3" data-thumb="<?php echo " {$imgvideo1}" ?>">
+											<!-- <div class="item-slick3" data-thumb="<?php echo "{$imgvideo1}" ?>">
 												<div class="wrap-pic-w pos-relative">
 													<div class="video">
-														<video style="width: 100%;" class="" src="<?php echo " {$video1}" ?>" controls>
+														<video style="width: 100%;" class="" src="<?php echo "{$video1}" ?>" controls>
 														</video>
 													</div>
 												</div>
@@ -1055,6 +1045,15 @@ px
 			<!--===============================================================================================-->
 			<script src="js/main.js"></script>
 			<!-- <script src="ciudades.js"></script> -->
+			<script type="text/javascript">
+    $(document).ready(function() {
+      setTimeout(function() {
+        // alert('Reloading Page');
+        history.go(1);
+
+      }, 3000);
+    });
+  </script>
 			<script src="departamentosDelivery.js?version= v<?php echo "{$fecha_actual}" ?>"></script>
 			<script src="procesos.js?version= v<?php echo "{$fecha_actual}" ?>"></script>
 			<script src="caracteristicas.js?version= v<?php echo "{$fecha_actual}" ?>"></script>

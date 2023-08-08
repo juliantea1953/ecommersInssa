@@ -3368,10 +3368,10 @@ function ShowSelectedCDelivery() {
       var flete = array_var.fleteBerna20;
       break;
 
-      case "grecia151T":
+      case "grecia181T":
       var flete = array_var.fleteGrecia1t;
       break;
-      case "grecia152T":
+      case "grecia182T":
       var flete = array_var.fleteGrecia2t;
       break;
 

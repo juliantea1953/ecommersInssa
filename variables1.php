@@ -41,11 +41,11 @@ switch ($produc) {
       $og_image_url = "property=\"og:image:secure_url\" content=\"https://inssa.com.co/ecommerce/images/paris/paris_12.jpg?v1\"";
 
 
-        $img1 = "images/paris/paris_12.jpg?v=1";
-        $img2 = "images/paris/paris_2.png?v1";
-        $img3 = "images/paris/paris_32.jpg?v1";
-        $img4 = "images/paris/paris_42.jpg?v1";
-        $img5 = "images/paris/paris_42.jpg?v1";
+        $img1 = "images/paris/paris1.jpg?v=1";
+        $img2 = "images/paris/paris2.png?v1";
+        $img3 = "images/paris/paris3.jpg?v1";
+        $img4 = "images/paris/paris4.jpg?v1";
+        $img5 = "images/paris/paris4.jpg?v1";
         $imgvideo1 = "images/paris/paris1.jpeg?v1";
 
         $video1 = "";
@@ -75,11 +75,12 @@ switch ($produc) {
       break;
   
     case "turin":
-       $img1 = "images/Turin/Turin.png?v1";
-       $img2 = "images/Turin/turin-sensacion.png?v1";
-       $img3 = "images/Turin/stiker-para-turin1080.png?v1";
-       $img4 = "images/Turin/stiker-para-turin1080.png?v1";
-       $imgvideo1 = "images/Turin/stiker-para-turin1080.png?v1";
+       $img1 = "images/Turin/turin1.jpg?v1";
+       $img2 = "images/Turin/turin2.jpg?v1";
+       $img3 = "images/Turin/turin3.jpg?v1";
+       $img4 = "images/Turin/turin4.jpg?v1";
+       $img5 = "images/Turin/turin4.jpg?v1";
+       $imgvideo1 = "images/Turin/turin4.jpg?v1";
 
        $video1 = "";
        $hrefCapacitacion = "";
@@ -90,19 +91,19 @@ switch ($produc) {
         $og_title = "property=\"og:title\" content=\"Cafetera Turin\"";
         $og_url = "property=\"og:url\" content=\"https://www.inssa.com.co\"";
         $og_desciption = "property=\"og:description\" content=\"Inssa Prime, compra en un 2 X 3\"";
-        $og_image = "property=\"og:image\" content=\"https://inssa.com.co/ecommerce/images/turin/Turin.png?v1\"";
-        $og_image_url = "property=\"og:image:secure_url\" content=\"https://inssa.com.co/ecommerce/images/turin/Turin.png?v1\"";
+        $og_image = "property=\"og:image\" content=\"https://inssa.com.co/ecommerce/images/Turin/turin1.jpg?v1\"";
+        $og_image_url = "property=\"og:image:secure_url\" content=\"https://inssa.com.co/ecommerce/images/Turin/turin1.jpg?v1\"";
        
       break;
   
     case "berna12L":
 
 
-        $img1 = "images/berna12l/berna12_11.jpg?v1";
-        $img2 = "images/berna12l/berna12_2.png?v1";
-        $img3 = "images/berna12l/berna12_31.jpg?v1";
-        $img4 = "images/berna12l/berna12_41.jpg?v1";
-        $img5 = "images/berna12l/berna12_41.jpg?v1";
+        $img1 = "images/berna12l/berna1.jpg?v1";
+        $img2 = "images/berna12l/berna2.png?v1";
+        $img3 = "images/berna12l/berna3.jpg?v1";
+        $img4 = "images/berna12l/berna4.jpg?v1";
+        $img5 = "images/berna12l/berna4.jpg?v1";
         $imgvideo1 = "images/berna12l/stiker-para-Berna12L-1080.png?v1";
  
         $video1 = "";

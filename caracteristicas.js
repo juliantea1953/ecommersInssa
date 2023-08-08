@@ -108,6 +108,9 @@ switch (producto) {
       {
         Nombre: "Incluye caja de mezcladores.",
       },
+      {
+        Nombre: "Incluye Kit de bomba autónoma",
+      },
     ];
     addLi();
 
@@ -162,6 +165,9 @@ switch (producto) {
       {
         Nombre: "Incluye caja de mezcladores.",
       },
+      {
+        Nombre: "Incluye Kit de bomba autónoma",
+      },
     ];
     addLi();
 
@@ -182,7 +188,10 @@ switch (producto) {
         Nombre: "Fácil manejo y limpieza.",
       },
       {
-        Nombre: "Dimensiones: Alto 67cm - Ancho 30cm - Fondo 46cm.",
+        Nombre: "Mayor higiene, frescura y presentación de los productos.",
+      },
+      {
+        Nombre: "Alto 67cm - Ancho 30cm - Fondo 46cm.",
       },
       {
         Nombre: "Peso: 20kg.",
@@ -191,19 +200,25 @@ switch (producto) {
         Nombre: "Potencia: 1800w.",
       },
       {
-        Nombre: "Voltaje: 110v.",
+        Nombre: "Alimentación: 110v.",
+      },
+      {
+        Nombre: "Eficiente, rentable, versátil.",
       },
       {
         Nombre: "Garantía 12 meses.",
       },
       {
-        Nombre: "Incluye depurador de agua.",
+        Nombre: "Incluye filtro depurador de agua.",
       },
       {
-        Nombre: "incluye kit para instalación de filtros.",
+        Nombre: "Incluye kit para instalación de filtros.",
       },
       {
-        Nombre: "incluye kit de racores para instalación.",
+        Nombre: "Incluye kit de racores para instalación.",
+      },
+      {
+        Nombre: "Incluye Kit de bomba autónoma",
       },
     ];
     addLi();

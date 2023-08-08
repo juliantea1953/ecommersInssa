@@ -145,7 +145,7 @@
             $(this).find('.slick3').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                fade: true,
+                fade: false,
                 infinite: true,
                 autoplay: false,
                 autoplaySpeed: 6000,

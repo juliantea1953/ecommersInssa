@@ -25,7 +25,7 @@ function detectionMovil() {
     navigator.userAgent.match(/Windows Phone/i)
   ) {
     // console.log("Estás usando un dispositivo móvil!!");
-    document.getElementById("contTextWhat").style.display = "none";
+    // document.getElementById("contTextWhat").style.display = "none";
     document.getElementById("contNombreMov").style.display = "";
     document.getElementById("contNombreDes").style.display = "none";
 
@@ -89,7 +89,7 @@ switch (producto) {
 
     // document.getElementById("videoProduct").style.marginTop = "3%"
     var videoProduct = document.getElementById("slick-slide03");
-    videoProduct.style.marginTop = "5%";
+    videoProduct.style.marginTop = "1.5%";
 
     var vid = document.getElementById("video");
 
@@ -100,16 +100,16 @@ switch (producto) {
   case "parisEspresso":
 
     // var precioNeto = 8657000 * cantidadProducto;
-    var precioNeto = 8657000 * cantidadProducto;
+    var precioNeto = 8947000 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
     document.getElementById("fleteI").value = 0;
     envioNeto = document.getElementById("subtotalTextMov").innerHTML =
-      "$8,657,000.00 + IVA";
+      "$8,947,000.00 + IVA";
     envioNeto = document.getElementById("subtotalTextDes").innerHTML =
-      "$8,657,000.00 + IVA";
+      "$8,947,000.00 + IVA";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "$8,657,000.00";
+      "$8,947,000.00";
     // envioNeto = document.getElementById("subtotalTextMov").innerHTML =
     //   "$10.00 + IVA";
     // envioNeto = document.getElementById("subtotalTextDes").innerHTML =
@@ -119,10 +119,10 @@ switch (producto) {
     envioNombre = document.getElementById("nombreDes").innerHTML =
       "Cafetera Paris espresso";
     sku = "Cafetera Paris";
-    envioIva = document.getElementById("iva").innerHTML = "$1,644,830.00";
-    envioTotal = document.getElementById("total").innerHTML = "$10,301,830.00";
+    envioIva = document.getElementById("iva").innerHTML = "$1,699,930.00";
+    envioTotal = document.getElementById("total").innerHTML = "$10,646,930.00";
 
-    total = 10301830;
+    total = 10646930;
     inventario = 5;
     url = document.getElementById("redirect-url").value =
       "http://inssa.com.co/ecommerce/postParisEspresso.html?ver1";
@@ -130,11 +130,11 @@ switch (producto) {
 
     var imgg5 = document.createElement("img");
 
-    imgg5.src = "images/paris/paris_42.jpg";
+    imgg5.src = "images/paris/paris4.jpg";
 
     var aImg5 = document.createElement("a");
 
-    aImg5.href = "images/paris/paris_42.jpg";
+    aImg5.href = "images/paris/paris4.jpg";
     aImg5.id = "iA";
     aImg5.className =
       "flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04";
@@ -150,17 +150,17 @@ switch (producto) {
 
   case "parisSoluble":
 
-    // var precioNeto = 6216000 * cantidadProducto;
-    var precioNeto = 1 * cantidadProducto;
+    // var precioNeto = 6506000 * cantidadProducto;
+    var precioNeto = 6506000 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
     document.getElementById("fleteI").value = 0;
     envioNeto = document.getElementById("subtotalTextMov").innerHTML =
-      "$6,216,000.00 + IVA";
+      "$6,506,000.00 + IVA";
     envioNeto = document.getElementById("subtotalTextDes").innerHTML =
-      "$6,216,000.00 + IVA";
+      "$6,506,000.00 + IVA";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "$6,216,000.00";
+      "$6,506,000.00";
     // envioNeto = document.getElementById("subtotalTextMov").innerHTML =
     //   "$10.00 + IVA";
     // envioNeto = document.getElementById("subtotalTextDes").innerHTML =
@@ -170,10 +170,10 @@ switch (producto) {
     envioNombre = document.getElementById("nombreDes").innerHTML =
       "Cafetera Paris soluble";
     sku = "Cafetera Paris soluble";
-    envioIva = document.getElementById("iva").innerHTML = "$1,181,040.00";
-    envioTotal = document.getElementById("total").innerHTML = "$7,397,040.00";
+    envioIva = document.getElementById("iva").innerHTML = "$1,236,140.00";
+    envioTotal = document.getElementById("total").innerHTML = "$7,742,140.00";
 
-    total = 7397040;
+    total = 7742140;
     inventario = 6;
     url = document.getElementById("redirect-url").value =
       "http://inssa.com.co/ecommerce/postParisSoluble.html?ver1";
@@ -200,49 +200,49 @@ switch (producto) {
     break;
 
   case "turin":
-    var precioNeto = 3205000 * cantidadProducto;
+    var precioNeto = 3495000 * cantidadProducto;
     var tasa = 19;
     var iva = (precioNeto * tasa) / 100;
     document.getElementById("fleteI").value = 0;
 
     envioNeto = document.getElementById("subtotalTextDes").innerHTML =
-      "$3,205,000.00 + IVA";
+      "$3,495,000.00 + IVA";
     envioNeto = document.getElementById("subtotalTextMov").innerHTML =
-      "$3,205,000.00 + IVA";
+      "$3,495,000.00 + IVA";
     envioNeto2 = document.getElementById("subtotal").innerHTML =
-      "$3,205,000.00";
+      "$3,495,000.00";
     envioNombre = document.getElementById("nombreDes").innerHTML =
       "Cafetera Turin";
     envioNombre = document.getElementById("nombreMov").innerHTML =
       "Cafetera Turin";
     sku = "Cafetera Turin";
-    envioIva = document.getElementById("iva").innerHTML = "$608,950.00";
-    envioTotal = document.getElementById("total").innerHTML = "$3,813,950.00";
+    envioIva = document.getElementById("iva").innerHTML = "$664,050.00";
+    envioTotal = document.getElementById("total").innerHTML = "$4,159,050.00";
 
-    total = 3813950;
-    inventario = 0;
+    total = 4159050;
+    inventario = 4;
     
     url = document.getElementById("redirect-url").value =
       "http://inssa.com.co/ecommerce/postTurin.html";
       wompiapi();
 
-    var imgg5 = document.createElement("img");
+      var imgg5 = document.createElement("img");
 
-    imgg5.src = "images/paris/paris_4.png";
-
-    var aImg5 = document.createElement("a");
-
-    aImg5.href = "images/paris/paris_4.png";
-    aImg5.id = "iA";
-    aImg5.className =
-      "flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04";
-
-    var iImg5 = document.createElement("i");
-    iImg5.className = "fa fa-expand";
-
-    document.getElementById("video").appendChild(imgg5);
-    document.getElementById("video").appendChild(aImg5);
-    document.getElementById("iA").appendChild(iImg5);
+      imgg5.src = "images/Turin/turin4.jpg";
+  
+      var aImg5 = document.createElement("a");
+  
+      aImg5.href = "images/Turin/turin4.jpg";
+      aImg5.id = "iA";
+      aImg5.className =
+        "flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04";
+  
+      var iImg5 = document.createElement("i");
+      iImg5.className = "fa fa-expand";
+  
+      document.getElementById("video").appendChild(imgg5);
+      document.getElementById("video").appendChild(aImg5);
+      document.getElementById("iA").appendChild(iImg5);
     break;
 
   case "berna12L":
@@ -274,11 +274,11 @@ switch (producto) {
 
     var imgg5 = document.createElement("img");
 
-    imgg5.src = "images/berna12l/berna12_41.jpg";
+    imgg5.src = "images/berna12l/berna4.jpg";
 
     var aImg5 = document.createElement("a");
 
-    aImg5.href = "images/berna12l/berna12_41.jpg";
+    aImg5.href = "images/berna12l/berna4.jpg";
     aImg5.id = "iA";
     aImg5.className =
       "flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04";
@@ -352,10 +352,10 @@ switch (producto) {
       "$2,772,000.00";
 
     envioNombre = document.getElementById("nombreDes").innerHTML =
-      "Dispensadora de bebidas Grecia 15 litros 1 tanque";
+      "Dispensadora de bebidas Grecia 18 litros 1 tanque";
     envioNombre = document.getElementById("nombreMov").innerHTML =
-      "Dispensadora de bebidas Grecia 15 litros 1 tanque";
-    sku = " Grecia 15L1T";
+      "Dispensadora de bebidas Grecia 1 litros 1 tanque";
+    sku = " Grecia 18L1T";
     envioIva = document.getElementById("iva").innerHTML = "$526,680.00";
     envioTotal = document.getElementById("total").innerHTML = "$3,298,680.00";
 
@@ -454,7 +454,7 @@ switch (producto) {
     envioTotal = document.getElementById("total").innerHTML = "$11,781,000.00";
 
     total = 11781000;
-    inventario = 3;
+    inventario = 4;
     
     url = document.getElementById("redirect-url").value =
       "http://inssa.com.co/ecommerce/postNeve110.html";
@@ -929,7 +929,7 @@ async function wompiapi() {
         description: "Compra de ",
         single_use: true,
         collect_shipping: true,
-        collect_customer_legal_id: false,
+        collect_customer_legal_id: true,
         amount_in_cents: totalwompi,
         currency: "COP",
         sku: "sku",
@@ -998,10 +998,10 @@ async function wompiapi() {
       },
       data: JSON.stringify({
         name: sku,
-        description: "Compra de " + sku + " ",
+        description: "Compra de " + sku + " por Inssa Prime",
         single_use: true,
         collect_shipping: false,
-        collect_customer_legal_id: false,
+        collect_customer_legal_id: true,
         amount_in_cents: totalwompi,
         currency: "COP",
         sku: sku,
@@ -1055,16 +1055,16 @@ async function wompiapi() {
 function overWhat() {
   if (movil === true) {
     // console.log("hola movil", movil);
-    document.getElementById("contTextWhat").style.display = "none";
+    // document.getElementById("contTextWhat").style.display = "none";
   }
-  document.getElementById("contTextWhat").style.display = "";
+  // document.getElementById("contTextWhat").style.display = "";
 }
 function outWhat() {
   if (movil === true) {
     // console.log("hola movil", movil);
-    document.getElementById("contTextWhat").style.display = "none";
+    // document.getElementById("contTextWhat").style.display = "none";
   }
-  document.getElementById("contTextWhat").style.display = "none";
+  // document.getElementById("contTextWhat").style.display = "none";
 }
 
 // Ventana modal
